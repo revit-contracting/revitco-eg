@@ -269,6 +269,34 @@ button {
   box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
 }
 
+/* --- Prominent Company Profile Button --- */
+.btn-profile {
+  background: linear-gradient(135deg, rgba(197, 168, 105, 0.16) 0%, rgba(229, 210, 160, 0.28) 100%);
+  color: #FFFFFF;
+  border: 1.5px solid var(--primary-gold);
+  box-shadow: 0 8px 24px rgba(197, 168, 105, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.btn-profile i {
+  color: var(--primary-gold);
+  font-size: 1.15rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-profile:hover {
+  background: var(--gold-gradient);
+  color: #0A0D14;
+  border-color: #F3E5AB;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 35px rgba(197, 168, 105, 0.5);
+}
+
+.btn-profile:hover i {
+  color: #0A0D14;
+  transform: scale(1.15) translateY(-1px);
+}
+
 /* --- Header & Navigation Bar --- */
 .header {
   position: fixed;

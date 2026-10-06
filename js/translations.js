@@ -22,6 +22,7 @@ const translations = {
     "hero.title2": "والدقة الهندسية",
     "hero.subtitle": "شركة ريفيت تقدم حلولاً هندسية متكاملة تشمل المقاولات العامة، التصميم المعماري والداخلي، اللاندسكيب، التشطيبات الفاخرة، والتوريدات العمومية للمشروعات الكبرى والخاصة.",
     "hero.exploreBtn": "استكشف التصميمات المختلفة",
+    "hero.profileBtn": "تحميل بروفايل الشركة الرسمي",
     "hero.whatsappBtn": "استشارة فورية عبر واتساب",
     "hero.stat1.num": "100%",
     "hero.stat1.label": "التزام بالمواصفات والمواعيد",
@@ -52,6 +53,7 @@ const translations = {
     "about.team.title": "الجهاز الفني والاستشاري",
     "about.team.desc": "يضم فريق ريفيت نخبة من المهندسين والاستشاريين ذوي الخبرة الواسعة في كبرى المشروعات داخل مصر وخارجها، لضمان أعلى كفاءة فنية وهندسية.",
     "about.btn": "تواصل مع فريقنا الهندسي",
+    "about.profileBtn": "تحميل بروفايل الشركة (PDF)",
 
     // Services Section
     "services.badge": "خدماتنا المتكاملة",
@@ -252,6 +254,7 @@ const translations = {
     "hero.title2": "& Engineering Precision",
     "hero.subtitle": "Revit delivers turnkey engineering solutions including general contracting, architectural & interior design, landscape, luxury fit-out, and public supplies for premium residential and commercial developments.",
     "hero.exploreBtn": "Explore Our Work",
+    "hero.profileBtn": "Download Official Profile",
     "hero.whatsappBtn": "Instant WhatsApp Consultation",
     "hero.stat1.num": "100%",
     "hero.stat1.label": "Adherence to Specs & Deadlines",
@@ -282,6 +285,7 @@ const translations = {
     "about.team.title": "Technical & Consultant Advisory Board",
     "about.team.desc": "Our team includes distinguished engineers and consultants who have contributed to landmark projects across Egypt and internationally.",
     "about.btn": "Connect with Our Engineers",
+    "about.profileBtn": "Download Company Profile (PDF)",
 
     // Services Section
     "services.badge": "Our Core Services",
