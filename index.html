@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="شركة ريفيت للمقاولات العامة والتوريدات العمومية - تنفيذ مشروعات إنشائية متكاملة، تصميم معماري وديكور داخلي 3D، لاندسكيب، تشطيبات فاخرة، وتوريدات معتمدة.">
+  <meta name="keywords" content="ريفيت, مقاولات عامة, تشطيبات, تصميم داخلي, لاندسكيب, توريدات عمومية, مرسى مطروح, مصر, شركة مقاولات">
+  <meta name="author" content="Revit Contracting & Public Supplies">
+  
+  <title>شركة ريفيت للمقاولات العامة والتوريدات العمومية | Revit Contracting</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Header & Navigation Bar
+       ========================================================================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo-wrapper">
+        <img src="logo.jpg" alt="شعار شركة ريفيت" class="brand-logo">
+        <div class="brand-text-block">
+          <span class="brand-name">REVIT</span>
+          <span class="brand-sub" data-i18n="hero.badge">للمقاولات العامة والتوريدات</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">الرئيسية</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">من نحن</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">خدماتنا</a>
+        <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">معرض الأعمال</a>
+        <a href="#certifications" class="nav-link" data-i18n="nav.certifications">الاعتمادات والتراخيص</a>
+        <a href="#why-us" class="nav-link" data-i18n="nav.whyUs">لماذا ريفيت؟</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+
+      <!-- Nav Actions (Theme, Lang, Social, CTA) -->
+      <div class="nav-actions">
+        <!-- Facebook Page Button -->
+        <a href="https://www.facebook.com/profile.php?id=61582192497668&locale=ar_AR" target="_blank" rel="noopener noreferrer" class="action-btn-circle" title="صفحتنا على فيسبوك" aria-label="فيسبوك">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- Instagram Page Button -->
+        <a href="https://www.instagram.com/revit_contracting?igsi=MWpldHhyZDJ3d2hwdQ==" target="_blank" rel="noopener noreferrer" class="action-btn-circle" title="حسابنا على انستغرام" aria-label="انستغرام">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Theme Toggle (Dark / Light) -->
+        <button id="themeToggleBtn" class="action-btn-circle" title="الوضع النهاري" aria-label="تبديل الوضع">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button id="langToggleBtn" class="lang-switch-btn" title="تغيير اللغة" aria-label="تبديل اللغة">
+          <i class="fas fa-globe"></i> <span class="lang-text">English</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.quoteBtn">اطلب عرض سعر</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="action-btn-circle menu-toggle-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileDrawer" class="nav-mobile-drawer">
+      <a href="#home" class="nav-link" data-i18n="nav.home">الرئيسية</a>
+      <a href="#about" class="nav-link" data-i18n="nav.about">من نحن</a>
+      <a href="#services" class="nav-link" data-i18n="nav.services">خدماتنا</a>
+      <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">معرض الأعمال</a>
+      <a href="#certifications" class="nav-link" data-i18n="nav.certifications">الاعتمادات والتراخيص</a>
+      <a href="#why-us" class="nav-link" data-i18n="nav.whyUs">لماذا ريفيت؟</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a>
+      <a href="https://www.facebook.com/profile.php?id=61582192497668&locale=ar_AR" target="_blank" rel="noopener noreferrer" class="nav-link" style="color: var(--primary-gold);"><i class="fab fa-facebook-f" style="margin-inline-end: 8px;"></i><span data-i18n="contact.facebookLabel">صفحتنا على فيسبوك</span></a>
+      <a href="https://www.instagram.com/revit_contracting?igsi=MWpldHhyZDJ3d2hwdQ==" target="_blank" rel="noopener noreferrer" class="nav-link" style="color: var(--primary-gold);"><i class="fab fa-instagram" style="margin-inline-end: 8px;"></i><span data-i18n="contact.instagramLabel">حسابنا على انستغرام</span></a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: 0.5rem;" data-i18n="nav.quoteBtn">اطلب عرض سعر</a>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="drawerOverlay" class="drawer-overlay" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <section id="home" class="hero-section">
+    <div class="hero-background-effects">
+      <div class="hero-glow-orb"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="badge">
+        <i class="fas fa-certificate"></i>
+        <span data-i18n="hero.badge">شركة مقاولات عامة وتوريدات عمومية معتمدة</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">نبني طموحاتكم بـ</span>
+        <span class="gold-text" data-i18n="hero.titleHighlight">أعلى معايير الجودة</span>
+        <span data-i18n="hero.title2">والدقة الهندسية</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        شركة ريفيت تقدم حلولاً هندسية متكاملة تشمل المقاولات العامة، التصميم المعماري والداخلي، اللاندسكيب، التشطيبات الفاخرة، والتوريدات العمومية للمشروعات الكبرى والخاصة.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#portfolio" class="btn btn-primary">
+          <i class="fas fa-cubes"></i>
+          <span data-i18n="hero.exploreBtn">استكشف التصميمات المختلفة</span>
+        </a>
+        <a href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span data-i18n="hero.whatsappBtn">استشارة فورية عبر واتساب</span>
+        </a>
+      </div>
+
+      <!-- Quick Trust Stats -->
+      <div class="hero-stats-bar">
+        <div class="stat-item">
+          <div class="stat-number gold-text" data-i18n="hero.stat1.num">100%</div>
+          <div class="stat-label" data-i18n="hero.stat1.label">التزام بالمواصفات والمواعيد</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number gold-text" data-i18n="hero.stat2.num">EFCBC</div>
+          <div class="stat-label" data-i18n="hero.stat2.label">عضوية الاتحاد المصري لمقاولي التشييد</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number gold-text" data-i18n="hero.stat3.num">شامل</div>
+          <div class="stat-label" data-i18n="hero.stat3.label">من المخطط وحتى التسليم على المفتاح</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Key Highlights Bar
+       ========================================================================= -->
+  <section class="highlights-section">
+    <div class="container">
+      <div class="highlights-grid">
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-award"></i></div>
+          <div class="hl-content">
+            <h4 data-i18n="hl.quality.title">أعلى معايير الجودة</h4>
+            <p data-i18n="hl.quality.desc">تطبيق دقيق لكود البناء وأنظمة السلامة العالمية في كل مرحلة.</p>
+          </div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="hl-content">
+            <h4 data-i18n="hl.team.title">كوادر هندسية متخصصة</h4>
+            <p data-i18n="hl.team.desc">نخبة من المهندسين والاستشاريين أصحاب الخبرات الكبرى.</p>
+          </div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-truck-ramp-box"></i></div>
+          <div class="hl-content">
+            <h4 data-i18n="hl.supplies.title">توريدات مباشرة وتنافسية</h4>
+            <p data-i18n="hl.supplies.desc">توفير كافة مستلزمات البناء والأدوات بأسعار وجودة لا تضاهى.</p>
+          </div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="hl-content">
+            <h4 data-i18n="hl.trust.title">تراخيص واعتمادات رسمية</h4>
+            <p data-i18n="hl.trust.desc">مسجلة تجارياً وضريبياً وعضو باتحاد المقاولين المصريين.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       About Us Section
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Text Side -->
+        <div class="about-text">
+          <div class="badge">
+            <i class="fas fa-building"></i>
+            <span data-i18n="about.badge">نبذة عن ريفيت</span>
+          </div>
+          <h2 data-i18n="about.title">شريكك الهندسي الموثوق في البناء والتطوير</h2>
+          <p data-i18n="about.desc1">
+            تعد شركة <strong>ريفيت للمقاولات العامة والتوريدات العمومية</strong> من الشركات المصرية الصاعدة بقوة في تنفيذ المشروعات الإنشائية المتكاملة وتوريد المواد والمعدات اللازمة لكافة القطاعات.
+          </p>
+          <p data-i18n="about.desc2">
+            تأسست الشركة على أسس مهنية صلبة تهدف إلى تقديم حلول هندسية متكاملة تجمع بين الفخامة المعمارية، الجودة الإنشائية، والدقة الصارمة في التنفيذ والالتزام بالمواعيد.
+          </p>
+
+          <!-- Vision & Mission Mini Cards -->
+          <div class="about-cards-row">
+            <div class="about-mini-card">
+              <h4 data-i18n="about.vision.title"><i class="fas fa-eye"></i> رؤيتنا</h4>
+              <p data-i18n="about.vision.desc">أن نكون في صدارة كبرى شركات المقاولات والتوريدات في مصر والمنطقة بمعايير عالمية.</p>
+            </div>
+            <div class="about-mini-card">
+              <h4 data-i18n="about.mission.title"><i class="fas fa-bullseye"></i> رسالتنا</h4>
+              <p data-i18n="about.mission.desc">تنفيذ مشاريع تفوق طموحات العملاء وتقديم خدمات توريد شاملة تدعم التنمية المستدامة.</p>
+            </div>
+          </div>
+
+          <!-- Technical Team Note -->
+          <div class="about-mini-card" style="margin-bottom: 2rem;">
+            <h4 data-i18n="about.team.title"><i class="fas fa-users-gear"></i> الجهاز الفني والاستشاري</h4>
+            <p data-i18n="about.team.desc">يضم فريق ريفيت نخبة من المهندسين والاستشاريين ذوي الخبرة الواسعة في كبرى المشروعات داخل مصر وخارجها.</p>
+          </div>
+
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-comments"></i>
+            <span data-i18n="about.btn">تواصل مع فريقنا الهندسي</span>
+          </a>
+        </div>
+
+        <!-- Visual Image Side -->
+        <div class="about-visual-side">
+          <div class="about-image-card">
+            <img src="about-revit.jpg" alt="شركة ريفيت للمقاولات العامة والتوريدات العمومية">
+            <div class="about-badge-floating">
+              <i class="fas fa-hard-hat"></i>
+              <div>
+                <h5>REVIT</h5>
+                <span data-i18n="hero.badge">مقاولات عامة وتوريدات عمومية</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Integrated Services Section
+       ========================================================================= -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="fas fa-shapes"></i>
+          <span data-i18n="services.badge">خدماتنا المتكاملة</span>
+        </div>
+        <h2 data-i18n="services.title">حلول هندسية وإنشائية شاملة من الفكرة للتسليم</h2>
+        <p data-i18n="services.subtitle">نقدم منظومة عمل متكاملة تغطي كافة متطلبات المقاولات والتشطيب والتصميم والتوريد باحترافية استثنائية.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Contracting -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-city"></i></div>
+          <h3 class="service-title" data-i18n="service1.title">المقاولات العامة والإنشاءات</h3>
+          <p class="service-desc" data-i18n="service1.desc">تنفيذ متكامل لكافة المباني السكنية، التجارية، والإدارية، أعمال الحفر والأساسات، والخرسانات المسلحة وفق الحسابات الإنشائية الدقيقة.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service1.f1">إنشاء الهياكل الخرسانية والمباني</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service1.f2">أعمال الأساسات والعزل المتطور</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service1.f3">المشروعات السكنية والتجارية</span></div>
+          </div>
+        </div>
+
+        <!-- Service 2: Interior & Architecture -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-couch"></i></div>
+          <h3 class="service-title" data-i18n="service2.title">التصميم المعماري والديكور الداخلي</h3>
+          <p class="service-desc" data-i18n="service2.desc">ابتكار تصميمات معمارية ثلاثية الأبعاد (3D) عصرية وفخمة للفيلات والشقق والشركات مع استغلال أمثل للمساحات وتوزيع الإضاءة والمواد.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service2.f1">تصميمات داخلية وخارجية 3D واقعية</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service2.f2">مخططات تنفيذية تفصيلية (Shop Drawings)</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service2.f3">تناغم المواد والخامات الفاخرة</span></div>
+          </div>
+        </div>
+
+        <!-- Service 3: Landscape -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-tree"></i></div>
+          <h3 class="service-title" data-i18n="service3.title">اللاندسكيب وتنسيق الحدائق</h3>
+          <p class="service-desc" data-i18n="service3.desc">تنسيق متكامل للمساحات الخارجية والحدائق، حمامات السباحة، الجلسات الخارجية العصرية، وشبكات الري والإنارة التجميلية.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service3.f1">تصميم وتنفيذ الحدائق والمسطحات الخضراء</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service3.f2">الشلالات والممرات المائية والجلسات</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service3.f3">حلول الإضاءة الخارجية والديكورية</span></div>
+          </div>
+        </div>
+
+        <!-- Service 4: Turnkey Finishing -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-paint-roller"></i></div>
+          <h3 class="service-title" data-i18n="service4.title">التشطيبات المتكاملة (Turnkey)</h3>
+          <p class="service-desc" data-i18n="service4.desc">باقات تشطيب راقية (سوبر لوكس / ألترا لوكس / ديلوكس) تشمل الأرضيات، الجبس بورد، الدهانات الحديثة، والشبكات الصحية والكهربائية.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service4.f1">أعمال الكهرباء والسباكة والتكييف</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service4.f2">الأسقف المعلقة والديكورات الحديثة</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service4.f3">تركيب الأرضيات والرخام والبورسلين</span></div>
+          </div>
+        </div>
+
+        <!-- Service 5: Supplies -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-boxes-stacked"></i></div>
+          <h3 class="service-title" data-i18n="service5.title">التوريدات العمومية والمستلزمات</h3>
+          <p class="service-desc" data-i18n="service5.desc">توريد مواد البناء المعتمدة، الأدوات الكهربائية والميكانيكية، والمستلزمات الصناعية للمشروعات الحكومية والخاصة بأفضل الأسعار.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service5.f1">توريد مواد البناء والحديد والأسمنت</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service5.f2">معدات ومستلزمات كهروميكانيكية</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service5.f3">عقود توريد للمؤسسات والشركات</span></div>
+          </div>
+        </div>
+
+        <!-- Service 6: Project Management -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-clipboard-check"></i></div>
+          <h3 class="service-title" data-i18n="service6.title">الإشراف الهندسي وإدارة المشروعات</h3>
+          <p class="service-desc" data-i18n="service6.desc">إشراف دقيق ومتابعة ميدانية يومية للتنفيذ لضمان مطابقة المواصفات القياسية وضبط الميزانيات والجداول الزمنية المحددة.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service6.f1">مراقبة الجودة والسلامة المهنية</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service6.f2">تقارير دورية وإشراف استشاري</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service6.f3">إدارة الجدول الزمني والتكاليف</span></div>
+          </div>
+        </div>
+
+        <!-- Service 7: Surveying -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-crosshairs"></i></div>
+          <h3 class="service-title" data-i18n="service7.title">الرفع والتوقيع المساحي بجميع الأجهزة</h3>
+          <p class="service-desc" data-i18n="service7.desc">إجراء أعمال الرفع المساحي الدقيق والتوقيع الهندسي لكافة المشروعات وقطع الأراضي والمباني والشبكات بأحدث الأجهزة المساحية المتطورة.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service7.f1">أجهزة Total Station و GPS و Level حديثة</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service7.f2">توقيع المحاور والمنشآت وتحديد المناسيب</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service7.f3">خرائط ومخططات كنتورية وطبوغرافية معتمدة</span></div>
+          </div>
+        </div>
+
+        <!-- Service 8: Soil Testing -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-layer-group"></i></div>
+          <h3 class="service-title" data-i18n="service8.title">جسات وتقارير التربة المعتمدة</h3>
+          <p class="service-desc" data-i18n="service8.desc">تنفيذ أعمال الجسات الميكانيكية واليدوية واختبارات التربة المعملية واستخراج تقارير أبحاث التربة وتوصيات التأسيس المعتمدة من كبرى بيوت الخبرة الاستشارية.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service8.f1">جسات ميكانيكية واختبارات معملية شاملة</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service8.f2">تحديد إجهاد التربة وعمق التأسيس ونوع الأساسات</span></div>
+            <div class="service-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="service8.f3">تقارير هندسية معتمدة من بيوت الخبرة الاستشارية</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Portfolio Showcase Section (5 Primary Categories)
+       ========================================================================= -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="fas fa-images"></i>
+          <span data-i18n="portfolio.badge">معرض الأعمال والتصميمات</span>
+        </div>
+        <h2 data-i18n="portfolio.title">معرض أعمال وتصميمات شركة ريفيت</h2>
+        <p data-i18n="portfolio.subtitle">استعرض مشروعاتنا وتصميماتنا المصنفة في 5 تصنيفات هندسية ومعمارية رئيسية متكاملة.</p>
+      </div>
+
+            <!-- Filter Tabs (5 Primary Categories + All) -->
+      <div class="portfolio-filter-tabs">
+        <button class="filter-tab-btn active" data-filter="all" data-i18n="portfolio.tabAll">الكل</button>
+        <button class="filter-tab-btn" data-filter="arch_2d" data-i18n="portfolio.tab_arch_2d">تصميم معماري 2D</button>
+        <button class="filter-tab-btn" data-filter="arch_3d" data-i18n="portfolio.tab_arch_3d">تصميم معماري و 3D</button>
+        <button class="filter-tab-btn" data-filter="finishing_decor" data-i18n="portfolio.tab_finishing_decor">تشطيبات و ديكور</button>
+        <button class="filter-tab-btn" data-filter="construction_buildings" data-i18n="portfolio.tab_construction_buildings">انشاءات و مباني</button>
+        <button class="filter-tab-btn" data-filter="landscape" data-i18n="portfolio.tab_landscape">لاندسكيب</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- ==================== 1. تصميم معماري 2D ==================== -->
+        <!-- برج سكني - مخططات 2D -->
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/2d/الدور الارضي برج سكني.jpg" alt="الدور الارضي برج سكني" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">الدور الارضي برج سكني</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/2d/الدور المتكرر برج سكني.jpg" alt="الدور المتكرر برج سكني" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">الدور المتكرر برج سكني</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_1.jpg" alt="مخطط معماري تنفيذي - مسقط الدور الأرضي (نموذج 1)" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مخطط معماري تنفيذي - مسقط الدور الأرضي (نموذج 1)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_2.jpg" alt="مخطط معماري تنفيذي - مسقط الدور الأول (نموذج 1)" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مخطط معماري تنفيذي - مسقط الدور الأول (نموذج 1)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_3.jpg" alt="مسقط أفقي تفصيلي - توزيع الفراغات للدور الأرضي" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مسقط أفقي تفصيلي - توزيع الفراغات للدور الأرضي</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_4.jpg" alt="مسقط أفقي تفصيلي - التقسيم الداخلي للدور الأول" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مسقط أفقي تفصيلي - التقسيم الداخلي للدور الأول</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_5.jpg" alt="مسقط أفقي تفصيلي - التقسيم والتوزيع للدور الثاني" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مسقط أفقي تفصيلي - التقسيم والتوزيع للدور الثاني</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_6.jpg" alt="مخطط أوتوكاد معماري - مسقط الدور الأرضي والمداخل" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مخطط أوتوكاد معماري - مسقط الدور الأرضي والمداخل</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_7.jpg" alt="مخطط معماري شامل - نموذج فيلا سكنية متكاملة" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">مخطط معماري شامل - نموذج فيلا سكنية متكاملة</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_2d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/plan_2d_8.jpg" alt="المخطط المعماري التنفيذي المعتمد النهائي" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مخططات 2D</span>
+              <h4 class="portfolio-item-title">المخطط المعماري التنفيذي المعتمد النهائي</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== 2. تصميم معماري و 3D ==================== -->
+        <!-- تصميم داخلى -->
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/تصميم داخلى/ChatGPT Image 23 مايو 2026، 04_54_01 م.png" alt="تصميم داخلي - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">تصميم داخلي</span>
+              <h4 class="portfolio-item-title">تصميم داخلي فاخر - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/تصميم داخلى/ChatGPT Image 23 مايو 2026، 05_21_13 م.png" alt="تصميم داخلي - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">تصميم داخلي</span>
+              <h4 class="portfolio-item-title">تصميم داخلي فاخر - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/تصميم داخلى/ChatGPT Image 23 مايو 2026، 05_27_36 م.png" alt="تصميم داخلي - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">تصميم داخلي</span>
+              <h4 class="portfolio-item-title">تصميم داخلي فاخر - 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/تصميم داخلى/ChatGPT Image 23 مايو 2026، 05_28_39 م.png" alt="تصميم داخلي - 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">تصميم داخلي</span>
+              <h4 class="portfolio-item-title">تصميم داخلي فاخر - 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/تصميم داخلى/ChatGPT Image 23 مايو 2026، 05_29_58 م.png" alt="تصميم داخلي - 5" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">تصميم داخلي</span>
+              <h4 class="portfolio-item-title">تصميم داخلي فاخر - 5</h4>
+            </div>
+          </div>
+        </div>
+        <!-- عمارة -->
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/عمارة/1.png" alt="تصميم عمارة - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">عمارة</span>
+              <h4 class="portfolio-item-title">تصميم عمارة سكنية - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/عمارة/2.png" alt="تصميم عمارة - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">عمارة</span>
+              <h4 class="portfolio-item-title">تصميم عمارة سكنية - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/3Dتصميم معماري/عمارة/3.png" alt="تصميم عمارة - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">عمارة</span>
+              <h4 class="portfolio-item-title">تصميم عمارة سكنية - 3</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_1.jpg" alt="تصميم حمامات ماستر فاخرة 3D - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">حمامات</span>
+              <h4 class="portfolio-item-title">تصميم حمامات ماستر فاخرة 3D - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_2.jpg" alt="تصميم حمامات ماستر فاخرة 3D - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">حمامات</span>
+              <h4 class="portfolio-item-title">تصميم حمامات ماستر فاخرة 3D - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_3.jpg" alt="تصميم حمامات ماستر فاخرة 3D - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">حمامات</span>
+              <h4 class="portfolio-item-title">تصميم حمامات ماستر فاخرة 3D - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_4.jpg" alt="تصميم حمامات ماستر فاخرة 3D - لوحة 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">حمامات</span>
+              <h4 class="portfolio-item-title">تصميم حمامات ماستر فاخرة 3D - لوحة 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_دريسينج_1.jpg" alt="غرف ملابس ودريسينج روم مودرن - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">دريسينج</span>
+              <h4 class="portfolio-item-title">غرف ملابس ودريسينج روم مودرن - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_دريسينج_2.jpg" alt="غرف ملابس ودريسينج روم مودرن - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">دريسينج</span>
+              <h4 class="portfolio-item-title">غرف ملابس ودريسينج روم مودرن - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_غرف_اطفال_1.jpg" alt="تصميم غرف أطفال مبهجة وعصرية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">غرف اطفال</span>
+              <h4 class="portfolio-item-title">تصميم غرف أطفال مبهجة وعصرية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_غرف_اطفال_2.jpg" alt="تصميم غرف أطفال مبهجة وعصرية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">غرف اطفال</span>
+              <h4 class="portfolio-item-title">تصميم غرف أطفال مبهجة وعصرية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_غرف_نوم_1.jpg" alt="أجنحة وغرف نوم رئيسية راقية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">غرف نوم</span>
+              <h4 class="portfolio-item-title">أجنحة وغرف نوم رئيسية راقية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_غرف_نوم_2.jpg" alt="أجنحة وغرف نوم رئيسية راقية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">غرف نوم</span>
+              <h4 class="portfolio-item-title">أجنحة وغرف نوم رئيسية راقية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_فيلا_1.jpg" alt="تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">فيلا</span>
+              <h4 class="portfolio-item-title">تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_فيلا_2.jpg" alt="تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">فيلا</span>
+              <h4 class="portfolio-item-title">تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_1.jpg" alt="ديكورات ومكتبات شاشات تلفزيون - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكتبة شاشة</span>
+              <h4 class="portfolio-item-title">ديكورات ومكتبات شاشات تلفزيون - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_2.jpg" alt="ديكورات ومكتبات شاشات تلفزيون - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكتبة شاشة</span>
+              <h4 class="portfolio-item-title">ديكورات ومكتبات شاشات تلفزيون - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_3.jpg" alt="ديكورات ومكتبات شاشات تلفزيون - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكتبة شاشة</span>
+              <h4 class="portfolio-item-title">ديكورات ومكتبات شاشات تلفزيون - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_4.jpg" alt="ديكورات ومكتبات شاشات تلفزيون - لوحة 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكتبة شاشة</span>
+              <h4 class="portfolio-item-title">ديكورات ومكتبات شاشات تلفزيون - لوحة 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="arch_3d">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_سفرة_1.jpg" alt="غرف سفرة وطعام مودرن فاخرة - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">سفرة</span>
+              <h4 class="portfolio-item-title">غرف سفرة وطعام مودرن فاخرة - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== 3. تشطيبات و ديكور ==================== -->
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_1.jpg" alt="تشطيبات ودهانات ديكورية مميزة - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">دهانات داخلية</span>
+              <h4 class="portfolio-item-title">تشطيبات ودهانات ديكورية مميزة - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_2.jpg" alt="تشطيبات ودهانات ديكورية مميزة - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">دهانات داخلية</span>
+              <h4 class="portfolio-item-title">تشطيبات ودهانات ديكورية مميزة - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_3.jpg" alt="تشطيبات ودهانات ديكورية مميزة - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">دهانات داخلية</span>
+              <h4 class="portfolio-item-title">تشطيبات ودهانات ديكورية مميزة - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_1.jpg" alt="ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">سلالم</span>
+              <h4 class="portfolio-item-title">ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_2.jpg" alt="ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">سلالم</span>
+              <h4 class="portfolio-item-title">ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_3.jpg" alt="ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">سلالم</span>
+              <h4 class="portfolio-item-title">ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_طرقات_داخلية_1.jpg" alt="ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">طرقات داخلية</span>
+              <h4 class="portfolio-item-title">ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_طرقات_داخلية_2.jpg" alt="ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">طرقات داخلية</span>
+              <h4 class="portfolio-item-title">ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مطابخ_1.jpg" alt="مطابخ عصرية متطورة بتشطيبات راقية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مطابخ</span>
+              <h4 class="portfolio-item-title">مطابخ عصرية متطورة بتشطيبات راقية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مطابخ_2.jpg" alt="مطابخ عصرية متطورة بتشطيبات راقية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مطابخ</span>
+              <h4 class="portfolio-item-title">مطابخ عصرية متطورة بتشطيبات راقية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكاتب_1.jpg" alt="تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكاتب</span>
+              <h4 class="portfolio-item-title">تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="finishing_decor">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_مكاتب_2.jpg" alt="تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مكاتب</span>
+              <h4 class="portfolio-item-title">تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== 4. انشاءات و مباني ==================== -->
+        <!-- فندق -->
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/فندق/ChatGPT Image 15 يونيو 2026، 06_33_26 ص.png" alt="تصميم فندق - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">فندق</span>
+              <h4 class="portfolio-item-title">تصميم فندق فاخر - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/فندق/ChatGPT Image 15 يونيو 2026، 06_40_16 ص.png" alt="تصميم فندق - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">فندق</span>
+              <h4 class="portfolio-item-title">تصميم فندق فاخر - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/فندق/ChatGPT Image 15 يونيو 2026، 06_45_38 ص.png" alt="تصميم فندق - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">فندق</span>
+              <h4 class="portfolio-item-title">تصميم فندق فاخر - 3</h4>
+            </div>
+          </div>
+        </div>
+        <!-- مزرعة خيل -->
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/مزرعة خيل/اسطابل الخيل 6.png" alt="مزرعة خيل - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مزرعة خيل</span>
+              <h4 class="portfolio-item-title">تصميم اسطبل خيل - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/مزرعة خيل/اسطابل الخيل 7.png" alt="مزرعة خيل - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مزرعة خيل</span>
+              <h4 class="portfolio-item-title">تصميم اسطبل خيل - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/مزرعة خيل/اسطابل الخيل 8.png" alt="مزرعة خيل - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مزرعة خيل</span>
+              <h4 class="portfolio-item-title">تصميم اسطبل خيل - 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/انشاءات و مباني/مزرعة خيل/اسطابل الخيل 9.png" alt="مزرعة خيل - 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">مزرعة خيل</span>
+              <h4 class="portfolio-item-title">تصميم اسطبل خيل - 4</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_1.jpg" alt="إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">اسوار</span>
+              <h4 class="portfolio-item-title">إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_2.jpg" alt="إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">اسوار</span>
+              <h4 class="portfolio-item-title">إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_3.jpg" alt="إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">اسوار</span>
+              <h4 class="portfolio-item-title">إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_1.jpg" alt="تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">بوابات حديد</span>
+              <h4 class="portfolio-item-title">تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_2.jpg" alt="تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">بوابات حديد</span>
+              <h4 class="portfolio-item-title">تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_3.jpg" alt="تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">بوابات حديد</span>
+              <h4 class="portfolio-item-title">تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_1.jpg" alt="أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">صور اثناء التنفيذ</span>
+              <h4 class="portfolio-item-title">أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_2.jpg" alt="أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">صور اثناء التنفيذ</span>
+              <h4 class="portfolio-item-title">أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_3.jpg" alt="أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">صور اثناء التنفيذ</span>
+              <h4 class="portfolio-item-title">أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_1.jpg" alt="تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">واجهات</span>
+              <h4 class="portfolio-item-title">تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_2.jpg" alt="تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">واجهات</span>
+              <h4 class="portfolio-item-title">تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="construction_buildings">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_3.jpg" alt="تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">واجهات</span>
+              <h4 class="portfolio-item-title">تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== 5. لاندسكيب ==================== -->
+        <!-- لاند 1 و لاند 2 -->
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاند 1.png" alt="لاندسكيب - لاند 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاند2.png" alt="لاندسكيب - لاند 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب - 2</h4>
+            </div>
+          </div>
+        </div>
+        <!-- لاندسكيب كامب -->
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/8 لاند.png" alt="لاندسكيب كامب - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/9 لاند.png" alt="لاندسكيب كامب - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/10.png" alt="لاندسكيب كامب - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/11.png" alt="لاندسكيب كامب - 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/12.png" alt="لاندسكيب كامب - 5" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 5</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب كامب/13.png" alt="لاندسكيب كامب - 6" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب كامب</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب كامب - 6</h4>
+            </div>
+          </div>
+        </div>
+        <!-- لاندسكيب فيلا -->
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/1.png" alt="لاندسكيب فيلا - 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/2.png" alt="لاندسكيب فيلا - 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/3.png" alt="لاندسكيب فيلا - 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/4.png" alt="لاندسكيب فيلا - 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/5.png" alt="لاندسكيب فيلا - 5" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 5</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/لاندسكيب/لاندسكيب فيلا/ChatGPT Image Sep 4, 2026, 06_23_03 PM.png" alt="لاندسكيب فيلا - 6" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب فيلا</span>
+              <h4 class="portfolio-item-title">تصميم لاندسكيب فيلا - 6</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_1.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 1" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_2.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 2" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_3.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 3" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_4.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 4" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_5.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 5" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 5</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_6.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 6" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 6</h4>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item-card" data-category="landscape">
+          <div class="portfolio-image-wrapper">
+            <img src="التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_7.jpg" alt="تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 7" loading="lazy">
+            <div class="portfolio-view-icon"><i class="fas fa-expand"></i></div>
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge-tag">لاندسكيب</span>
+              <h4 class="portfolio-item-title">تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 7</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Official Accreditations & Certifications Section
+       ========================================================================= -->
+  <section id="certifications" class="certifications-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="fas fa-stamp"></i>
+          <span data-i18n="cert.badge">الثقة والاعتماد الرسمي</span>
+        </div>
+        <h2 data-i18n="cert.title">تراخيص واعتمادات رسمية تضمن حقوقك</h2>
+        <p data-i18n="cert.subtitle">نعمل بموجب تراخيص رسمية وقيد قانوني كامل يمنحك الأمان الهندسي والمصداقية المطلقة.</p>
+      </div>
+
+      <div class="certifications-grid">
+        <!-- 1. EFCBC Membership -->
+        <div class="cert-card cert-card-efcbc">
+          <div class="cert-stamp-badge badge-efcbc">
+            <i class="fas fa-certificate"></i>
+            <span data-i18n="cert.card1.badge">معتمد رسمياً EFCBC</span>
+          </div>
+          <div class="cert-seal cert-seal-efcbc">
+            <div class="seal-inner">
+              <i class="fas fa-building-columns"></i>
+            </div>
+            <div class="seal-ribbon">92504</div>
+          </div>
+          <h4 data-i18n="cert.card1.title">عضوية الاتحاد المصري لمقاولي التشييد</h4>
+          <p data-i18n="cert.card1.desc">بطاقة عضوية رسمية رقم (92504) طبقا للقرار الوزاري رقم (429) لسنة 2022.</p>
+          <div class="cert-meta">
+            <i class="fas fa-shield-halved"></i>
+            <span data-i18n="cert.card1.meta">قرار وزاري رقم 429</span>
+          </div>
+        </div>
+
+        <!-- 2. Commercial Registry -->
+        <div class="cert-card cert-card-cr">
+          <div class="cert-stamp-badge badge-cr">
+            <i class="fas fa-stamp"></i>
+            <span data-i18n="cert.card2.badge">قيد رسمي موثق</span>
+          </div>
+          <div class="cert-seal cert-seal-cr">
+            <div class="seal-inner">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div class="seal-ribbon">سجل تجاري</div>
+          </div>
+          <h4 data-i18n="cert.card2.title">سجل تجاري مصري معتمد</h4>
+          <p data-i18n="cert.card2.desc">قيد تجاري رسمي ساري لكافة أعمال المقاولات العامة والتوريدات العمومية.</p>
+          <div class="cert-meta">
+            <i class="fas fa-landmark"></i>
+            <span data-i18n="cert.card2.meta">وزارة التجارة والصناعة</span>
+          </div>
+        </div>
+
+        <!-- 3. Tax Card -->
+        <div class="cert-card cert-card-tax">
+          <div class="cert-stamp-badge badge-tax">
+            <i class="fas fa-receipt"></i>
+            <span data-i18n="cert.card3.badge">ملف ضريبي نظامي</span>
+          </div>
+          <div class="cert-seal cert-seal-tax">
+            <div class="seal-inner">
+              <i class="fas fa-scale-balanced"></i>
+            </div>
+            <div class="seal-ribbon">كود 4100</div>
+          </div>
+          <h4 data-i18n="cert.card3.title">بطاقة ضريبية معتمدة (كود 4100)</h4>
+          <p data-i18n="cert.card3.desc">مسجلة بمصلحة الضرائب المصرية - كود النشاط 4100 لتشييد المباني والمقاولات.</p>
+          <div class="cert-meta">
+            <i class="fas fa-check-double"></i>
+            <span data-i18n="cert.card3.meta">مصلحة الضرائب المصرية</span>
+          </div>
+        </div>
+
+        <!-- 4. Notarized Contracts & Warranties -->
+        <div class="cert-card cert-card-guarantee">
+          <div class="cert-stamp-badge badge-guarantee">
+            <i class="fas fa-shield-check"></i>
+            <span data-i18n="cert.card4.badge">حماية قانونية وهندسية</span>
+          </div>
+          <div class="cert-seal cert-seal-guarantee">
+            <div class="seal-inner">
+              <i class="fas fa-file-shield"></i>
+            </div>
+            <div class="seal-ribbon">ضمان شامل</div>
+          </div>
+          <h4 data-i18n="cert.card4.title">عقود موثقة وضمانات شاملة</h4>
+          <p data-i18n="cert.card4.desc">جداول زمنية ملزمة مع بنود جزائية وضمان أعمال ما بعد التسليم.</p>
+          <div class="cert-meta">
+            <i class="fas fa-handshake-angle"></i>
+            <span data-i18n="cert.card4.meta">ضمان ما بعد التسليم</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accreditation Trust Banner -->
+      <div class="official-stamp-banner">
+        <div class="stamp-content">
+          <i class="fas fa-certificate stamp-icon"></i>
+          <div class="stamp-text">
+            <h4>REVIT CERTIFIED CONTRACTOR</h4>
+            <p data-i18n="hero.subtitle">شركة ريفيت تلتزم بكود البناء المصري وأعلى مواصفات السلامة الهندسية المعتمدة.</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-i18n="quote.title">اطلب استشارتك الهندسية الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Why Choose Revit Section
+       ========================================================================= -->
+  <section id="why-us" class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="fas fa-star"></i>
+          <span data-i18n="why.badge">لماذا تختارنا؟</span>
+        </div>
+        <h2 data-i18n="why.title">لماذا يفضل العملاء التعامل مع ريفيت؟</h2>
+        <p data-i18n="why.subtitle">نجمع بين طموح الشركة الحديثة وخبرات الكوادر الهندسية العريقة لتقديم تجربة استثنائية.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <div class="why-info">
+            <h4 data-i18n="why.p1.title">دقة المواعيد وسرعة التنفيذ</h4>
+            <p data-i18n="why.p1.desc">نلتزم بجداول زمنية صارمة ومحددة في العقود لضمان تسليم مشروعك في الوقت المحدد.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <div class="why-info">
+            <h4 data-i18n="why.p2.title">تصميمات 3D مطابقة للواقع</h4>
+            <p data-i18n="why.p2.desc">نقدم رؤية بصرية واقعية قبل البدء في التنفيذ لترى مشروعك وتعتمد كل تفصيلة مسبقاً.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <div class="why-info">
+            <h4 data-i18n="why.p3.title">وفر مالي مع توريدات مباشرة</h4>
+            <p data-i18n="why.p3.desc">نمتلك شبكة توريدات مباشرة للمواد والمعدات تضمن لك أفضل الأسعار وأعلى جودة خامات.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">04</div>
+          <div class="why-info">
+            <h4 data-i18n="why.p4.title">إشراف هندسي وضمان شامل</h4>
+            <p data-i18n="why.p4.desc">فريق هندسي متخصص يتابع أدق التفاصيل في الموقع مع تقديم شهادات ضمان للأعمال المنفذة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Request a Quote & Contact Section
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="fas fa-paper-plane"></i>
+          <span data-i18n="quote.badge">ابدأ مشروعك الآن</span>
+        </div>
+        <h2 data-i18n="quote.title">اطلب عرض سعر أو استشارة هندسية مجانية</h2>
+        <p data-i18n="quote.subtitle">اختر الخدمة والمساحة وسيقوم فريقنا الهندسي بدراسة طلبك وتقديم أفضل عرض فني ومالي.</p>
+      </div>
+
+      <div class="contact-layout-grid">
+        <!-- Interactive Quote Form -->
+        <div class="quote-form-container">
+          <form id="quoteForm">
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="clientName" data-i18n="form.name">الاسم الكامل</label>
+                <input type="text" id="clientName" class="form-input" placeholder="أدخل اسمك الكريم" data-i18n-placeholder="form.namePlaceholder" required>
+              </div>
+              <div class="form-group">
+                <label for="clientPhone" data-i18n="form.phone">رقم الهاتف / واتساب</label>
+                <input type="tel" id="clientPhone" class="form-input" placeholder="مثال: 010xxxxxxxx" data-i18n-placeholder="form.phonePlaceholder" required>
+              </div>
+            </div>
+
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="clientService" data-i18n="form.service">نوع الخدمة المطلوبة</label>
+                <select id="clientService" class="form-select">
+                  <option value="" data-i18n="form.servicePlaceholder">اختر نوع الخدمة...</option>
+                  <option value="مقاولات عامة وبناء متكامل" data-i18n="form.serviceOpt1">مقاولات عامة وبناء متكامل</option>
+                  <option value="تصميم معماري وديكور داخلي 3D" data-i18n="form.serviceOpt2">تصميم معماري وديكور داخلي 3D</option>
+                  <option value="تصميم وتنفيذ لاندسكيب وحدائق" data-i18n="form.serviceOpt3">تصميم وتنفيذ لاندسكيب وحدائق</option>
+                  <option value="تشطيبات متكاملة (شقق / فيلات / شركات)" data-i18n="form.serviceOpt4">تشطيبات متكاملة (شقق / فيلات / شركات)</option>
+                  <option value="توريدات عمومية ومواد بناء ومعدات" data-i18n="form.serviceOpt5">توريدات عمومية ومواد بناء ومعدات</option>
+                  <option value="إشراف واستشارات هندسية" data-i18n="form.serviceOpt6">إشراف واستشارات هندسية</option>
+                  <option value="الرفع والتوقيع المساحي بجميع الأجهزة" data-i18n="form.serviceOpt7">الرفع والتوقيع المساحي بجميع الأجهزة</option>
+                  <option value="جسات وتقارير التربة المعتمدة من بيوت الخبرة" data-i18n="form.serviceOpt8">جسات وتقارير التربة المعتمدة من بيوت الخبرة</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="clientArea" data-i18n="form.area">المساحة التقريبية (م²)</label>
+                <input type="text" id="clientArea" class="form-input" placeholder="مثال: 250 م²" data-i18n-placeholder="form.areaPlaceholder">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientLocation" data-i18n="form.location">موقع المشروع / المدينة</label>
+              <input type="text" id="clientLocation" class="form-input" placeholder="مثال: مطروح / الساحل / الإسكندرية / القاهرة" data-i18n-placeholder="form.locationPlaceholder">
+            </div>
+
+            <div class="form-group">
+              <label for="clientDetails" data-i18n="form.details">تفاصيل إضافية عن المشروع</label>
+              <textarea id="clientDetails" class="form-textarea" placeholder="اكتب أي تفاصيل تود توضيحها حول مشروعك..." data-i18n-placeholder="form.detailsPlaceholder"></textarea>
+            </div>
+
+            <div class="form-actions-group">
+              <button type="button" id="sendWhatsappBtn" class="btn btn-whatsapp" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="form.submitWhatsapp">إرسال الطلب عبر واتساب مباشرة (أسرع استجابة)</span>
+              </button>
+              <button type="button" id="sendEmailBtn" class="btn btn-outline" style="width: 100%;">
+                <i class="fas fa-envelope"></i>
+                <span data-i18n="form.submitEmail">إرسال طلب استشارة</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Direct Contact Details Card -->
+        <div class="contact-info-card">
+          <div class="info-card-header">
+            <h3 data-i18n="contact.infoTitle">معلومات التواصل المباشر</h3>
+            <p data-i18n="contact.infoDesc">فريق ريفيت جاهز لاستقبال اتصالاتكم واستفساراتكم طوال أيام الأسبوع.</p>
+          </div>
+
+          <div class="contact-details-list">
+            <!-- Phones -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fas fa-phone-volume"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.phoneLabel">أرقام الهواتف والتواصل السريع:</h5>
+                <div class="phones-cluster">
+                  <a href="tel:01044743355" dir="ltr">01044743355</a>
+                  <a href="tel:01023552597" dir="ltr">01023552597</a>
+                  <a href="tel:01211153506" dir="ltr">01211153506</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fas fa-envelope-open-text"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.emailLabel">البريد الإلكتروني الرسمي:</h5>
+                <a href="mailto:revit.egypt@gmail.com">revit.egypt@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Facebook Page -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fab fa-facebook-f"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.facebookLabel">صفحتنا الرسمية على فيسبوك:</h5>
+                <a href="https://www.facebook.com/profile.php?id=61582192497668&locale=ar_AR" target="_blank" rel="noopener noreferrer" data-i18n="contact.facebookLinkText">شركة ريفيت للمقاولات والتوريدات</a>
+              </div>
+            </div>
+
+            <!-- Instagram Account -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fab fa-instagram"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.instagramLabel">حسابنا الرسمي على انستغرام:</h5>
+                <a href="https://www.instagram.com/revit_contracting?igsi=MWpldHhyZDJ3d2hwdQ==" target="_blank" rel="noopener noreferrer">@revit_contracting</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.addressLabel">المقر الرئيسي والموقع:</h5>
+                <p data-i18n="contact.addressVal">محافظة مطروح - مرسى مطروح، جمهورية مصر العربية</p>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="contact-item-row">
+              <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
+              <div class="contact-item-content">
+                <h5 data-i18n="contact.hoursLabel">مواعيد العمل:</h5>
+                <p data-i18n="contact.hoursVal">السبت - الخميس: 9:00 صباحاً - 8:00 مساءً</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer Section
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <img src="logo.jpg" alt="شعار شركة ريفيت" class="brand-logo">
+            <div class="brand-text-block">
+              <span class="brand-name" style="color: #fff;">REVIT</span>
+              <span class="brand-sub" data-i18n="hero.badge">للمقاولات العامة والتوريدات</span>
+            </div>
+          </div>
+          <p data-i18n="footer.aboutDesc">شركة مصرية معتمدة متخصصة في المقاولات العامة، التصميم الداخلي والمعماري، اللاندسكيب، والتشطيبات الفاخرة والتوريدات العمومية.</p>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/profile.php?id=61582192497668&locale=ar_AR" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="فيسبوك" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/revit_contracting?igsi=MWpldHhyZDJ3d2hwdQ==" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="انستغرام" title="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="واتساب" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:revit.egypt@gmail.com" class="footer-social-btn" aria-label="البريد الإلكتروني" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+            <a href="tel:01044743355" class="footer-social-btn" aria-label="الهاتف" title="الهاتف"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-column">
+          <h4 data-i18n="footer.linksTitle">روابط سريعة</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+            <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+            <li><a href="#services" data-i18n="nav.services">خدماتنا</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">معرض الأعمال</a></li>
+            <li><a href="#certifications" data-i18n="nav.certifications">الاعتمادات الرسمية</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-column">
+          <h4 data-i18n="footer.servicesTitle">خدماتنا الرئيسية</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" data-i18n="service1.title">المقاولات العامة والإنشاءات</a></li>
+            <li><a href="#services" data-i18n="service2.title">التصميم المعماري والديكور 3D</a></li>
+            <li><a href="#services" data-i18n="service3.title">اللاندسكيب وتنسيق الحدائق</a></li>
+            <li><a href="#services" data-i18n="service4.title">التشطيبات المتكاملة (Turnkey)</a></li>
+            <li><a href="#services" data-i18n="service5.title">التوريدات العمومية والمواد</a></li>
+            <li><a href="#services" data-i18n="service7.title">الرفع والتوقيع المساحي</a></li>
+            <li><a href="#services" data-i18n="service8.title">جسات وتقارير التربة المعتمدة</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">جميع الحقوق محفوظة © 2026 شركة ريفيت للمقاولات العامة والتوريدات العمومية.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Floating Action Buttons
+       ========================================================================= -->
+  <div class="floating-actions-container">
+    <a href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="تحدث معنا عبر واتساب" aria-label="واتساب">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="scrollTopBtn" class="floating-btn floating-scroll-top" title="الرجوع للأعلى" aria-label="أعلى الصفحة">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       Cinematic Lightbox Modal
+       ========================================================================= -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="عارض الصور المكبرة">
+    <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+    <button id="lightboxPrevBtn" class="lightbox-nav-btn lightbox-prev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+    <button id="lightboxNextBtn" class="lightbox-nav-btn lightbox-next" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content-box">
+      <img id="lightboxImage" class="lightbox-image" src="" alt="صورة المشروع">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toastNotification" class="toast-notification">
+    <i class="fas fa-check-circle"></i>
+    <span class="toast-msg">تم استلام طلبك بنجاح!</span>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

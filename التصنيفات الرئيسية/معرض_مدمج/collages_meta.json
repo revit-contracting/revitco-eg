@@ -1,0 +1,352 @@
+﻿[
+    {
+        "Category":  "arch_2d",
+        "Sub":  "مخططات 2D",
+        "ArabicName":  "مخططات معمارية 2D وتنفيذية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مخططات_2D_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_2d",
+        "Sub":  "مخططات 2D",
+        "ArabicName":  "مخططات معمارية 2D وتنفيذية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مخططات_2D_2.jpg",
+        "ImageCount":  1
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "حمامات",
+        "ArabicName":  "تصميم حمامات ماستر فاخرة 3D - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "حمامات",
+        "ArabicName":  "تصميم حمامات ماستر فاخرة 3D - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "حمامات",
+        "ArabicName":  "تصميم حمامات ماستر فاخرة 3D - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "حمامات",
+        "ArabicName":  "تصميم حمامات ماستر فاخرة 3D - لوحة 4",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_حمامات_4.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "دريسينج",
+        "ArabicName":  "غرف ملابس ودريسينج روم مودرن - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_دريسينج_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "دريسينج",
+        "ArabicName":  "غرف ملابس ودريسينج روم مودرن - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_دريسينج_2.jpg",
+        "ImageCount":  3
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "غرف اطفال",
+        "ArabicName":  "تصميم غرف أطفال مبهجة وعصرية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_غرف_اطفال_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "غرف اطفال",
+        "ArabicName":  "تصميم غرف أطفال مبهجة وعصرية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_غرف_اطفال_2.jpg",
+        "ImageCount":  3
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "غرف نوم",
+        "ArabicName":  "أجنحة وغرف نوم رئيسية راقية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_غرف_نوم_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "غرف نوم",
+        "ArabicName":  "أجنحة وغرف نوم رئيسية راقية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_غرف_نوم_2.jpg",
+        "ImageCount":  3
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "فيلا",
+        "ArabicName":  "تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_فيلا_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "فيلا",
+        "ArabicName":  "تصميمات فلل وقصور ثلاثية الأبعاد - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_فيلا_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "مكتبة شاشة",
+        "ArabicName":  "ديكورات ومكتبات شاشات تلفزيون - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "مكتبة شاشة",
+        "ArabicName":  "ديكورات ومكتبات شاشات تلفزيون - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "مكتبة شاشة",
+        "ArabicName":  "ديكورات ومكتبات شاشات تلفزيون - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "مكتبة شاشة",
+        "ArabicName":  "ديكورات ومكتبات شاشات تلفزيون - لوحة 4",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكتبة_شاشة_4.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "arch_3d",
+        "Sub":  "سفرة",
+        "ArabicName":  "غرف سفرة وطعام مودرن فاخرة - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_سفرة_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "دهانات داخلية",
+        "ArabicName":  "تشطيبات ودهانات ديكورية مميزة - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "دهانات داخلية",
+        "ArabicName":  "تشطيبات ودهانات ديكورية مميزة - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "دهانات داخلية",
+        "ArabicName":  "تشطيبات ودهانات ديكورية مميزة - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_دهانات_داخلية_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "سلالم",
+        "ArabicName":  "ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "سلالم",
+        "ArabicName":  "ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "سلالم",
+        "ArabicName":  "ديكورات وتشطيبات سلالم رخامية وخشبية - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_سلالم_3.jpg",
+        "ImageCount":  2
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "طرقات داخلية",
+        "ArabicName":  "ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_طرقات_داخلية_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "طرقات داخلية",
+        "ArabicName":  "ممرات وطرقات داخلية بأحدث الإضاءات - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_طرقات_داخلية_2.jpg",
+        "ImageCount":  3
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "مطابخ",
+        "ArabicName":  "مطابخ عصرية متطورة بتشطيبات راقية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مطابخ_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "مطابخ",
+        "ArabicName":  "مطابخ عصرية متطورة بتشطيبات راقية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مطابخ_2.jpg",
+        "ImageCount":  3
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "مكاتب",
+        "ArabicName":  "تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكاتب_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "finishing_decor",
+        "Sub":  "مكاتب",
+        "ArabicName":  "تصميم وتشطيب مساحات مكاتب ومقرات إدارية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_مكاتب_2.jpg",
+        "ImageCount":  1
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "اسوار",
+        "ArabicName":  "إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "اسوار",
+        "ArabicName":  "إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "اسوار",
+        "ArabicName":  "إنشاء وتشطيب أسوار خرسانية وديكورية - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_اسوار_3.jpg",
+        "ImageCount":  1
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "بوابات حديد",
+        "ArabicName":  "تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "بوابات حديد",
+        "ArabicName":  "تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "بوابات حديد",
+        "ArabicName":  "تصنيع وتركيب بوابات حديد ليزر وفورفورجيه - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_بوابات_حديد_3.jpg",
+        "ImageCount":  2
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "صور اثناء التنفيذ",
+        "ArabicName":  "أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "صور اثناء التنفيذ",
+        "ArabicName":  "أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "صور اثناء التنفيذ",
+        "ArabicName":  "أعمال التنفيذ والإنشاءات بالمواقع الميدانية - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_صور_اثناء_التنفيذ_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "واجهات",
+        "ArabicName":  "تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "واجهات",
+        "ArabicName":  "تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "construction_buildings",
+        "Sub":  "واجهات",
+        "ArabicName":  "تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_واجهات_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 1",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_1.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 2",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_2.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 3",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_3.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 4",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_4.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 5",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_5.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 6",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_6.jpg",
+        "ImageCount":  4
+    },
+    {
+        "Category":  "landscape",
+        "Sub":  "لاندسكيب",
+        "ArabicName":  "تصميم وتنسيق حدائق ولاندسكيب متكامل - لوحة 7",
+        "RelativePath":  "التصنيفات الرئيسية/معرض_مدمج/collage_لاندسكيب_7.jpg",
+        "ImageCount":  3
+    }
+]
