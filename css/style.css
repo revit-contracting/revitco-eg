@@ -321,40 +321,76 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 85px;
+  height: 94px;
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 1.1rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 16px;
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.logo-wrapper:hover {
+  transform: translateY(-2px);
+  background: rgba(197, 168, 105, 0.05);
 }
 
 .brand-logo {
-  height: 52px;
+  height: 68px;
   width: auto;
-  border-radius: var(--radius-sm);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  border-radius: 14px;
+  border: 1.5px solid rgba(197, 168, 105, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 14px rgba(197, 168, 105, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  object-fit: cover;
+}
+
+.logo-wrapper:hover .brand-logo {
+  transform: scale(1.05) rotate(-1deg);
+  border-color: var(--primary-gold);
+  box-shadow: 0 10px 28px rgba(197, 168, 105, 0.45), 0 0 22px rgba(229, 210, 160, 0.35);
 }
 
 .brand-text-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 3px;
 }
 
 .brand-name {
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  line-height: 1.1;
-  color: var(--text-main);
+  font-size: 1.85rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  line-height: 1.05;
+  background: linear-gradient(135deg, var(--text-main) 25%, var(--primary-gold) 75%, #E5D2A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.logo-wrapper:hover .brand-name {
+  background-position: right center;
+  filter: drop-shadow(0 2px 10px rgba(197, 168, 105, 0.35));
 }
 
 .brand-sub {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: var(--primary-gold);
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  transition: all 0.35s ease;
+}
+
+.logo-wrapper:hover .brand-sub {
+  color: #E5D2A0;
+  letter-spacing: 0.7px;
 }
 
 .nav-links {
@@ -2271,4 +2307,354 @@ button {
     width: 34px;
     height: 34px;
   }
+}
+
+/* ==========================================================================
+   ANNOUNCEMENT BAR
+   ========================================================================== */
+.announcement-bar {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(90deg, #1a1200 0%, #2c1f00 40%, #1a1200 100%);
+  border-bottom: 1px solid rgba(197, 168, 105, 0.4);
+  overflow: hidden;
+  z-index: 1010;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.announcement-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  white-space: nowrap;
+  animation: announcementScroll 30s linear infinite;
+  padding-inline-start: 100%;
+  will-change: transform;
+}
+
+@keyframes announcementScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+[dir="ltr"] .announcement-track {
+  animation-direction: reverse;
+}
+
+.announcement-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-gold);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.announcement-item i {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.announcement-sep {
+  color: var(--primary-gold);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.announcement-close {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(197, 168, 105, 0.15);
+  border: 1px solid rgba(197, 168, 105, 0.3);
+  color: var(--primary-gold);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 5;
+  flex-shrink: 0;
+}
+
+.announcement-close:hover {
+  background: rgba(197, 168, 105, 0.35);
+  color: #fff;
+}
+
+.announcement-bar.hidden {
+  display: none;
+}
+
+/* Light mode bar */
+[data-theme="light"] .announcement-bar {
+  background: linear-gradient(90deg, #f5e8c0 0%, #fdf3d7 40%, #f5e8c0 100%);
+  border-bottom-color: rgba(164, 133, 67, 0.4);
+}
+
+[data-theme="light"] .announcement-item,
+[data-theme="light"] .announcement-sep,
+[data-theme="light"] .announcement-close {
+  color: #7a5c1e;
+}
+
+@media (max-width: 576px) {
+  .announcement-bar { height: 36px; }
+  .announcement-item { font-size: 0.78rem; }
+}
+
+/* ==========================================================================
+   SCROLL-DRIVEN REVEAL ANIMATIONS
+   ========================================================================== */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside revealed containers */
+.reveal-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.reveal-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+.reveal-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+.reveal-on-scroll:nth-child(5) { transition-delay: 0.4s; }
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   PROJECT WORKFLOW TIMELINE
+   ========================================================================== */
+.workflow-section {
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  background: var(--bg-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.workflow-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(197, 168, 105, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 80%, rgba(197, 168, 105, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.workflow-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Central vertical line */
+.workflow-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom,
+    rgba(197, 168, 105, 0.0) 0%,
+    rgba(197, 168, 105, 0.5) 10%,
+    rgba(197, 168, 105, 0.5) 90%,
+    rgba(197, 168, 105, 0.0) 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .workflow-timeline::before {
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Individual step */
+.wf-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .wf-step {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    padding-inline-end: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .wf-step:nth-child(even) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    padding-inline-end: 0;
+    padding-inline-start: 3rem;
+  }
+}
+
+/* Step Number Bubble */
+.wf-step-number {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px rgba(197, 168, 105, 0.18), var(--shadow-gold);
+  position: relative;
+  z-index: 2;
+}
+
+.wf-step-number span {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0A0D14;
+  font-family: var(--font-en);
+}
+
+@media (min-width: 768px) {
+  .wf-step-number {
+    position: absolute;
+    inset-inline-end: -29px;
+    top: 0;
+    width: 58px;
+    height: 58px;
+  }
+
+  .wf-step:nth-child(even) .wf-step-number {
+    inset-inline-end: auto;
+    inset-inline-start: -29px;
+  }
+}
+
+/* Connector dot (mobile only) */
+.wf-connector {
+  display: none;
+}
+
+/* Step Card */
+.wf-step-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  position: relative;
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+}
+
+.wf-step-card::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gold-gradient);
+  border-radius: 3px 0 0 3px;
+}
+
+[dir="ltr"] .wf-step-card::before {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.wf-step-card:hover {
+  border-color: var(--primary-gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+.wf-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(197, 168, 105, 0.12);
+  border: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--primary-gold);
+  font-size: 1.1rem;
+}
+
+.wf-step-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+.wf-step-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+/* CTA row */
+.wf-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  .workflow-timeline::before {
+    inset-inline-start: 28px;
+    transform: none;
+  }
+
+  .wf-step {
+    padding-inline-start: 72px;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .wf-step-number {
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .wf-step-number span { font-size: 0.9rem; }
+
+  .wf-step-card { width: 100%; }
+  .wf-step-card h4 { font-size: 0.98rem; }
 }

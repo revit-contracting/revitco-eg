@@ -179,6 +179,33 @@ const translations = {
     "why.p4.title": "إشراف هندسي وضمان شامل",
     "why.p4.desc": "فريق هندسي متخصص يتابع أدق التفاصيل في الموقع مع تقديم شهادات ضمان للأعمال المنفذة.",
 
+
+    // Announcement Bar
+    "announce.msg1": "ظ†ظ‚ط¯ظ… ط§ط³طھط´ط§ط±ط§طھ ظ‡ظ†ط¯ط³ظٹط© ظˆظ…ط¹ط§ظٹظ†ط§طھ ظ…ط¬ط§ظ†ظٹط© ظ„ظ…ط´ط±ظˆط¹ط§طھ ظ…ط·ط±ظˆط­ ظˆط§ظ„ط³ط§ط­ظ„ ط§ظ„ط´ظ…ط§ظ„ظٹ",
+    "announce.msg2": "ط¨ط§ظ‚ط§طھ طھطµظ…ظٹظ… 3D ط§ط­طھط±ط§ظپظٹط© ط¨ط£ط³ط¹ط§ط± طھظ†ط§ظپط³ظٹط© â€” ط§طھطµظ„ ط¨ظ†ط§ ط§ظ„ط¢ظ†",
+    "announce.msg3": "ط§ظ„طھط³ظ„ظٹظ… ط¹ظ„ظ‰ ط§ظ„ظ…ظپطھط§ط­ ظ…ط¹ ط¶ظ…ط§ظ† ط´ط§ظ…ظ„ ط¨ط¹ط¯ ط§ظ„طھظ†ظپظٹط°",
+
+    // Navigation new
+    "nav.workflow": "ظ…ط±ط§ط­ظ„ ط§ظ„طھظ†ظپظٹط°",
+
+    // Workflow Timeline
+    "wf.badge": "ظ…ط±ط§ط­ظ„ طھظ†ظپظٹط° ظ…ط´ط±ظˆط¹ظƒ",
+    "wf.title": "ظ…ظ† ط§ظ„ظپظƒط±ط© ط¥ظ„ظ‰ ط§ظ„طھط³ظ„ظٹظ… â€” ط±ط­ظ„طھظƒ ظ…ط¹ ط±ظٹظپظٹطھ",
+    "wf.subtitle": "ظ†ط³ظٹط± ظ…ط¹ظƒ ط®ط·ظˆط© ط¨ط®ط·ظˆط© ط¨ط´ظپط§ظپظٹط© طھط§ظ…ط© ظˆط¥ط´ط±ط§ظپ ظ‡ظ†ط¯ط³ظٹ ظ…طھط®طµطµ ظپظٹ ظƒظ„ ظ…ط±ط­ظ„ط©.",
+    "wf.step1.title": "ط§ظ„ظ…ط¹ط§ظٹظ†ط© ظˆط¬ظ„ط³ط© ط§ظ„ط§ط³طھط´ط§ط±ط© ط§ظ„ظ…ط¬ط§ظ†ظٹط©",
+    "wf.step1.desc": "ظٹط²ظˆط±ظƒ ظ…ظ‡ظ†ط¯ط³ظ†ط§ ظپظٹ ط§ظ„ظ…ظˆظ‚ط¹ ظ„طھظ‚ظٹظٹظ… ظ…طھط·ظ„ط¨ط§طھظƒ ظˆط±ط¤ظٹطھظƒطŒ ظˆطھط­ط¯ظٹط¯ ظ†ط·ط§ظ‚ ط§ظ„ظ…ط´ط±ظˆط¹ ظˆطھظ‚ط¯ظٹظ… ط£ظˆظ„ ط§ط³طھط´ط§ط±ط© ظ…ط¬ط§ظ†ظٹط© ط¨ظ„ط§ ط£ظٹ ط§ظ„طھط²ط§ظ….",
+    "wf.step2.title": "ط§ظ„ط±ظپط¹ ط§ظ„ظ…ط³ط§ط­ظٹ ظˆط§ظ„طھطµظ…ظٹظ… ط§ظ„ظ…ط¹ظ…ط§ط±ظٹ 3D",
+    "wf.step2.desc": "ط±ظپط¹ ظ…ط³ط§ط­ظٹ ط¯ظ‚ظٹظ‚ ظ„ظ„ظ…ظˆظ‚ط¹ ط¨ط£ط¬ظ‡ط²ط© Total StationطŒ ط«ظ… طھطµظ…ظٹظ… ظ…ط¹ظ…ط§ط±ظٹ ظˆط¯ط§ط®ظ„ظٹ ط«ظ„ط§ط«ظٹ ط§ظ„ط£ط¨ط¹ط§ط¯ ظ…ط·ط§ط¨ظ‚ ظ„ظ„ظˆط§ظ‚ط¹ طھط¹طھظ…ط¯ظ‡ ظ‚ط¨ظ„ ط§ظ„ط¨ط¯ط، ظپظٹ ط§ظ„طھظ†ظپظٹط°.",
+    "wf.step3.title": "ط§ظ„ط¹ظ‚ط¯ ظˆط¬ط¯ظˆظ„ ط§ظ„ظƒظ…ظٹط§طھ ط§ظ„ظ…ط¹طھظ…ط¯",
+    "wf.step3.desc": "ط¹ظ‚ط¯ ط±ط³ظ…ظٹ ظ…ظˆط«ظ‚ ظٹطھط¶ظ…ظ† ط¬ط¯ط§ظˆظ„ ط§ظ„ظƒظ…ظٹط§طھ ظˆط§ظ„ط£ط³ط¹ط§ط± ط§ظ„ط«ط§ط¨طھط©طŒ ظˆط§ظ„ط¬ط¯ظˆظ„ ط§ظ„ط²ظ…ظ†ظٹ ط§ظ„ظ…ظ„ط²ظ… ظ…ط¹ ط¨ظ†ظˆط¯ ط¬ط²ط§ط¦ظٹط© طھط¶ظ…ظ† ط­ظ‚ظˆظ‚ظƒ ط¨ط§ظ„ظƒط§ظ…ظ„.",
+    "wf.step4.title": "ط§ظ„طھظ†ظپظٹط° ظˆط§ظ„ط¥ط´ط±ط§ظپ ط§ظ„ظ‡ظ†ط¯ط³ظٹ ط§ظ„ظ…ظٹط¯ط§ظ†ظٹ",
+    "wf.step4.desc": "طھظ†ظپظٹط° ط§ط­طھط±ط§ظپظٹ ط¨ط£ظٹط¯ظٹ ظƒظˆط§ط¯ط± ظ…طھط®طµطµط© ظ…ط¹ ط¥ط´ط±ط§ظپ ظ‡ظ†ط¯ط³ظٹ ظٹظˆظ…ظٹ ظ…ظٹط¯ط§ظ†ظٹ ظˆطھظ‚ط§ط±ظٹط± ط¯ظˆط±ظٹط© ط¹ظ† ظ…ط±ط§ط­ظ„ ط§ظ„طھظ‚ط¯ظ… ظ„طھظƒظˆظ† ط¹ظ„ظ‰ ط§ط·ظ„ط§ط¹ ط¯ط§ط¦ظ….",
+    "wf.step5.title": "ط§ظ„طھط³ظ„ظٹظ… ط§ظ„ظ†ظ‡ط§ط¦ظٹ ظˆط´ظ‡ط§ط¯ط© ط§ظ„ط¶ظ…ط§ظ†",
+    "wf.step5.desc": "طھط³ظ„ظٹظ… ظ…ط´ط±ظˆط¹ظƒ ط¬ط§ظ‡ط²ط§ظ‹ ظ„ظ„ط³ظƒظ† ط£ظˆ ط§ظ„ط§ط³طھط®ط¯ط§ظ… ظ…ط¹ ظ…ط­ط¶ط± ط§ط³طھظ„ط§ظ… ط±ط³ظ…ظٹ ظˆط´ظ‡ط§ط¯ط© ط¶ظ…ط§ظ† ط´ط§ظ…ظ„ط© ط¹ظ„ظ‰ ط§ظ„ط£ط¹ظ…ط§ظ„ ط§ظ„ظ…ظ†ظپط°ط©.",
+    "wf.ctaBtn": "ط§ط¨ط¯ط£ ظ…ط´ط±ظˆط¹ظƒ ظ…ط¹ظ†ط§ ط§ظ„ط¢ظ†",
+
+    // Profile Download
+    "profile.downloadBtn": "طھط­ظ…ظٹظ„ ط§ظ„ط¨ط±ظˆظپط§ظٹظ„ ط§ظ„ظ‡ظ†ط¯ط³ظٹ (PDF)",
     // Quote & Contact Form
     "quote.badge": "ابدأ مشروعك الآن",
     "quote.title": "اطلب عرض سعر أو استشارة هندسية مجانية",
@@ -411,6 +438,60 @@ const translations = {
     "why.p4.title": "Rigorous Supervision & Guarantees",
     "why.p4.desc": "Dedicated site engineers monitor every milestone with comprehensive warranty documentation.",
 
+
+    // Announcement Bar
+    "announce.msg1": "ظ†ظ‚ط¯ظ… ط§ط³طھط´ط§ط±ط§طھ ظ‡ظ†ط¯ط³ظٹط© ظˆظ…ط¹ط§ظٹظ†ط§طھ ظ…ط¬ط§ظ†ظٹط© ظ„ظ…ط´ط±ظˆط¹ط§طھ ظ…ط·ط±ظˆط­ ظˆط§ظ„ط³ط§ط­ظ„ ط§ظ„ط´ظ…ط§ظ„ظٹ",
+    "announce.msg2": "ط¨ط§ظ‚ط§طھ طھطµظ…ظٹظ… 3D ط§ط­طھط±ط§ظپظٹط© ط¨ط£ط³ط¹ط§ط± طھظ†ط§ظپط³ظٹط© â€” ط§طھطµظ„ ط¨ظ†ط§ ط§ظ„ط¢ظ†",
+    "announce.msg3": "ط§ظ„طھط³ظ„ظٹظ… ط¹ظ„ظ‰ ط§ظ„ظ…ظپطھط§ط­ ظ…ط¹ ط¶ظ…ط§ظ† ط´ط§ظ…ظ„ ط¨ط¹ط¯ ط§ظ„طھظ†ظپظٹط°",
+
+    // Navigation new
+    "nav.workflow": "ظ…ط±ط§ط­ظ„ ط§ظ„طھظ†ظپظٹط°",
+
+    // Workflow Timeline
+    "wf.badge": "ظ…ط±ط§ط­ظ„ طھظ†ظپظٹط° ظ…ط´ط±ظˆط¹ظƒ",
+    "wf.title": "ظ…ظ† ط§ظ„ظپظƒط±ط© ط¥ظ„ظ‰ ط§ظ„طھط³ظ„ظٹظ… â€” ط±ط­ظ„طھظƒ ظ…ط¹ ط±ظٹظپظٹطھ",
+    "wf.subtitle": "ظ†ط³ظٹط± ظ…ط¹ظƒ ط®ط·ظˆط© ط¨ط®ط·ظˆط© ط¨ط´ظپط§ظپظٹط© طھط§ظ…ط© ظˆط¥ط´ط±ط§ظپ ظ‡ظ†ط¯ط³ظٹ ظ…طھط®طµطµ ظپظٹ ظƒظ„ ظ…ط±ط­ظ„ط©.",
+    "wf.step1.title": "ط§ظ„ظ…ط¹ط§ظٹظ†ط© ظˆط¬ظ„ط³ط© ط§ظ„ط§ط³طھط´ط§ط±ط© ط§ظ„ظ…ط¬ط§ظ†ظٹط©",
+    "wf.step1.desc": "ظٹط²ظˆط±ظƒ ظ…ظ‡ظ†ط¯ط³ظ†ط§ ظپظٹ ط§ظ„ظ…ظˆظ‚ط¹ ظ„طھظ‚ظٹظٹظ… ظ…طھط·ظ„ط¨ط§طھظƒ ظˆط±ط¤ظٹطھظƒطŒ ظˆطھط­ط¯ظٹط¯ ظ†ط·ط§ظ‚ ط§ظ„ظ…ط´ط±ظˆط¹ ظˆطھظ‚ط¯ظٹظ… ط£ظˆظ„ ط§ط³طھط´ط§ط±ط© ظ…ط¬ط§ظ†ظٹط© ط¨ظ„ط§ ط£ظٹ ط§ظ„طھط²ط§ظ….",
+    "wf.step2.title": "ط§ظ„ط±ظپط¹ ط§ظ„ظ…ط³ط§ط­ظٹ ظˆط§ظ„طھطµظ…ظٹظ… ط§ظ„ظ…ط¹ظ…ط§ط±ظٹ 3D",
+    "wf.step2.desc": "ط±ظپط¹ ظ…ط³ط§ط­ظٹ ط¯ظ‚ظٹظ‚ ظ„ظ„ظ…ظˆظ‚ط¹ ط¨ط£ط¬ظ‡ط²ط© Total StationطŒ ط«ظ… طھطµظ…ظٹظ… ظ…ط¹ظ…ط§ط±ظٹ ظˆط¯ط§ط®ظ„ظٹ ط«ظ„ط§ط«ظٹ ط§ظ„ط£ط¨ط¹ط§ط¯ ظ…ط·ط§ط¨ظ‚ ظ„ظ„ظˆط§ظ‚ط¹ طھط¹طھظ…ط¯ظ‡ ظ‚ط¨ظ„ ط§ظ„ط¨ط¯ط، ظپظٹ ط§ظ„طھظ†ظپظٹط°.",
+    "wf.step3.title": "ط§ظ„ط¹ظ‚ط¯ ظˆط¬ط¯ظˆظ„ ط§ظ„ظƒظ…ظٹط§طھ ط§ظ„ظ…ط¹طھظ…ط¯",
+    "wf.step3.desc": "ط¹ظ‚ط¯ ط±ط³ظ…ظٹ ظ…ظˆط«ظ‚ ظٹطھط¶ظ…ظ† ط¬ط¯ط§ظˆظ„ ط§ظ„ظƒظ…ظٹط§طھ ظˆط§ظ„ط£ط³ط¹ط§ط± ط§ظ„ط«ط§ط¨طھط©طŒ ظˆط§ظ„ط¬ط¯ظˆظ„ ط§ظ„ط²ظ…ظ†ظٹ ط§ظ„ظ…ظ„ط²ظ… ظ…ط¹ ط¨ظ†ظˆط¯ ط¬ط²ط§ط¦ظٹط© طھط¶ظ…ظ† ط­ظ‚ظˆظ‚ظƒ ط¨ط§ظ„ظƒط§ظ…ظ„.",
+    "wf.step4.title": "ط§ظ„طھظ†ظپظٹط° ظˆط§ظ„ط¥ط´ط±ط§ظپ ط§ظ„ظ‡ظ†ط¯ط³ظٹ ط§ظ„ظ…ظٹط¯ط§ظ†ظٹ",
+    "wf.step4.desc": "طھظ†ظپظٹط° ط§ط­طھط±ط§ظپظٹ ط¨ط£ظٹط¯ظٹ ظƒظˆط§ط¯ط± ظ…طھط®طµطµط© ظ…ط¹ ط¥ط´ط±ط§ظپ ظ‡ظ†ط¯ط³ظٹ ظٹظˆظ…ظٹ ظ…ظٹط¯ط§ظ†ظٹ ظˆطھظ‚ط§ط±ظٹط± ط¯ظˆط±ظٹط© ط¹ظ† ظ…ط±ط§ط­ظ„ ط§ظ„طھظ‚ط¯ظ… ظ„طھظƒظˆظ† ط¹ظ„ظ‰ ط§ط·ظ„ط§ط¹ ط¯ط§ط¦ظ….",
+    "wf.step5.title": "ط§ظ„طھط³ظ„ظٹظ… ط§ظ„ظ†ظ‡ط§ط¦ظٹ ظˆط´ظ‡ط§ط¯ط© ط§ظ„ط¶ظ…ط§ظ†",
+    "wf.step5.desc": "طھط³ظ„ظٹظ… ظ…ط´ط±ظˆط¹ظƒ ط¬ط§ظ‡ط²ط§ظ‹ ظ„ظ„ط³ظƒظ† ط£ظˆ ط§ظ„ط§ط³طھط®ط¯ط§ظ… ظ…ط¹ ظ…ط­ط¶ط± ط§ط³طھظ„ط§ظ… ط±ط³ظ…ظٹ ظˆط´ظ‡ط§ط¯ط© ط¶ظ…ط§ظ† ط´ط§ظ…ظ„ط© ط¹ظ„ظ‰ ط§ظ„ط£ط¹ظ…ط§ظ„ ط§ظ„ظ…ظ†ظپط°ط©.",
+    "wf.ctaBtn": "ط§ط¨ط¯ط£ ظ…ط´ط±ظˆط¹ظƒ ظ…ط¹ظ†ط§ ط§ظ„ط¢ظ†",
+
+    // Profile Download
+    "profile.downloadBtn": "طھط­ظ…ظٹظ„ ط§ظ„ط¨ط±ظˆظپط§ظٹظ„ ط§ظ„ظ‡ظ†ط¯ط³ظٹ (PDF)",
+
+    // Announcement Bar
+    "announce.msg1": "Free engineering consultations & site inspections for Matrouh and North Coast projects",
+    "announce.msg2": "Professional 3D design packages at competitive prices â€” Contact us now",
+    "announce.msg3": "Turnkey delivery with comprehensive post-construction warranty",
+
+    // Navigation new
+    "nav.workflow": "Project Phases",
+
+    // Workflow Timeline
+    "wf.badge": "Project Execution Phases",
+    "wf.title": "From Concept to Handover â€” Your Journey with Revit",
+    "wf.subtitle": "We walk with you step-by-step with full transparency and specialized engineering supervision at every stage.",
+    "wf.step1.title": "Site Visit & Free Consultation",
+    "wf.step1.desc": "Our engineer visits your site to assess your needs and vision, define the project scope, and provide a free initial consultation with zero commitment.",
+    "wf.step2.title": "Land Surveying & 3D Architectural Design",
+    "wf.step2.desc": "Precision surveying with Total Station instruments, followed by a photorealistic 3D architectural and interior design you approve before any construction begins.",
+    "wf.step3.title": "Contract & Approved Bill of Quantities",
+    "wf.step3.desc": "An officially notarized contract with fixed-price bill of quantities, a binding timeline, and penalty clauses that fully protect your rights.",
+    "wf.step4.title": "Construction & On-Site Engineering Supervision",
+    "wf.step4.desc": "Professional execution by specialized crews with daily on-site engineering supervision and periodic progress reports to keep you fully informed.",
+    "wf.step5.title": "Final Handover & Warranty Certificate",
+    "wf.step5.desc": "Your project delivered move-in ready with an official handover record and a comprehensive warranty certificate covering all completed work.",
+    "wf.ctaBtn": "Start Your Project with Us",
+
+    // Profile Download
+    "profile.downloadBtn": "Download Engineering Profile (PDF)",
     // Quote & Contact Form
     "quote.badge": "Start Your Project",
     "quote.title": "Request a Quote or Free Engineering Consultation",
