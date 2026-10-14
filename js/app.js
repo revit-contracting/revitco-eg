@@ -387,44 +387,4 @@ document.addEventListener('DOMContentLoaded', () => {
       if (quoteForm) quoteForm.reset();
     });
   }
-
-  // --- Announcement Bar ---
-  (function() {
-    const bar   = document.getElementById('announcementBar');
-    const close = document.getElementById('announcementClose');
-    if (!bar || !close) return;
-
-    // Check if user dismissed it in this session
-    if (sessionStorage.getItem('revit_announce_closed') === '1') {
-      bar.classList.add('hidden');
-    }
-
-    close.addEventListener('click', () => {
-      bar.classList.add('hidden');
-      sessionStorage.setItem('revit_announce_closed', '1');
-    });
-  })();
-
-  // --- Scroll-Driven Reveal Animations ---
-  (function() {
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) return;
-
-    const revealEls = document.querySelectorAll('.reveal-on-scroll');
-    if (!revealEls.length) return;
-
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealEls.forEach(el => io.observe(el));
-  })();
 });
