@@ -405,8 +405,48 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(currentLang === 'ar' ? 'يرجى إدخال الاسم ورقم الهاتف على الأقل.' : 'Please enter your name and phone number.');
         return;
       }
+
+      const subject = currentLang === 'ar'
+        ? `طلب استشارة هندسية ومقايسة - ${data.name}`
+        : `Engineering Consultation & Quote Request - ${data.name}`;
+
+      let body = '';
+      if (currentLang === 'ar') {
+        body = `طلب مقايسة واستشارة هندسية - شركة ريفيت\n\n` +
+               `الاسم: ${data.name}\n` +
+               `رقم الهاتف: ${data.phone}\n` +
+               `الخدمة المطلوبة: ${data.service || 'غير محدد'}\n` +
+               `المساحة: ${data.area ? data.area + ' م²' : 'غير محدد'}\n` +
+               `الموقع: ${data.location || 'غير محدد'}\n` +
+               `تفاصيل المشروع: ${data.details || 'لا يوجد'}\n\n` +
+               `تم الإرسال عبر الموقع الإلكتروني لشركة ريفيت.`;
+      } else {
+        body = `Engineering Consultation & Quote Request - Revit Contracting\n\n` +
+               `Name: ${data.name}\n` +
+               `Phone: ${data.phone}\n` +
+               `Service: ${data.service || 'Not specified'}\n` +
+               `Area: ${data.area ? data.area + ' m²' : 'Not specified'}\n` +
+               `Location: ${data.location || 'Not specified'}\n` +
+               `Details: ${data.details || 'None'}\n\n` +
+               `Sent from Revit Official Website.`;
+      }
+
+      const mailtoUrl = `mailto:revit.egypt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+
       showToast(translations[currentLang]["form.successMsg"]);
       if (quoteForm) quoteForm.reset();
+    });
+  }
+
+  // Footer Email Button Click Feedback
+  const footerEmailBtn = document.querySelector('.footer-social-btn[href^="mailto:"]');
+  if (footerEmailBtn) {
+    footerEmailBtn.addEventListener('click', () => {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('revit.egypt@gmail.com').catch(() => {});
+      }
+      showToast(currentLang === 'ar' ? 'تم نسخ البريد الإلكتروني: revit.egypt@gmail.com' : 'Email copied: revit.egypt@gmail.com');
     });
   }
 });
