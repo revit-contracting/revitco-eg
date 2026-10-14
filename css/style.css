@@ -328,13 +328,63 @@ button {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.brand-logo-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: logoFloat 4.5s ease-in-out infinite, logoPulseGlow 4.5s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+/* Luxurious Golden Sheen Streak */
+.brand-logo-container::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -130%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(223, 186, 115, 0.45) 45%,
+    rgba(255, 255, 255, 0.75) 50%,
+    rgba(223, 186, 115, 0.45) 55%,
+    transparent 75%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  animation: logoSheen 5.5s infinite ease-in-out;
 }
 
 .brand-logo {
   height: 64px;
   width: auto;
-  border-radius: var(--radius-sm);
-  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
+  display: block;
+  border-radius: inherit;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logo-wrapper:hover .brand-logo-container {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(197, 168, 105, 0.45), 0 0 16px rgba(197, 168, 105, 0.3), 0 0 0 1px var(--primary-gold);
+}
+
+.logo-wrapper:hover .brand-logo-container::after {
+  animation: logoSheenHover 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.logo-wrapper:hover .brand-logo {
+  transform: scale(1.03);
 }
 
 .brand-text-block {
@@ -348,6 +398,13 @@ button {
   letter-spacing: 0.5px;
   line-height: 1.1;
   color: var(--text-main);
+  transition: letter-spacing 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo-wrapper:hover .brand-name {
+  color: var(--primary-gold);
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(197, 168, 105, 0.35);
 }
 
 .brand-sub {
@@ -355,6 +412,60 @@ button {
   color: var(--primary-gold);
   font-weight: 600;
   letter-spacing: 0.2px;
+  transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.logo-wrapper:hover .brand-sub {
+  color: #DFBA73;
+  letter-spacing: 0.4px;
+}
+
+/* --- Keyframes for Professional Logo Animation --- */
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes logoPulseGlow {
+  0%, 100% {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(197, 168, 105, 0.18);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(197, 168, 105, 0.35), 0 0 12px rgba(197, 168, 105, 0.22), 0 0 0 1px rgba(197, 168, 105, 0.5);
+  }
+}
+
+@keyframes logoSheen {
+  0%, 65% {
+    left: -130%;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  85% {
+    left: 150%;
+    opacity: 1;
+  }
+  86%, 100% {
+    left: 150%;
+    opacity: 0;
+  }
+}
+
+@keyframes logoSheenHover {
+  0% {
+    left: -130%;
+    opacity: 0.8;
+  }
+  100% {
+    left: 150%;
+    opacity: 1;
+  }
 }
 
 .nav-links {
@@ -2270,5 +2381,16 @@ button {
   .action-btn-circle {
     width: 34px;
     height: 34px;
+  }
+}
+
+/* Accessibility: Disable continuous animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo-container {
+    animation: none !important;
+  }
+  .brand-logo-container::after {
+    animation: none !important;
+    display: none !important;
   }
 }
