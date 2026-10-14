@@ -321,20 +321,20 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 85px;
+  height: 90px;
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 1rem;
 }
 
 .brand-logo {
-  height: 52px;
+  height: 64px;
   width: auto;
   border-radius: var(--radius-sm);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }
 
 .brand-text-block {
@@ -343,18 +343,18 @@ button {
 }
 
 .brand-name {
-  font-size: 1.35rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
   line-height: 1.1;
   color: var(--text-main);
 }
 
 .brand-sub {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   color: var(--primary-gold);
   font-weight: 600;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .nav-links {
@@ -1885,19 +1885,19 @@ button {
 @media (max-width: 768px) {
   /* Compact Navigation Bar */
   .nav-container {
-    height: 68px;
+    height: 74px;
   }
 
   .brand-logo {
-    height: 42px;
+    height: 52px;
   }
 
   .brand-name {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 
   .brand-sub {
-    font-size: 0.65rem;
+    font-size: 0.70rem;
   }
 
   .nav-actions {
@@ -2252,11 +2252,11 @@ button {
   }
 
   .brand-name {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   .brand-logo {
-    height: 36px;
+    height: 44px;
   }
 
   .lang-switch-btn .lang-text {
