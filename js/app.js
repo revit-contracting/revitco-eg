@@ -163,21 +163,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterTabs = document.querySelectorAll('.filter-tab-btn');
   const portfolioItems = document.querySelectorAll('.portfolio-item-card');
 
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+  function filterPortfolio(filterCategory, isInitial = false) {
+    portfolioItems.forEach(item => {
+      const itemCategory = item.getAttribute('data-category');
+      const matches = filterCategory === 'all' || itemCategory === filterCategory;
 
-      const filterCategory = tab.getAttribute('data-filter');
-
-      portfolioItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
-        if (filterCategory === 'all' || itemCategory === filterCategory) {
-          item.style.display = 'block';
+      if (matches) {
+        item.style.display = 'block';
+        if (isInitial) {
+          item.style.opacity = '1';
+          item.style.transform = 'scale(1)';
+        } else {
           setTimeout(() => {
             item.style.opacity = '1';
             item.style.transform = 'scale(1)';
           }, 50);
+        }
+      } else {
+        if (isInitial) {
+          item.style.display = 'none';
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.95)';
         } else {
           item.style.opacity = '0';
           item.style.transform = 'scale(0.95)';
@@ -185,9 +191,25 @@ document.addEventListener('DOMContentLoaded', () => {
             item.style.display = 'none';
           }, 300);
         }
-      });
+      }
+    });
+  }
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filterCategory = tab.getAttribute('data-filter');
+      filterPortfolio(filterCategory);
     });
   });
+
+  // Apply initial filter for the active tab on page load
+  const activeTab = document.querySelector('.filter-tab-btn.active');
+  if (activeTab) {
+    filterPortfolio(activeTab.getAttribute('data-filter'), true);
+  }
 
   // --- Cinematic Lightbox Modal ---
   const lightboxModal = document.getElementById('lightboxModal');
