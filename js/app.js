@@ -449,4 +449,104 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast(currentLang === 'ar' ? 'تم نسخ البريد الإلكتروني: revit.egypt@gmail.com' : 'Email copied: revit.egypt@gmail.com');
     });
   }
+
+  // --- Site Execution Reels Player Functionality ---
+  const reelCards = document.querySelectorAll('.reel-card');
+
+  reelCards.forEach(card => {
+    const video = card.querySelector('.reel-video');
+    const audioBtn = card.querySelector('.reel-audio-btn');
+    const progressFill = card.querySelector('.reel-progress-fill');
+    if (!video) return;
+
+    // Toggle play/pause on card click (excluding audio button)
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.reel-audio-btn')) return;
+
+      if (video.paused) {
+        // Pause any other playing reels
+        document.querySelectorAll('.reel-card.is-playing video').forEach(v => {
+          if (v !== video) {
+            v.pause();
+            v.closest('.reel-card').classList.remove('is-playing');
+          }
+        });
+
+        video.play().then(() => {
+          card.classList.add('is-playing');
+        }).catch(() => {});
+      } else {
+        video.pause();
+        card.classList.remove('is-playing');
+      }
+    });
+
+    // Toggle audio
+    if (audioBtn) {
+      audioBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        video.muted = !video.muted;
+        const icon = audioBtn.querySelector('i');
+        if (icon) {
+          if (video.muted) {
+            icon.className = 'fas fa-volume-mute';
+            audioBtn.setAttribute('title', currentLang === 'ar' ? 'تشغيل الصوت' : 'Unmute');
+          } else {
+            icon.className = 'fas fa-volume-up';
+            audioBtn.setAttribute('title', currentLang === 'ar' ? 'كتم الصوت' : 'Mute');
+          }
+        }
+        // If paused, play when unmuting
+        if (!video.muted && video.paused) {
+          video.play().then(() => {
+            card.classList.add('is-playing');
+          }).catch(() => {});
+        }
+      });
+    }
+
+    // Update progress bar
+    video.addEventListener('timeupdate', () => {
+      if (progressFill && video.duration) {
+        const percent = (video.currentTime / video.duration) * 100;
+        progressFill.style.width = percent + '%';
+      }
+    });
+
+    // Reset progress when looped/ended
+    video.addEventListener('ended', () => {
+      if (progressFill) progressFill.style.width = '0%';
+    });
+
+    // Desktop hover preview (muted)
+    card.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 992 && video.paused) {
+        video.play().then(() => {
+          card.classList.add('is-playing');
+        }).catch(() => {});
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 992 && !video.paused && video.muted) {
+        video.pause();
+        card.classList.remove('is-playing');
+      }
+    });
+  });
+
+  // IntersectionObserver: Pause reels when scrolled out of view to save CPU/battery
+  if ('IntersectionObserver' in window) {
+    const reelsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target.querySelector('video');
+        if (!entry.isIntersecting && video && !video.paused) {
+          video.pause();
+          entry.target.classList.remove('is-playing');
+        }
+      });
+    }, { threshold: 0.25 });
+
+    reelCards.forEach(card => reelsObserver.observe(card));
+  }
 });
