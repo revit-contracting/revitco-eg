@@ -339,6 +339,8 @@ button {
   justify-content: center;
   border-radius: var(--radius-sm);
   overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(197, 168, 105, 0.3);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   animation: logoFloat 4.5s ease-in-out infinite, logoPulseGlow 4.5s ease-in-out infinite;
   will-change: transform, box-shadow;
