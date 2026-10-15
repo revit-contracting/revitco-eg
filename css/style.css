@@ -271,15 +271,17 @@ button {
 
 /* --- Prominent Company Profile Button --- */
 .btn-profile {
-  background: linear-gradient(135deg, rgba(197, 168, 105, 0.16) 0%, rgba(229, 210, 160, 0.28) 100%);
-  color: #FFFFFF;
+  background: linear-gradient(135deg, rgba(197, 168, 105, 0.2) 0%, rgba(229, 210, 160, 0.35) 100%);
+  background-color: #FFFFFF;
+  color: #0A0D14;
+  font-weight: 800;
   border: 1.5px solid var(--primary-gold);
   box-shadow: 0 8px 24px rgba(197, 168, 105, 0.25);
   backdrop-filter: blur(10px);
 }
 
 .btn-profile i {
-  color: var(--primary-gold);
+  color: #0A0D14;
   font-size: 1.15rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -295,6 +297,22 @@ button {
 .btn-profile:hover i {
   color: #0A0D14;
   transform: scale(1.15) translateY(-1px);
+}
+
+/* High contrast black font for profile button in dark mode with gold gradient */
+:root:not([data-theme="light"]) .btn-profile {
+  background: var(--gold-gradient);
+  color: #0A0D14;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+:root:not([data-theme="light"]) .btn-profile i {
+  color: #0A0D14;
+}
+
+:root:not([data-theme="light"]) .btn-profile:hover {
+  background: var(--gold-gradient-hover);
+  color: #0A0D14;
 }
 
 /* --- Header & Navigation Bar --- */
