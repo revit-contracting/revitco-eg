@@ -798,9 +798,10 @@ button {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 0.5rem 0 1.25rem;
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  direction: ltr;
+  padding: 0.75rem 0 1.5rem;
+  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
 }
 
 .partners-track {
@@ -808,11 +809,7 @@ button {
   width: max-content;
   direction: ltr;
   will-change: transform;
-  animation: partnersMarquee 38s linear infinite;
-}
-
-.partners-track:hover {
-  animation-play-state: paused;
+  animation: partnersMarquee 28s linear infinite;
 }
 
 .partners-group {
@@ -824,10 +821,10 @@ button {
 
 @keyframes partnersMarquee {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
