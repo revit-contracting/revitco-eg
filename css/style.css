@@ -812,6 +812,13 @@ button {
   animation: partnersMarquee 28s linear infinite;
 }
 
+/* Pause when cursor hovers over the slider, resume immediately on mouse leave */
+.partners-slider-wrapper:hover .partners-track,
+.partners-track:hover,
+.partners-slider-wrapper:active .partners-track {
+  animation-play-state: paused;
+}
+
 .partners-group {
   display: flex;
   gap: 1.25rem;
