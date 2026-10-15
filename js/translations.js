@@ -228,6 +228,25 @@ const translations = {
     "why.p4.title": "إشراف هندسي وضمان شامل",
     "why.p4.desc": "فريق هندسي متخصص يتابع أدق التفاصيل في الموقع مع تقديم شهادات ضمان للأعمال المنفذة.",
 
+    // Lead Magnet Guide
+    "guide.badge": "إهداء استشاري مجاني من مهندسي ريفيت",
+    "guide.title": "دليل المالك الذكي لتشطيب شقتك أو فيلتك وتجنب أخطاء البناء الشائعة",
+    "guide.subtitle": "كتيّب هندسي تطبيقي مبسط تم إعداده بواسطة نخبة من مهندسي واستشاريي شركة ريفيت، يضع بين يديك أسرار التوفير المالي، التسلسل الهندسي المعتمد، وكيفية فحص واستلام بنود التشطيب كخبير دون مخاطرة.",
+    "guide.f1.title": "التسلسل الهندسي المعتمد",
+    "guide.f1.desc": "الترتيب الصارم لـ 12 مرحلة تشطيب من الطوب للمفتاح لتجنب التكسير وإهدار المواد.",
+    "guide.f2.title": "أخطر 7 أخطاء تأسيس",
+    "guide.f2.desc": "أخطاء شائعة ومكلفة في السباكة والكهرباء والعزل المائي وكيفية تلافيها نهائياً.",
+    "guide.f3.title": "قوائم فحص واستلام (Checklist)",
+    "guide.f3.desc": "معايير استلام المحارة، تركيبات البورسلين، والدهانات واختبارات كبس المياه.",
+    "guide.f4.title": "إدارة الميزانية والتوريد",
+    "guide.f4.desc": "كيف تحسب تكلفة المتر الحقيقية وتشتري خاماتك الأصلية بأفضل سعر تنافسي.",
+    "guide.downloadBtn": "تحميل الدليل مجاناً (PDF)",
+    "guide.previewBtn": "تصفح الدليل أونلاين",
+    "guide.whatsappBtn": "أرسل لي النسخة عبر واتساب",
+    "guide.tagYear": "إصدار 2026 الحصري",
+    "guide.tagFree": "تحميل مجاني 100%",
+    "guide.tagRevit": "إعداد مهندسي ريفيت",
+
     // Quote & Contact Form
     "quote.badge": "ابدأ مشروعك الآن",
     "quote.title": "اطلب عرض سعر أو استشارة هندسية مجانية",
@@ -508,6 +527,25 @@ const translations = {
     "why.p3.desc": "Direct supply pipelines for materials and equipment ensure optimal cost and top-tier specifications.",
     "why.p4.title": "Rigorous Supervision & Guarantees",
     "why.p4.desc": "Dedicated site engineers monitor every milestone with comprehensive warranty documentation.",
+
+    // Lead Magnet Guide
+    "guide.badge": "Complimentary Advisory from Revit Engineers",
+    "guide.title": "Smart Owner's Guide to Villa & Apartment Fit-out & Avoiding Costly Mistakes",
+    "guide.subtitle": "A practical, actionable engineering guide authored by Revit's senior consultants, delivering the blueprint for budget control, approved sequence of works, and pro-level inspection checklists.",
+    "guide.f1.title": "Certified Workflow Sequence",
+    "guide.f1.desc": "The strict 12-phase execution order from core & shell to turnkey handover.",
+    "guide.f2.title": "7 Fatal Rough-In Mistakes",
+    "guide.f2.desc": "Costly pitfalls in plumbing, electrical conduits, and waterproofing to prevent early on.",
+    "guide.f3.title": "Handover & Inspection Checklists",
+    "guide.f3.desc": "Standard protocols for plastering, porcelain alignment, paints, and pressure testing.",
+    "guide.f4.title": "Budget Management & Sourcing",
+    "guide.f4.desc": "How to accurately project cost per square meter and purchase certified materials.",
+    "guide.downloadBtn": "Download Free Guide (PDF)",
+    "guide.previewBtn": "Read Guide Online",
+    "guide.whatsappBtn": "Send Copy via WhatsApp",
+    "guide.tagYear": "Exclusive 2026 Edition",
+    "guide.tagFree": "100% Free Download",
+    "guide.tagRevit": "Engineered by Revit",
 
     // Quote & Contact Form
     "quote.badge": "Start Your Project",

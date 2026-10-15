@@ -549,4 +549,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
     reelCards.forEach(card => reelsObserver.observe(card));
   }
+
+  // --- Smart Finishing Guide Digital Reader Modal Controller ---
+  const guideModal = document.getElementById('guideModal');
+  const openGuideModalBtn = document.getElementById('openGuideModalBtn');
+  const bookTriggerBtn = document.getElementById('bookTriggerBtn');
+  const closeGuideModalBtn = document.getElementById('closeGuideModalBtn');
+  const closeGuideModalBtnBottom = document.getElementById('closeGuideModalBtnBottom');
+
+  function openGuideModal() {
+    if (guideModal) {
+      guideModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeGuideModal() {
+    if (guideModal) {
+      guideModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (openGuideModalBtn) {
+    openGuideModalBtn.addEventListener('click', openGuideModal);
+  }
+
+  if (bookTriggerBtn) {
+    bookTriggerBtn.addEventListener('click', openGuideModal);
+  }
+
+  if (closeGuideModalBtn) {
+    closeGuideModalBtn.addEventListener('click', closeGuideModal);
+  }
+
+  if (closeGuideModalBtnBottom) {
+    closeGuideModalBtnBottom.addEventListener('click', closeGuideModal);
+  }
+
+  if (guideModal) {
+    guideModal.addEventListener('click', (e) => {
+      if (e.target === guideModal) {
+        closeGuideModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && guideModal && guideModal.classList.contains('active')) {
+      closeGuideModal();
+    }
+  });
 });
