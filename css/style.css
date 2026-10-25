@@ -174,7 +174,7 @@ button {
   display: inline-block;
 }
 
-.badge {
+.badge, .section-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
@@ -191,7 +191,7 @@ button {
   box-shadow: 0 4px 15px rgba(197, 168, 105, 0.15);
 }
 
-.badge i {
+.badge i, .section-badge i {
   font-size: 1.2rem;
 }
 
@@ -779,7 +779,7 @@ button {
   margin: 0 auto 2.5rem;
 }
 
-.partners-header .badge {
+.partners-header .badge, .section-badge {
   font-size: 1.25rem;
   font-weight: 700;
   padding: 0.65rem 1.6rem;
@@ -788,7 +788,7 @@ button {
   box-shadow: 0 4px 15px rgba(197, 168, 105, 0.15);
 }
 
-.partners-header .badge i {
+.partners-header .badge i, .section-badge i {
   font-size: 1.2rem;
 }
 
@@ -1008,7 +1008,7 @@ html[lang="en"] .partner-card {
   align-items: center;
 }
 
-.about-text .badge {
+.about-text .badge, .section-badge {
   margin-bottom: 1.25rem;
 }
 
@@ -1957,7 +1957,7 @@ html[lang="en"] .partner-card {
   align-items: center;
 }
 
-.guide-text .badge {
+.guide-text .badge, .section-badge {
   margin-bottom: 1.25rem;
 }
 
@@ -3173,7 +3173,7 @@ html[lang="en"] .partner-card {
   }
 
   /* Partners Section Mobile */
-  .partners-header .badge {
+  .partners-header .badge, .section-badge {
     font-size: 1.05rem;
     padding: 0.5rem 1.25rem;
   }
@@ -3418,7 +3418,7 @@ html[lang="en"] .partner-card {
     justify-content: center;
   }
 
-  .badge {
+  .badge, .section-badge {
     font-size: 1.05rem;
     padding: 0.5rem 1.25rem;
   }
