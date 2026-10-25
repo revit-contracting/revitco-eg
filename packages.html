@@ -761,46 +761,479 @@
       </div>
     </div>
 
-    <!-- Interactive Cost Calculator -->
-    <section class="calculator-section" id="calculator">
-      <div class="section-title" style="margin-top: 0;">
-        <h2>حاسبة التكلفة والمقايسة التقديرية</h2>
-        <p>أدخل مساحة شقتك بالامتار المربعة واختر الباقة لاحتساب التكلفة التقديرية وجدول الدفعات.</p>
-      </div>
+    <div id="finishingCalc" class="revite-executive-calc-container">
+        <style>
+          .revite-executive-calc-container {
+            background: radial-gradient(circle at 20% 20%, #1e293b 0%, #0a0f1d 100%) !important;
+            border: 2px solid #c5a869 !important;
+            border-radius: 28px !important;
+            padding: 3rem 2.2rem !important;
+            margin: 4.5rem 0 3.5rem !important;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(197, 168, 105, 0.25) !important;
+            color: #ffffff !important;
+            position: relative !important;
+            overflow: hidden !important;
+            font-family: 'Cairo', system-ui, sans-serif !important;
+          }
+          .revite-executive-calc-container::before {
+            content: '' !important;
+            position: absolute !important;
+            top: -50% !important;
+            right: -20% !important;
+            width: 400px !important;
+            height: 400px !important;
+            background: radial-gradient(circle, rgba(197, 168, 105, 0.15) 0%, transparent 70%) !important;
+            pointer-events: none !important;
+          }
+          .calc-head-badge {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            background: rgba(197, 168, 105, 0.15) !important;
+            border: 1px solid #c5a869 !important;
+            color: #e5c378 !important;
+            padding: 0.4rem 1.2rem !important;
+            border-radius: 50px !important;
+            font-size: 0.9rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.8rem !important;
+          }
+          .calc-head-title {
+            font-size: 2.2rem !important;
+            font-weight: 900 !important;
+            color: #ffffff !important;
+            margin-bottom: 0.5rem !important;
+            line-height: 1.3 !important;
+          }
+          .calc-head-title span {
+            color: #c5a869 !important;
+          }
+          .calc-head-desc {
+            color: #94a3b8 !important;
+            font-size: 1.05rem !important;
+            max-width: 750px !important;
+            margin-bottom: 2.5rem !important;
+          }
 
-      <div class="calc-grid">
-        <div class="calc-controls">
-          <label for="areaInput">مساحة الوحدة (بالمتر المربع م²):</label>
-          <input type="number" id="areaInput" value="120" min="40" max="1000" oninput="calculateEstimate()">
+          /* Package Selection Cards */
+          .calc-step-label {
+            font-size: 1.1rem !important;
+            font-weight: 800 !important;
+            color: #e2e8f0 !important;
+            margin-bottom: 1rem !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+          }
+          .calc-step-label i {
+            color: #c5a869 !important;
+          }
+          .tier-selector-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+            gap: 1rem !important;
+            margin-bottom: 2rem !important;
+          }
+          .tier-card-btn {
+            background: rgba(255, 255, 255, 0.04) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+            border-radius: 16px !important;
+            padding: 1.2rem 1rem !important;
+            cursor: pointer !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            text-align: right !important;
+            position: relative !important;
+            color: #ffffff !important;
+          }
+          .tier-card-btn:hover {
+            border-color: #c5a869 !important;
+            background: rgba(197, 168, 105, 0.08) !important;
+            transform: translateY(-3px) !important;
+          }
+          .tier-card-btn.active {
+            border-color: #c5a869 !important;
+            background: linear-gradient(135deg, rgba(197, 168, 105, 0.2) 0%, rgba(22, 30, 46, 0.9) 100%) !important;
+            box-shadow: 0 0 20px rgba(197, 168, 105, 0.3) !important;
+          }
+          .tier-card-btn .t-name {
+            font-size: 1.15rem !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin-bottom: 4px !important;
+          }
+          .tier-card-btn.active .t-name {
+            color: #e5c378 !important;
+          }
+          .tier-card-btn .t-price {
+            font-size: 1.25rem !important;
+            font-weight: 900 !important;
+            color: #c5a869 !important;
+          }
+          .tier-card-btn .t-tag {
+            font-size: 0.72rem !important;
+            color: #94a3b8 !important;
+          }
+          .tier-card-btn .t-popular-badge {
+            position: absolute !important;
+            top: -10px !important;
+            left: 12px !important;
+            background: linear-gradient(135deg, #c5a869, #ebd59b) !important;
+            color: #0a0f1d !important;
+            font-size: 0.68rem !important;
+            font-weight: 900 !important;
+            padding: 2px 10px !important;
+            border-radius: 12px !important;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4) !important;
+          }
 
-          <label for="packageSelect">اختر باقة التشطيب:</label>
-          <select id="packageSelect" onchange="calculateEstimate()">
-            <option value="3700">الباقة الاقتصادية (3,700 ج.م / م²)</option>
-            <option value="5500" selected>الباقة اللوكس (5,500 ج.م / م²)</option>
-            <option value="7500">باقة VIP (7,500 ج.م / م²)</option>
-            <option value="15700">باقة LUXURY الفندقية (15,700 ج.م / م²)</option>
-          </select>
+          /* Area Controls */
+          .area-control-wrapper {
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 18px !important;
+            padding: 1.5rem !important;
+            margin-bottom: 2.5rem !important;
+          }
+          .area-input-row {
+            display: flex !important;
+            align-items: center !important;
+            gap: 1.5rem !important;
+            flex-wrap: wrap !important;
+            margin-bottom: 1.2rem !important;
+          }
+          .area-numeric-box {
+            display: flex !important;
+            align-items: center !important;
+            background: #0d1525 !important;
+            border: 2px solid #c5a869 !important;
+            border-radius: 14px !important;
+            padding: 0.4rem 1rem !important;
+            gap: 10px !important;
+          }
+          .area-numeric-box input {
+            background: transparent !important;
+            border: none !important;
+            color: #e5c378 !important;
+            font-size: 1.8rem !important;
+            font-weight: 900 !important;
+            width: 100px !important;
+            text-align: center !important;
+            outline: none !important;
+            font-family: inherit !important;
+          }
+          .area-unit {
+            color: #94a3b8 !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem !important;
+          }
+          .area-slider {
+            flex-grow: 1 !important;
+            height: 10px !important;
+            border-radius: 5px !important;
+            background: #1e293b !important;
+            outline: none !important;
+            accent-color: #c5a869 !important;
+            cursor: pointer !important;
+          }
+          .quick-areas-pills {
+            display: flex !important;
+            gap: 8px !important;
+            flex-wrap: wrap !important;
+          }
+          .quick-area-btn {
+            background: rgba(255, 255, 255, 0.06) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #cbd5e1 !important;
+            padding: 0.35rem 0.9rem !important;
+            border-radius: 20px !important;
+            font-size: 0.85rem !important;
+            font-weight: 700 !important;
+            cursor: pointer !important;
+            transition: all 0.2s !important;
+          }
+          .quick-area-btn:hover {
+            border-color: #c5a869 !important;
+            color: #ffffff !important;
+            background: rgba(197, 168, 105, 0.15) !important;
+          }
 
-          <label>مدة التنفيذ المتوقعة:</label>
-          <div id="durationText" style="font-weight: 700; color: var(--accent); font-size: 1.1rem; margin-bottom: 1rem;">
-            من 60 إلى 75 يوم عمل
+          /* Results Presentation Deck */
+          .calc-results-deck {
+            display: grid !important;
+            grid-template-columns: 1fr 1.3fr !important;
+            gap: 2rem !important;
+            align-items: stretch !important;
+          }
+
+          /* Total Card */
+          .calc-grand-total-card {
+            background: linear-gradient(145deg, #162033 0%, #0d1525 100%) !important;
+            border: 2px solid #c5a869 !important;
+            border-radius: 22px !important;
+            padding: 2.2rem 1.8rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            text-align: center !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(197, 168, 105, 0.1) !important;
+            position: relative !important;
+          }
+          .total-label-top {
+            font-size: 1.05rem !important;
+            color: #94a3b8 !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+          }
+          .total-sum-number {
+            font-size: 3.2rem !important;
+            font-weight: 900 !important;
+            color: #ebd59b !important;
+            text-shadow: 0 2px 20px rgba(197, 168, 105, 0.4) !important;
+            margin: 0.8rem 0 !important;
+            line-height: 1.1 !important;
+          }
+          .total-timeline-tag {
+            background: rgba(197, 168, 105, 0.12) !important;
+            border: 1px solid rgba(197, 168, 105, 0.4) !important;
+            color: #e5c378 !important;
+            padding: 0.6rem 1rem !important;
+            border-radius: 12px !important;
+            font-size: 0.95rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 1.5rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+          }
+          .btn-calc-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+            color: #ffffff !important;
+            font-weight: 800 !important;
+            padding: 0.95rem 1.5rem !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 10px !important;
+            font-size: 1.05rem !important;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+            transition: all 0.3s !important;
+            border: none !important;
+          }
+          .btn-calc-whatsapp:hover {
+            transform: translateY(-3px) !important;
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55) !important;
+            color: #ffffff !important;
+          }
+
+          /* Milestones Breakdown Deck */
+          .calc-milestones-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 22px !important;
+            padding: 1.8rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+          }
+          .milestones-title {
+            font-size: 1.1rem !important;
+            font-weight: 800 !important;
+            color: #e2e8f0 !important;
+            margin-bottom: 1.2rem !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+            padding-bottom: 0.8rem !important;
+          }
+          .milestones-title i {
+            color: #c5a869 !important;
+          }
+          .milestones-list {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 0.85rem !important;
+          }
+          .milestone-item {
+            background: rgba(13, 21, 37, 0.7) !important;
+            border: 1px solid rgba(255, 255, 255, 0.06) !important;
+            border-radius: 12px !important;
+            padding: 0.75rem 1rem !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 10px !important;
+          }
+          .milestone-info {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            font-size: 0.92rem !important;
+            color: #cbd5e1 !important;
+          }
+          .milestone-badge {
+            background: rgba(197, 168, 105, 0.15) !important;
+            color: #e5c378 !important;
+            padding: 2px 8px !important;
+            border-radius: 8px !important;
+            font-size: 0.78rem !important;
+            font-weight: 800 !important;
+          }
+          .milestone-cost {
+            font-size: 1.15rem !important;
+            font-weight: 900 !important;
+            color: #c5a869 !important;
+            white-space: nowrap !important;
+          }
+
+          @media (max-width: 900px) {
+            .calc-results-deck {
+              grid-template-columns: 1fr !important;
+            }
+            .total-sum-number {
+              font-size: 2.6rem !important;
+            }
+          }
+        </style>
+
+        <!-- Header -->
+        <div style="text-align: right; margin-bottom: 2rem;">
+          <div class="calc-head-badge"><i class="fas fa-bolt"></i> حاسبة المقايسة الذكية المعتمدة</div>
+          <h3 class="calc-head-title">احسب تكلفة تشطيب وحدتك مع <span>ريفيت للمقاولات</span></h3>
+          <p class="calc-head-desc">أداة تسعير فورية ودقيقة تحسب لك الميزانية الشاملة وتوزيع الدفعات الهندسية بدقة متناهية وفقاً للكود الهندسي.</p>
+        </div>
+
+        <!-- Step 1: Package Selector -->
+        <div class="calc-step-label"><i class="fas fa-layer-group"></i> 1. اختر باقة التشطيب المناسبة:</div>
+        <div class="tier-selector-grid" id="tierSelectorDeck">
+          <div class="tier-card-btn" onclick="selectTierCard(3700, 'الباقة الاقتصادية', this)">
+            <div class="t-name">الباقة الاقتصادية</div>
+            <div class="t-price">3,700 <span style="font-size: 0.8rem; font-weight: normal;">ج.م/م²</span></div>
+            <div class="t-tag">سكن عملي، مصايف، استثمار</div>
+          </div>
+
+          <div class="tier-card-btn active" onclick="selectTierCard(5500, 'الباقة اللوكس', this)">
+            <div class="t-popular-badge">الأكثر طلباً ⭐</div>
+            <div class="t-name">الباقة اللوكس</div>
+            <div class="t-price">5,500 <span style="font-size: 0.8rem; font-weight: normal;">ج.م/م²</span></div>
+            <div class="t-tag">سكن عائلي أنيق ومتميز</div>
+          </div>
+
+          <div class="tier-card-btn" onclick="selectTierCard(7500, 'باقة VIP', this)">
+            <div class="t-name">باقة VIP</div>
+            <div class="t-price">7,500 <span style="font-size: 0.8rem; font-weight: normal;">ج.م/م²</span></div>
+            <div class="t-tag">رفاهية وديكورات عصرية فخمة</div>
+          </div>
+
+          <div class="tier-card-btn" onclick="selectTierCard(15700, 'باقة LUXURY الفندقية', this)">
+            <div class="t-name">باقة LUXURY الفندقية</div>
+            <div class="t-price">15,700 <span style="font-size: 0.8rem; font-weight: normal;">ج.م/م²</span></div>
+            <div class="t-tag">فندقية Ultra-Luxury + سمارت هوم</div>
           </div>
         </div>
 
-        <div class="calc-result-box">
-          <div class="calc-total-label">إجمالي التكلفة التقديرية</div>
-          <div class="calc-total-val" id="totalEstimate">660,000 ج.م</div>
+        <!-- Hidden input for backward compatibility -->
+        <input type="hidden" id="finishingTier" value="5500">
 
-          <div class="calc-breakdown">
-            <div>الدفعة الأولى (تأسيس وتعاقد 20%): <br><span id="p1">132,000 ج.م</span></div>
-            <div>الدفعة الثانية (تأسيس سباكة وكهرباء 25%): <br><span id="p2">165,000 ج.م</span></div>
-            <div>الدفعة الثالثة (محارة وجبس بورد 25%): <br><span id="p3">165,000 ج.م</span></div>
-            <div>الدفعة الرابعة (أرضيات ودهانات 20%): <br><span id="p4">132,000 ج.م</span></div>
-            <div style="grid-column: span 2; margin-top: 5px;">دفعة التسليم النهائي والضمان (10%): <span id="p5">66,000 ج.م</span></div>
+        <!-- Step 2: Area Control -->
+        <div class="calc-step-label"><i class="fas fa-ruler-combined"></i> 2. حدد مساحة الوحدة المسطحة:</div>
+        <div class="area-control-wrapper">
+          <div class="area-input-row">
+            <div class="area-numeric-box">
+              <input type="number" id="finishingArea" value="120" min="40" max="1000" oninput="syncAreaFromInput(this.value)">
+              <span class="area-unit">م² مسطح</span>
+            </div>
+            <input type="range" id="finishingAreaSlider" class="area-slider" min="40" max="600" value="120" step="5" oninput="syncAreaFromSlider(this.value)">
+          </div>
+          
+          <div class="quick-areas-pills">
+            <span style="font-size: 0.85rem; color: #94a3b8; align-self: center; margin-inline-end: 6px;">مساحات سريعة:</span>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(80)">80 م²</button>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(100)">100 م²</button>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(120)">120 م²</button>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(150)">150 م²</button>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(200)">200 م²</button>
+            <button type="button" class="quick-area-btn" onclick="setQuickArea(300)">300 م²</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Results Deck -->
+        <div class="calc-results-deck">
+          <!-- Total Card -->
+          <div class="calc-grand-total-card">
+            <div>
+              <div class="total-label-top"><i class="fas fa-coins" style="color: #c5a869;"></i> إجمالي التكلفة التقديرية</div>
+              <div class="total-sum-number" id="finishingTotalFigure">660,000 ج.م</div>
+              
+              <div class="total-timeline-tag" id="finishingDuration">
+                <i class="far fa-clock"></i> مدة التنفيذ: من 60 إلى 75 يوم عمل
+              </div>
+            </div>
+
+            <a id="calcWhatsappLink" href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="btn-calc-whatsapp">
+              <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i>
+              <span>احجز المعاينة واعتمد المقايسة فوراً</span>
+            </a>
+          </div>
+
+          <!-- Milestones Card -->
+          <div class="calc-milestones-card">
+            <div class="milestones-title">
+              <i class="fas fa-tasks"></i>
+              <span>جدول دفعات التنفيذ (مراحل تسليم معتمدة):</span>
+            </div>
+
+            <div class="milestones-list">
+              <div class="milestone-item">
+                <div class="milestone-info">
+                  <span class="milestone-badge">20%</span>
+                  <span>الدفعة الأولى: التعاقد وبدء التأسيس</span>
+                </div>
+                <div class="milestone-cost" id="inst1">132,000 ج.م</div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-info">
+                  <span class="milestone-badge">25%</span>
+                  <span>الدفعة الثانية: تأسيس السباكة والكهرباء</span>
+                </div>
+                <div class="milestone-cost" id="inst2">165,000 ج.م</div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-info">
+                  <span class="milestone-badge">25%</span>
+                  <span>الدفعة الثالثة: المحارة والجبس بورد</span>
+                </div>
+                <div class="milestone-cost" id="inst3">165,000 ج.م</div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-info">
+                  <span class="milestone-badge">20%</span>
+                  <span>الدفعة الرابعة: السيراميك والدهانات</span>
+                </div>
+                <div class="milestone-cost" id="inst4">132,000 ج.م</div>
+              </div>
+
+              <div class="milestone-item" style="border-color: rgba(197, 168, 105, 0.4); background: rgba(197, 168, 105, 0.08);">
+                <div class="milestone-info">
+                  <span class="milestone-badge" style="background: #c5a869; color: #0a0f1d;">10%</span>
+                  <span style="color: #e5c378; font-weight: 700;">الدفعة الأخيرة: التسليم النهائي والضمان</span>
+                </div>
+                <div class="milestone-cost" id="inst5">66,000 ج.م</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+            
+    
 
     <!-- Detailed Comparison Table -->
     <div class="section-title">
@@ -998,5 +1431,6 @@
     // Initial calculation
     calculateEstimate();
   </script>
+<script src="js/app.js"></script>
 </body>
 </html>

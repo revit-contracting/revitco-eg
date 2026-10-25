@@ -603,19 +603,74 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // =========================================================================
-// Finishing Packages Calculator Logic
+
+
 // =========================================================================
+// Executive Finishing Calculator Logic
+// =========================================================================
+function selectTierCard(rate, name, el) {
+  const cards = document.querySelectorAll('#tierSelectorDeck .tier-card-btn');
+  cards.forEach(c => c.classList.remove('active'));
+  if (el) el.classList.add('active');
+
+  const tierInput = document.getElementById('finishingTier');
+  if (tierInput) tierInput.value = rate;
+
+  runFinishingCalculation();
+}
+
+function syncAreaFromInput(val) {
+  const slider = document.getElementById('finishingAreaSlider');
+  if (slider) slider.value = val;
+  runFinishingCalculation();
+}
+
+function syncAreaFromSlider(val) {
+  const input = document.getElementById('finishingArea');
+  if (input) input.value = val;
+  runFinishingCalculation();
+}
+
+function setQuickArea(area) {
+  const input = document.getElementById('finishingArea');
+  const slider = document.getElementById('finishingAreaSlider');
+  if (input) input.value = area;
+  if (slider) slider.value = area;
+  runFinishingCalculation();
+}
+
+function setFinishingPackage(rate, name) {
+  const cards = document.querySelectorAll('#tierSelectorDeck .tier-card-btn');
+  cards.forEach(c => {
+    if (c.innerText.includes(name)) {
+      c.classList.add('active');
+    } else {
+      c.classList.remove('active');
+    }
+  });
+
+  const tierInput = document.getElementById('finishingTier');
+  if (tierInput) tierInput.value = rate;
+
+  runFinishingCalculation();
+
+  const calcElem = document.getElementById('finishingCalc');
+  if (calcElem) {
+    calcElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
 function runFinishingCalculation() {
   const areaInput = document.getElementById('finishingArea');
-  const tierSelect = document.getElementById('finishingTier');
+  const tierInput = document.getElementById('finishingTier');
   const totalDisplay = document.getElementById('finishingTotalFigure');
   const durationDisplay = document.getElementById('finishingDuration');
   const whatsappBtn = document.getElementById('calcWhatsappLink');
 
-  if (!areaInput || !tierSelect || !totalDisplay) return;
+  if (!areaInput || !tierInput || !totalDisplay) return;
 
   const area = parseFloat(areaInput.value) || 0;
-  const rate = parseFloat(tierSelect.value) || 3700;
+  const rate = parseFloat(tierInput.value) || 5500;
   const total = area * rate;
 
   totalDisplay.innerText = total.toLocaleString('ar-EG') + ' ج.م';
@@ -638,19 +693,13 @@ function runFinishingCalculation() {
   if (rate === 7500) { duration = "من 75 إلى 90 يوم عمل"; packageName = "باقة VIP"; }
   if (rate === 15700) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
 
-  if (durationDisplay) durationDisplay.innerText = duration;
+  if (durationDisplay) {
+    durationDisplay.innerHTML = <i class="far fa-clock"></i> مدة التنفيذ: ;
+  }
 
   if (whatsappBtn) {
     const msg = encodeURIComponent(مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ () لمساحة  م² بإجمالي تقديري  ج.م);
     whatsappBtn.href = https://wa.me/201044743355?text=;
-  }
-}
-
-function setFinishingPackage(rate, name) {
-  const tierSelect = document.getElementById('finishingTier');
-  if (tierSelect) {
-    tierSelect.value = rate;
-    runFinishingCalculation();
   }
 }
 
