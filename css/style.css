@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    REVIT GENERAL CONTRACTING & PUBLIC SUPPLIES
    Luxury Architectural Web Application Stylesheet
    Supports: RTL / LTR Bilingual, Dark Mode (Default) / Light Mode
@@ -779,7 +779,16 @@ button {
 }
 
 .partners-header .badge {
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.65rem 1.6rem;
+  margin-bottom: 1.25rem;
+  gap: 0.65rem;
+  box-shadow: 0 4px 15px rgba(197, 168, 105, 0.15);
+}
+
+.partners-header .badge i {
+  font-size: 1.2rem;
 }
 
 .partners-header h2 {
@@ -3163,6 +3172,11 @@ html[lang="en"] .partner-card {
   }
 
   /* Partners Section Mobile */
+  .partners-header .badge {
+    font-size: 1.05rem;
+    padding: 0.5rem 1.25rem;
+  }
+
   .partners-header h2 {
     font-size: 1.65rem;
   }
