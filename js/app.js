@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const htmlElement = document.documentElement;
   const langToggleBtn = document.getElementById('langToggleBtn');
   const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const themeToggleBtnMobile = document.getElementById('themeToggleBtnMobile');
+  const themeToggleMobileText = document.getElementById('themeToggleMobileText');
+  const themeToggleMobileIcon = document.getElementById('themeToggleMobileIcon');
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
   const drawerOverlay = document.getElementById('drawerOverlay');
@@ -694,12 +697,12 @@ function runFinishingCalculation() {
   if (rate === 15700) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
 
   if (durationDisplay) {
-    durationDisplay.innerHTML = <i class="far fa-clock"></i> مدة التنفيذ: ;
+    durationDisplay.innerHTML = '<i class="far fa-clock"></i> مدة التنفيذ: ' + duration;
   }
 
   if (whatsappBtn) {
-    const msg = encodeURIComponent(مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ () لمساحة  م² بإجمالي تقديري  ج.م);
-    whatsappBtn.href = https://wa.me/201044743355?text=;
+    var msg = encodeURIComponent('مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ (' + packageName + ') لمساحة ' + area + ' م² بإجمالي تقديري ' + total.toLocaleString('ar-EG') + ' ج.م');
+    whatsappBtn.href = 'https://wa.me/201044743355?text=' + msg;
   }
 }
 
