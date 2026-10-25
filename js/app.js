@@ -601,3 +601,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// =========================================================================
+// Finishing Packages Calculator Logic
+// =========================================================================
+function runFinishingCalculation() {
+  const areaInput = document.getElementById('finishingArea');
+  const tierSelect = document.getElementById('finishingTier');
+  const totalDisplay = document.getElementById('finishingTotalFigure');
+  const durationDisplay = document.getElementById('finishingDuration');
+  const whatsappBtn = document.getElementById('calcWhatsappLink');
+
+  if (!areaInput || !tierSelect || !totalDisplay) return;
+
+  const area = parseFloat(areaInput.value) || 0;
+  const rate = parseFloat(tierSelect.value) || 3700;
+  const total = area * rate;
+
+  totalDisplay.innerText = total.toLocaleString('ar-EG') + ' ج.م';
+
+  const inst1 = document.getElementById('inst1');
+  const inst2 = document.getElementById('inst2');
+  const inst3 = document.getElementById('inst3');
+  const inst4 = document.getElementById('inst4');
+  const inst5 = document.getElementById('inst5');
+
+  if (inst1) inst1.innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
+  if (inst2) inst2.innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
+  if (inst3) inst3.innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
+  if (inst4) inst4.innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
+  if (inst5) inst5.innerText = (total * 0.10).toLocaleString('ar-EG') + ' ج.م';
+
+  let duration = "من 45 إلى 60 يوم عمل";
+  let packageName = "الباقة الاقتصادية";
+  if (rate === 5500) { duration = "من 60 إلى 75 يوم عمل"; packageName = "الباقة اللوكس"; }
+  if (rate === 7500) { duration = "من 75 إلى 90 يوم عمل"; packageName = "باقة VIP"; }
+  if (rate === 15700) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
+
+  if (durationDisplay) durationDisplay.innerText = duration;
+
+  if (whatsappBtn) {
+    const msg = encodeURIComponent(مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ () لمساحة  م² بإجمالي تقديري  ج.م);
+    whatsappBtn.href = https://wa.me/201044743355?text=;
+  }
+}
+
+function setFinishingPackage(rate, name) {
+  const tierSelect = document.getElementById('finishingTier');
+  if (tierSelect) {
+    tierSelect.value = rate;
+    runFinishingCalculation();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  runFinishingCalculation();
+});

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Revit Contracting & Public Supplies - Translation Dictionary
  * Arabic (Default) & English
  */
@@ -8,6 +8,7 @@ const translations = {
     "nav.home": "الرئيسية",
     "nav.about": "من نحن",
     "nav.services": "خدماتنا",
+    "nav.packages": "باقات التشطيب",
     "nav.portfolio": "معرض الأعمال",
     "nav.reels": "فيديوهات التنفيذ",
     "nav.certifications": "الاعتمادات والتراخيص",
@@ -85,6 +86,10 @@ const translations = {
     // Services Section
     "services.badge": "خدماتنا المتكاملة",
     "services.title": "حلول هندسية وإنشائية شاملة من الفكرة للتسليم",
+        // Finishing Packages Section
+    "packages.badge": "باقات هندسية متكاملة",
+    "packages.title": "باقات التشطيب الداخلي المعتمدة من ريفيت",
+    "packages.subtitle": "حلول تشطيب متكاملة تبدأ من 3,700 ج.م/م² مع تصميمات 2D & 3D مجانية، هدايا حصرية عند التعاقد، وضمان 10 سنوات على التأسيس.",
     "services.subtitle": "نقدم منظومة عمل متكاملة تغطي كافة متطلبات المقاولات والتشطيب والتصميم والتوريد باحترافية استثنائية.",
 
     "service1.title": "المقاولات العامة والإنشاءات",
@@ -308,6 +313,7 @@ const translations = {
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.services": "Services",
+    "nav.packages": "Finishing Packages",
     "nav.portfolio": "Portfolio",
     "nav.reels": "Site Videos",
     "nav.certifications": "Accreditations",
@@ -385,6 +391,10 @@ const translations = {
     // Services Section
     "services.badge": "Our Core Services",
     "services.title": "Comprehensive Engineering & Building Solutions",
+    // Finishing Packages Section
+    "packages.badge": "Certified Turnkey Packages",
+    "packages.title": "Revit Interior Finishing Packages",
+    "packages.subtitle": "Integrated engineering fit-out packages starting at 3,700 EGP/m² with complimentary 2D & 3D designs, exclusive signing gifts, and a 10-year MEP warranty.",
     "services.subtitle": "We provide end-to-end contracting, design, finishing, and supply services tailored to the highest standards.",
 
     "service1.title": "General Contracting & Construction",

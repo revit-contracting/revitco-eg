@@ -1,0 +1,1002 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>باقات التشطيب الداخلي | شركة ريفيت للمقاولات والتصميم الداخلي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d1b2a;
+      --secondary: #1b263b;
+      --accent: #c59b27;
+      --accent-light: #e0b84c;
+      --light-bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --shadow-hover: 0 20px 35px -10px rgba(197, 155, 39, 0.2), 0 10px 15px -5px rgba(0,0,0,0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(135deg, #09121d 0%, #162436 100%);
+      color: white;
+      padding: 1.2rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      border-bottom: 2px solid var(--accent);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+    }
+    .brand-logo-text {
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    .brand-logo-text span {
+      color: var(--accent);
+    }
+    .brand-tagline {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .nav-cta {
+      background: linear-gradient(45deg, var(--accent), var(--accent-light));
+      color: #0d1b2a;
+      font-weight: 700;
+      padding: 0.6rem 1.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(197, 155, 39, 0.3);
+    }
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(197, 155, 39, 0.4);
+    }
+
+    /* Hero Banner */
+    .hero {
+      position: relative;
+      background: linear-gradient(rgba(13, 27, 42, 0.85), rgba(13, 27, 42, 0.9)), url('images/packages/01_revite_packages_showcase_all.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1.5rem 6rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .hero h1 span {
+      color: var(--accent);
+      text-shadow: 0 2px 10px rgba(197,155,39,0.3);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: #cbd5e1;
+    }
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .badge-pill {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1240px;
+      margin: -3rem auto 4rem;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Section Heading */
+    .section-title {
+      text-align: center;
+      margin: 4rem 0 2.5rem;
+    }
+    .section-title h2 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0.5rem auto 0;
+    }
+
+    /* Packages Grid */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+    }
+
+    .package-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.35s ease;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .package-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent);
+    }
+    .package-card.featured {
+      border: 2px solid var(--accent);
+    }
+    .featured-tag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: linear-gradient(45deg, #c59b27, #e0b84c);
+      color: #0d1b2a;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      z-index: 5;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card-img-wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+    .card-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .package-card:hover .card-img-wrapper img {
+      transform: scale(1.06);
+    }
+
+    .card-body {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .package-type {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+    .package-name {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .package-target {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      min-height: 48px;
+    }
+    .package-price {
+      background: #f1f5f9;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      border-right: 4px solid var(--accent);
+    }
+    .price-num {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--primary);
+    }
+    .price-currency {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #64748b;
+    }
+
+    /* Gift Box */
+    .package-gift {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 1px dashed #d97706;
+      border-radius: 12px;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #92400e;
+    }
+    .gift-icon {
+      font-size: 1.4rem;
+    }
+
+    /* Policy & Supervision Boxes */
+    .special-notice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 3.5rem 0;
+    }
+    .notice-card {
+      background: white;
+      border-radius: 18px;
+      padding: 1.8rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .notice-card.amber {
+      border-right: 5px solid #f59e0b;
+    }
+    .notice-card.blue {
+      border-right: 5px solid #2563eb;
+    }
+    .notice-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+    }
+    .notice-desc {
+      font-size: 0.92rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .features-list {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .features-list li {
+      font-size: 0.92rem;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #334155;
+    }
+    .features-list li::before {
+      content: '✔';
+      color: #10b981;
+      font-weight: bold;
+    }
+
+    .btn-choose {
+      display: block;
+      text-align: center;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .btn-choose:hover {
+      background: var(--accent);
+      color: var(--primary);
+    }
+    .package-card.featured .btn-choose {
+      background: linear-gradient(45deg, var(--accent), var(--accent-light));
+      color: var(--primary);
+    }
+
+    /* Calculator Section */
+    .calculator-section {
+      background: white;
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      box-shadow: var(--shadow);
+      margin: 4rem 0;
+      border: 1px solid var(--border);
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .calc-controls label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    .calc-controls input, .calc-controls select {
+      width: 100%;
+      padding: 0.85rem 1.2rem;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .calc-controls input:focus, .calc-controls select:focus {
+      border-color: var(--accent);
+    }
+    .calc-result-box {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      position: relative;
+      border: 2px solid var(--accent);
+    }
+    .calc-total-label {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    .calc-total-val {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+    }
+    .calc-breakdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      text-align: right;
+      font-size: 0.88rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 1.2rem;
+    }
+    .calc-breakdown div span {
+      color: var(--accent-light);
+      font-weight: 700;
+    }
+
+    /* Comparison Table */
+    .table-responsive {
+      overflow-x: auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 4rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+    }
+    th, td {
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+    th {
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+    th:first-child {
+      border-top-right-radius: 20px;
+    }
+    th:last-child {
+      border-top-left-radius: 20px;
+    }
+    tr:nth-child(even) {
+      background-color: #fafbfc;
+    }
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+    .item-highlight {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Guarantees Box */
+    .guarantees-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    .guarantee-card {
+      background: white;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+      box-shadow: var(--shadow);
+    }
+    .guarantee-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .guarantee-card h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .guarantee-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background: linear-gradient(135deg, #09121d 0%, #162436 100%);
+      color: white;
+      border-radius: 24px;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(197, 155, 39, 0.4);
+    }
+    .cta-banner h3 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    .cta-banner h3 span {
+      color: var(--accent);
+    }
+    .cta-banner p {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s;
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+    .btn-facebook {
+      background: #1877f2;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(24, 119, 242, 0.35);
+      transition: all 0.3s;
+    }
+    .btn-facebook:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
+    }
+
+    footer {
+      background: #060b11;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.95rem;
+      border-top: 1px solid #1e293b;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .calc-grid { grid-template-columns: 1fr; }
+      .calc-total-val { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div>
+          <div class="brand-logo-text">REVITE <span>.</span></div>
+          <div class="brand-tagline">ريفيت للمقاولات والتصميم الداخلي</div>
+        </div>
+      </a>
+      <a href="#calculator" class="nav-cta">احسب تكلفة شقتك</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>باقات تشطيب هندسية تبدأ من <span>3,700 ج.م / م²</span></h1>
+    <p>حلول ذكية، دقة تنفيذ بموجب الكود الهندسي، وضمان موثق يمنحك راحة البال وأرقى لمسات الجمال.</p>
+    <div class="hero-badges">
+      <div class="badge-pill">📐 تصميمات معمارية وتنفيذية 2D & 3D مجاناً</div>
+      <div class="badge-pill">🎁 هدية مميزة وقيمة مع كل باقة</div>
+      <div class="badge-pill">🛡️ ضمان 10 سنوات على التأسيس</div>
+      <div class="badge-pill">⏱️ التزام صارم بمواعيد التسليم</div>
+      <div class="badge-pill">💼 متاح تفصيل باقتك بنسبة الإشراف</div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Packages Section -->
+    <div class="packages-grid">
+
+      <!-- Card 1: Economic -->
+      <div class="package-card">
+        <div class="card-img-wrapper">
+          <img src="images/packages/02_revite_package_economic_3700.jpg" alt="الباقة الاقتصادية">
+        </div>
+        <div class="card-body">
+          <div class="package-type">الباقة الأولى</div>
+          <h3 class="package-name">الباقة الاقتصادية</h3>
+          <p class="package-target">مثالية للسكن العملي، الشقق الاستثمارية، المصايف والشاليهات بأعلى كفاءة.</p>
+          <div class="package-price">
+            <span class="price-num">3,700</span>
+            <span class="price-currency">ج.م / المتر</span>
+          </div>
+
+          <div class="package-gift">
+            <span class="gift-icon">🎁</span>
+            <div><strong>هدية ريفيت:</strong> هدية مميزة وقيمة خاصة بالباقة تُقدم عند التعاقد</div>
+          </div>
+
+          <ul class="features-list">
+            <li><strong>تصميمات 2D & 3D ولوحات تنفيذية شاملة مجاناً</strong></li>
+            <li>أسلاك السويدي الأصلية معتمدة</li>
+            <li>سباكة الشريف أو BR بضمان الشركة</li>
+            <li>سيراميك فرز أول قطع ليزر كليوباترا</li>
+            <li>أطقم حمامات مودرن + خلاطات استانلس</li>
+            <li>3 سكاكين معجون + دهان قابل للغسيل</li>
+            <li>باب مصفح تركي أمان (للمساحات الأكبر من 120 م²)</li>
+          </ul>
+          <a href="#calculator" class="btn-choose" onclick="selectPackage(3700, 'الباقة الاقتصادية')">احسب المقايسة</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Deluxe -->
+      <div class="package-card featured">
+        <div class="featured-tag">الأكثر طلباً ⭐</div>
+        <div class="card-img-wrapper">
+          <img src="images/packages/03_revite_package_deluxe_5500.jpg" alt="الباقة اللوكس">
+        </div>
+        <div class="card-body">
+          <div class="package-type">الباقة الثانية</div>
+          <h3 class="package-name">الباقة اللوكس</h3>
+          <p class="package-target">الخيار المثالي للسكن العائلي الأنيق والمتميز بتوازن مثالي بين السعر والفخامة.</p>
+          <div class="package-price">
+            <span class="price-num">5,500</span>
+            <span class="price-currency">ج.م / المتر</span>
+          </div>
+
+          <div class="package-gift">
+            <span class="gift-icon">🎁</span>
+            <div><strong>هدية ريفيت:</strong> هدية مميزة وقيمة خاصة بالباقة تُقدم عند التعاقد</div>
+          </div>
+
+          <ul class="features-list">
+            <li><strong>تصميمات 2D & 3D ولوحات تنفيذية شاملة مجاناً</strong></li>
+            <li>كابلات السويدي + لوحة شنايدر إلكتريك</li>
+            <li>مواسير أكواثيرم ألماني + عزل إيبوكسي</li>
+            <li>أرضيات بورسلين فاخر 60×120 للريسبشن</li>
+            <li>أطقم حمامات ديورافيت أو إيديال ستاندرد</li>
+            <li>جبس بورد كناوف ببيوت نور وبانوهات فيوتك</li>
+            <li>دهانات جوتن Jotun فينوماستيك حريري</li>
+          </ul>
+          <a href="#calculator" class="btn-choose" onclick="selectPackage(5500, 'الباقة اللوكس')">احسب المقايسة</a>
+        </div>
+      </div>
+
+      <!-- Card 3: VIP -->
+      <div class="package-card">
+        <div class="card-img-wrapper">
+          <img src="images/packages/04_revite_package_vip_7500.jpg" alt="باقة VIP">
+        </div>
+        <div class="card-body">
+          <div class="package-type">الباقة الثالثة</div>
+          <h3 class="package-name">باقة VIP</h3>
+          <p class="package-target">سكن عائلي فاخر بمزيد من الرفاهية، خامات رفيعة وتصاميم ديكورية ساحرة.</p>
+          <div class="package-price">
+            <span class="price-num">7,500</span>
+            <span class="price-currency">ج.م / المتر</span>
+          </div>
+
+          <div class="package-gift">
+            <span class="gift-icon">🎁</span>
+            <div><strong>هدية ريفيت:</strong> هدية فخمة ومميزة خاصة بالباقة تُقدم عند التعاقد</div>
+          </div>
+
+          <ul class="features-list">
+            <li><strong>تصميم 3D كامل وتعديلات معمارية مجاناً</strong></li>
+            <li>إضاءات ماجنتيك تراك وليد بروفايل مدمج</li>
+            <li>تجاليد ديكورية: بديل خشب وبديل رخام</li>
+            <li>أطقم معلقة وخلاطات جروهي ألماني أصلية</li>
+            <li>بورسلين مستورد إسباني أو هندي نخب أول</li>
+            <li>أبواب قشرة أرو وكوالين مغناطيسية صامتة</li>
+          </ul>
+          <a href="#calculator" class="btn-choose" onclick="selectPackage(7500, 'باقة VIP')">احسب المقايسة</a>
+        </div>
+      </div>
+
+      <!-- Card 4: Luxury -->
+      <div class="package-card">
+        <div class="card-img-wrapper">
+          <img src="images/packages/05_revite_package_luxury_hotel_15700.jpg" alt="باقة LUXURY الفندقية">
+        </div>
+        <div class="card-body">
+          <div class="package-type">الباقة الرابعة</div>
+          <h3 class="package-name">باقة LUXURY</h3>
+          <p class="package-target">التشطيب الفندقي فائق الترف (Ultra-Luxury) للقصور والبنتهاوس مع سمارت هوم.</p>
+          <div class="package-price">
+            <span class="price-num">15,700</span>
+            <span class="price-currency">ج.م / المتر</span>
+          </div>
+
+          <div class="package-gift">
+            <span class="gift-icon">🎁</span>
+            <div><strong>هدية ريفيت:</strong> هدية فندقية استثنائية فاخرة تُقدم عند التعاقد</div>
+          </div>
+
+          <ul class="features-list">
+            <li><strong>تصميمات فندقية 3D واقعية وشوب دروينج مجاناً</strong></li>
+            <li>رخام طبيعي مستورد (كرارة/بريشيا) ملمع بالكريستال</li>
+            <li>نظام سمارت هوم متكامل للإنارة والتكييف والصوت</li>
+            <li>أطقم فيلروي آند بوخ + هانز جروهي مدفون سمارت</li>
+            <li>تجاليد أخشاب طبيعية وإستانلس مذهب PVD</li>
+            <li>أبواب سقفية فندقية عازلة للصوت + قفل ذكي</li>
+          </ul>
+          <a href="#calculator" class="btn-choose" onclick="selectPackage(15700, 'باقة LUXURY')">احسب المقايسة</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Special Notices: Wall Demolition & Cost-Plus Supervision -->
+    <div class="special-notice-grid">
+      <div class="notice-card amber">
+        <div class="notice-title">
+          <span>🔨</span>
+          <span>تعديل الحوائط والتكسير وأعمال المحارة</span>
+        </div>
+        <div class="notice-desc">
+          في حال رغبة العميل في إجراء أي تعديلات معمارية بالحوائط (مثل تكسير جدران لفتح الغرف، إزالة حوائط مطبخ، فتح أو ترحيل أبواب وشبابيك، بناء قواطع طوب جديدة، وما يتبعها من أعمال محارة وبياض إضافية ونقل مخلفات)، <strong>يتم احتساب هذه الأعمال كبنود إضافية (Extra Works)</strong> بأسعار مقايسة تفضيلية وشفافة يتم حصرها والاتفاق عليها مسبقاً.
+        </div>
+      </div>
+
+      <div class="notice-card blue">
+        <div class="notice-title">
+          <span>💼</span>
+          <span>فصّل باقتك بنظام "نسبة الإشراف" (Cost-Plus)</span>
+        </div>
+        <div class="notice-desc">
+          هل تفضل شراء خاماتك بنفسك واختيار تفاصيل فريدة؟ توفر شركة ريفيت للمقاولات <strong>نظام التعاقد بنسبة إشراف هندسي على الأعمال (من 12% إلى 18%)</strong>. يدير مهندسونا المشروع بالكامل، ويوفرون اللوحات المعمارية (2D & 3D)، مع توفير أمهر الصنايعية ومراقبة الجودة، وتقديم فواتير شراء الخامات الفعلية بشفافية 100% مع الاستفادة من خصومات ريفيت للشركات.
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Cost Calculator -->
+    <section class="calculator-section" id="calculator">
+      <div class="section-title" style="margin-top: 0;">
+        <h2>حاسبة التكلفة والمقايسة التقديرية</h2>
+        <p>أدخل مساحة شقتك بالامتار المربعة واختر الباقة لاحتساب التكلفة التقديرية وجدول الدفعات.</p>
+      </div>
+
+      <div class="calc-grid">
+        <div class="calc-controls">
+          <label for="areaInput">مساحة الوحدة (بالمتر المربع م²):</label>
+          <input type="number" id="areaInput" value="120" min="40" max="1000" oninput="calculateEstimate()">
+
+          <label for="packageSelect">اختر باقة التشطيب:</label>
+          <select id="packageSelect" onchange="calculateEstimate()">
+            <option value="3700">الباقة الاقتصادية (3,700 ج.م / م²)</option>
+            <option value="5500" selected>الباقة اللوكس (5,500 ج.م / م²)</option>
+            <option value="7500">باقة VIP (7,500 ج.م / م²)</option>
+            <option value="15700">باقة LUXURY الفندقية (15,700 ج.م / م²)</option>
+          </select>
+
+          <label>مدة التنفيذ المتوقعة:</label>
+          <div id="durationText" style="font-weight: 700; color: var(--accent); font-size: 1.1rem; margin-bottom: 1rem;">
+            من 60 إلى 75 يوم عمل
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div class="calc-total-label">إجمالي التكلفة التقديرية</div>
+          <div class="calc-total-val" id="totalEstimate">660,000 ج.م</div>
+
+          <div class="calc-breakdown">
+            <div>الدفعة الأولى (تأسيس وتعاقد 20%): <br><span id="p1">132,000 ج.م</span></div>
+            <div>الدفعة الثانية (تأسيس سباكة وكهرباء 25%): <br><span id="p2">165,000 ج.م</span></div>
+            <div>الدفعة الثالثة (محارة وجبس بورد 25%): <br><span id="p3">165,000 ج.م</span></div>
+            <div>الدفعة الرابعة (أرضيات ودهانات 20%): <br><span id="p4">132,000 ج.م</span></div>
+            <div style="grid-column: span 2; margin-top: 5px;">دفعة التسليم النهائي والضمان (10%): <span id="p5">66,000 ج.م</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Comparison Table -->
+    <div class="section-title">
+      <h2>مقارنة المواصفات الهندسية</h2>
+      <p>جدول تفصيلي يوضح نوعية الخامات والماركات المستخدمة في كل باقة بدقة هندسية.</p>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>البند الفني</th>
+            <th>الاقتصادية (3,700)</th>
+            <th>اللوكس (5,500)</th>
+            <th>باقة VIP (7,500)</th>
+            <th>باقة LUXURY (15,700)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #fffbeb;">
+            <td class="item-highlight" style="color: #b45309;">🎁 الهدية المميزة</td>
+            <td><strong>هدية مميزة عند التعاقد 🎁</strong></td>
+            <td><strong>هدية مميزة عند التعاقد 🎁</strong></td>
+            <td><strong>هدية فخمة عند التعاقد 🎁</strong></td>
+            <td><strong>هدية فندقية استثنائية عند التعاقد 🎁</strong></td>
+          </tr>
+          <tr style="background: #f0fdf4;">
+            <td class="item-highlight" style="color: #15803d;">📐 التصميمات (2D & 3D)</td>
+            <td><strong>مشمولة مجاناً (2D & 3D)</strong></td>
+            <td><strong>مشمولة مجاناً (2D & 3D)</strong></td>
+            <td><strong>مشمولة مجاناً (2D & 3D)</strong></td>
+            <td><strong>مشمولة مجاناً (2D & 3D + VR)</strong></td>
+          </tr>
+          <tr>
+            <td class="item-highlight">كابلات الكهرباء</td>
+            <td>السويدي المعتمدة</td>
+            <td>السويدي الأصلية</td>
+            <td>السويدي الأصلية أحمال عالية</td>
+            <td>السويدي المعتمدة + شبكة Cat6 سمارت</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">المفاتيح واللوحات</td>
+            <td>ساس أو فينوس كلاسيك</td>
+            <td>فينوس ديزاينر / شنايدر</td>
+            <td>شنايدر إلكتريك / بتشينو ماتيك</td>
+            <td>ليجراند / شنايدر سمارت تاتش</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">السباكة والعزل</td>
+            <td>الشريف أو BR + عزل بيتومين</td>
+            <td>أكواثيرم ألماني + عزل إيبوكسي</td>
+            <td>أكواثيرم + عزل كيميائي مركب سيكا</td>
+            <td>أكواثيرم عازلة للصوت + عزل بولي يوريثان</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">أطقم الحمامات</td>
+            <td>كليوباترا أو ليسيكو</td>
+            <td>ديورافيت أو إيديال ستاندرد</td>
+            <td>ديورافيت معلق / روكا إسباني</td>
+            <td>فيلروي آند بوخ / ديورافيت فندقي</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">خلاطات المياه</td>
+            <td>كليوباترا ضمان معتمد</td>
+            <td>أيديال ستاندرد ضمان 5 سنوات</td>
+            <td>جروهي ألماني Eurosmart</td>
+            <td>هانز جروهي سمارت كنترول مدفون</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">أرضيات الريسبشن</td>
+            <td>سيراميك فرز أول قطع ليزر</td>
+            <td>بورسلين 60×120 فرز أول</td>
+            <td>بورسلين إسباني/هندي مستورد نخب أول</td>
+            <td>رخام طبيعي مستورد ملمع بالكريستال</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">الأسقف والجبس</td>
+            <td>مصيص + بيت نور ريسبشن</td>
+            <td>جبس بورد كناوف ألماني + بيوت نور</td>
+            <td>جبس بورد كامل + شادو جاب وليد بروفايل</td>
+            <td>تصاميم فندقية + تجاليد خشب وإضاءة ذكية</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">الدهانات</td>
+            <td>سايبس أو جي إل سي</td>
+            <td>جوتن فينوماستيك حريري</td>
+            <td>جوتن غني Rich Matt + لمسات ديكورية</td>
+            <td>جوتن ليدي ديزاين + دهانات إيطالية فخمة</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">الديكورات الجدارية</td>
+            <td>لون ديكوري مميز</td>
+            <td>بانوهات فيوتك فرنسية أنيقة</td>
+            <td>بديل خشب + بديل رخام مدمج</td>
+            <td>تكسيات خشب طبيعي + رخام بوكماتش واستيل PVD</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">الأبواب والنجارة</td>
+            <td>موسكي قشرة أرو استر</td>
+            <td>سويد حشو ممتاز قشرة أرو فاخرة</td>
+            <td>أرو ماسيف / دهان دوكو فرن ناعم</td>
+            <td>أبواب فندقية عازلة للصوت بارتفاع السقف</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">باب الشقة الرئيسي</td>
+            <td>باب مصفح تركي (للمساحات > 120 م²)</td>
+            <td>باب مصفح تركي فولاذي فئة أولى</td>
+            <td>باب مصفح تركي ثقيل ديكوري</td>
+            <td>باب مصفح ذكي فندقي Smart Lock</td>
+          </tr>
+          <tr>
+            <td class="item-highlight">الضمان المعتمد</td>
+            <td>10 سنوات تأسيس + عام تشطيب</td>
+            <td>10 سنوات تأسيس + عامين تشطيب</td>
+            <td>10 سنوات تأسيس + عامين صيانة دورية</td>
+            <td>15 سنة تأسيس شامل + ضمان فندقي متكامل</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Guarantees Grid -->
+    <div class="guarantees-grid">
+      <div class="guarantee-card">
+        <div class="guarantee-icon">📝</div>
+        <h4>عقد ومواصفات موثقة</h4>
+        <p>كل نوع خامة وماركتها مكتوبة بالتفصيل مع جداول فحص معتمدة.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon">⏳</div>
+        <h4>غرامة تأخير يومية</h4>
+        <p>التزامنا بالوقت التزام قانوني يحفظ حقك وأموالك كاملة.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon">👷‍♂️</div>
+        <h4>إشراف هندسي يومي</h4>
+        <p>مهندسو ريفيت متواجدون خطوة بخطوة في موقع العمل.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon">💎</div>
+        <h4>شهادات ضمان رسمي</h4>
+        <p>ضمان موثق على السباكة، العزل، والكهرباء والتشطيبات.</p>
+      </div>
+    </div>
+
+    <!-- Call to action Banner -->
+    <div class="cta-banner">
+      <h3>جاهز تبدأ تشطيب بيتك مع <span>ريفيت للمقاولات</span>؟</h3>
+      <p>فريقنا الهندسي مستعد لمعاينة وحدتك وتقديم الاستشارة الهندسية والمقايسة التفصيلية مجاناً وبدون أي التزام.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/201044743355" class="btn-whatsapp" target="_blank">
+          <span>💬 تواصل معنا عبر واتساب</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61582192497668&locale=ar_AR" class="btn-facebook" target="_blank">
+          <span>🌐 صفحتنا على فيسبوك</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © شركة ريفيت للمقاولات والتصميم الداخلي (Revite Contracting)</p>
+  </footer>
+
+  <script>
+    function calculateEstimate() {
+      const area = parseFloat(document.getElementById('areaInput').value) || 0;
+      const rate = parseFloat(document.getElementById('packageSelect').value) || 3700;
+      const total = area * rate;
+
+      document.getElementById('totalEstimate').innerText = total.toLocaleString('ar-EG') + ' ج.م';
+
+      // Payments
+      document.getElementById('p1').innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
+      document.getElementById('p2').innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
+      document.getElementById('p3').innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
+      document.getElementById('p4').innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
+      document.getElementById('p5').innerText = (total * 0.10).toLocaleString('ar-EG') + ' ج.م';
+
+      // Duration estimate
+      let duration = "من 45 إلى 60 يوم عمل";
+      if (rate === 5500) duration = "من 60 إلى 75 يوم عمل";
+      if (rate === 7500) duration = "من 75 إلى 90 يوم عمل";
+      if (rate === 15700) duration = "من 90 إلى 120 يوم عمل";
+      document.getElementById('durationText').innerText = duration;
+    }
+
+    function selectPackage(rate, name) {
+      document.getElementById('packageSelect').value = rate;
+      calculateEstimate();
+      document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Initial calculation
+    calculateEstimate();
+  </script>
+</body>
+</html>
