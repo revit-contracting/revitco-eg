@@ -200,7 +200,7 @@ const translations = {
     "reels.reel4.desc": "إشراف هندسي مستمر وتوثيق لكافة مراحل العزل والتركيبات والتسليم على المفتاح.",
     "reels.reel4.location": "مشروع استراحات ريفيت",
 
-    "cert.badge": "الثقة والاعتماد الرسمي",
+    "cert.badge": "الاعتمادات والتراخيص",
     "cert.title": "تراخيص واعتمادات رسمية تضمن حقوقك",
     "cert.subtitle": "نعمل بموجب تراخيص رسمية وقيد قانوني كامل يمنحك الأمان الهندسي والمصداقية المطلقة.",
     "cert.card1.title": "عضوية الاتحاد المصري لمقاولي التشييد والبناء",
@@ -505,7 +505,7 @@ const translations = {
     "reels.reel4.location": "Revit Chalets & Rest Project",
 
     // Certifications & Licenses Section
-    "cert.badge": "Official Accreditation & Trust",
+    "cert.badge": "Accreditations & Licenses",
     "cert.title": "Certified Licenses Guaranteeing Your Rights",
     "cert.subtitle": "We operate under official government licenses and legal accreditations ensuring safety, compliance, and peace of mind.",
     "cert.card1.title": "Egyptian Federation for Construction & Building",
