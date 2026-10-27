@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Revit Contracting & Public Supplies - Main Application Controller
  * Handles Bilingual Switch, Dark/Light Themes, Portfolio Filter, Lightbox,
  * and WhatsApp Instant Quote Generator.
@@ -673,7 +673,7 @@ function runFinishingCalculation() {
   if (!areaInput || !tierInput || !totalDisplay) return;
 
   const area = parseFloat(areaInput.value) || 0;
-  const rate = parseFloat(tierInput.value) || 5500;
+  const rate = parseFloat(tierInput.value) || 6600;
   const total = area * rate;
 
   totalDisplay.innerText = total.toLocaleString('ar-EG') + ' ج.م';
@@ -690,11 +690,11 @@ function runFinishingCalculation() {
   if (inst4) inst4.innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
   if (inst5) inst5.innerText = (total * 0.10).toLocaleString('ar-EG') + ' ج.م';
 
-  let duration = "من 45 إلى 60 يوم عمل";
+  let duration = "من 60 إلى 90 يوم عمل";
   let packageName = "الباقة الاقتصادية";
-  if (rate === 5500) { duration = "من 60 إلى 75 يوم عمل"; packageName = "الباقة اللوكس"; }
-  if (rate === 7500) { duration = "من 75 إلى 90 يوم عمل"; packageName = "باقة VIP"; }
-  if (rate === 15700) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
+  if (rate === 6600) { duration = "من 60 إلى 90 يوم عمل"; packageName = "الباقة اللوكس"; }
+  if (rate === 9000) { duration = "من 75 إلى 90 يوم عمل"; packageName = "باقة VIP"; }
+  if (rate === 20500) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
 
   if (durationDisplay) {
     durationDisplay.innerHTML = '<i class="far fa-clock"></i> مدة التنفيذ: ' + duration;

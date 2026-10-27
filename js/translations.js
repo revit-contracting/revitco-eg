@@ -89,7 +89,7 @@ const translations = {
         // Finishing Packages Section
     "packages.badge": "باقات هندسية متكاملة",
     "packages.title": "باقات التشطيب الداخلي المعتمدة من ريفيت",
-    "packages.subtitle": "حلول تشطيب متكاملة تبدأ من 3,700 ج.م/م² مع تصميمات 2D & 3D مجانية، هدايا حصرية عند التعاقد، وضمان 10 سنوات على التأسيس.",
+    "packages.subtitle": "حلول تشطيب متكاملة تبدأ من 4,100 ج.م/م² مع تصميمات 2D & 3D مجانية، هدايا حصرية عند التعاقد، وضمان 10 سنوات على التأسيس.",
     "services.subtitle": "نقدم منظومة عمل متكاملة تغطي كافة متطلبات المقاولات والتشطيب والتصميم والتوريد باحترافية استثنائية.",
 
     "service1.title": "المقاولات العامة والإنشاءات",
@@ -394,7 +394,7 @@ const translations = {
     // Finishing Packages Section
     "packages.badge": "Certified Turnkey Packages",
     "packages.title": "Revit Interior Finishing Packages",
-    "packages.subtitle": "Integrated engineering fit-out packages starting at 3,700 EGP/m² with complimentary 2D & 3D designs, exclusive signing gifts, and a 10-year MEP warranty.",
+    "packages.subtitle": "Integrated engineering fit-out packages starting at 4,100 EGP/m² with complimentary 2D & 3D designs, exclusive signing gifts, and a 10-year MEP warranty.",
     "services.subtitle": "We provide end-to-end contracting, design, finishing, and supply services tailored to the highest standards.",
 
     "service1.title": "General Contracting & Construction",
