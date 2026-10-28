@@ -652,23 +652,16 @@ function switchPackageTier(index) {
 
   buttons.forEach(btn => btn.classList.remove("active"));
 
-  if (index === "all") {
-    const allBtn = document.getElementById("btnTierAll");
-    if (allBtn) allBtn.classList.add("active");
-    if (grid) grid.classList.remove("single-tier-active");
-    cards.forEach(card => card.style.display = "flex");
-  } else {
-    const activeBtn = document.getElementById("btnTier" + index);
-    if (activeBtn) activeBtn.classList.add("active");
-    if (grid) grid.classList.add("single-tier-active");
-    cards.forEach((card, i) => {
-      if (i === index) {
-        card.style.display = "flex";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  }
+  const activeBtn = document.getElementById("btnTier" + index);
+  if (activeBtn) activeBtn.classList.add("active");
+  if (grid) grid.classList.add("single-tier-active");
+  cards.forEach((card, i) => {
+    if (i === index) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
 }
 
 function switchAboutCertTab(tab) {
