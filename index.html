@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=20261028_compact_v4">
+  <link rel="stylesheet" href="css/style.css?v=20261028_compact_v5">
 </head>
 <body>
 
@@ -783,6 +783,33 @@
       </div>
 
       <!-- Packages Cards Grid -->
+      <!-- Interactive Packages Tiers Switcher -->
+      <div class="packages-tiers-nav" role="tablist" aria-label="تبديل باقات التشطيب">
+        <button type="button" class="tier-nav-btn active" id="btnTier0" onclick="switchPackageTier(0)">
+          <i class="fas fa-coins"></i>
+          <span>الباقة الاقتصادية (4,100)</span>
+        </button>
+        <button type="button" class="tier-nav-btn" id="btnTier1" onclick="switchPackageTier(1)">
+          <i class="fas fa-gem"></i>
+          <span>الباقة اللوكس (6,600)</span>
+        </button>
+        <button type="button" class="tier-nav-btn btn-cost-plus" id="btnTier2" onclick="switchPackageTier(2)">
+          <i class="fas fa-sliders"></i>
+          <span>فصّل باقتك (14% - 18%)</span>
+        </button>
+        <button type="button" class="tier-nav-btn" id="btnTier3" onclick="switchPackageTier(3)">
+          <i class="fas fa-crown"></i>
+          <span>باقة VIP (9,000)</span>
+        </button>
+        <button type="button" class="tier-nav-btn" id="btnTier4" onclick="switchPackageTier(4)">
+          <i class="fas fa-hotel"></i>
+          <span>باقة LUXURY (20,500)</span>
+        </button>
+        <button type="button" class="tier-nav-btn" id="btnTierAll" onclick="switchPackageTier('all')">
+          <i class="fas fa-grip"></i>
+          <span>عرض جميع الباقات</span>
+        </button>
+      </div>
       <div class="packages-grid">
 
         <!-- Card 1: Economic -->

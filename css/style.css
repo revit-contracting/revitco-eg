@@ -4161,3 +4161,79 @@ html[lang="en"] .partner-card {
     height: 180px !important;
   }
 }
+
+/* Packages Tiers Interactive Switcher */
+.packages-tiers-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto 2.2rem auto;
+  max-width: 980px;
+  background: var(--bg-surface-2);
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.packages-tiers-nav .tier-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.65rem 1.15rem;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'Cairo', system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.packages-tiers-nav .tier-nav-btn:hover {
+  color: var(--text-main);
+  background: rgba(197, 168, 105, 0.08);
+}
+
+.packages-tiers-nav .tier-nav-btn.active {
+  background: var(--gold-gradient);
+  color: #0d1b2a;
+  box-shadow: 0 4px 15px rgba(197, 168, 105, 0.4);
+}
+
+.packages-tiers-nav .tier-nav-btn.btn-cost-plus.active {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+}
+
+.packages-grid.single-tier-active {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.packages-grid.single-tier-active .package-card {
+  max-width: 580px !important;
+  width: 100% !important;
+  animation: toolFadeIn 0.35s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .packages-tiers-nav {
+    border-radius: 20px;
+    padding: 6px;
+    gap: 6px;
+  }
+  .packages-tiers-nav .tier-nav-btn {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.82rem;
+    flex: 1 1 45%;
+    border-radius: 12px;
+  }
+}

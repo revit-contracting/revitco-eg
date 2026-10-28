@@ -644,6 +644,33 @@ function setQuickArea(area) {
 }
 
 
+
+function switchPackageTier(index) {
+  const grid = document.querySelector(".packages-grid");
+  const cards = document.querySelectorAll(".packages-grid .package-card");
+  const buttons = document.querySelectorAll(".packages-tiers-nav .tier-nav-btn");
+
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  if (index === "all") {
+    const allBtn = document.getElementById("btnTierAll");
+    if (allBtn) allBtn.classList.add("active");
+    if (grid) grid.classList.remove("single-tier-active");
+    cards.forEach(card => card.style.display = "flex");
+  } else {
+    const activeBtn = document.getElementById("btnTier" + index);
+    if (activeBtn) activeBtn.classList.add("active");
+    if (grid) grid.classList.add("single-tier-active");
+    cards.forEach((card, i) => {
+      if (i === index) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+}
+
 function switchAboutCertTab(tab) {
   const aboutPane = document.getElementById("aboutTabPane");
   const certsPane = document.getElementById("certsTabPane");
@@ -757,5 +784,6 @@ function runFinishingCalculation() {
 
 document.addEventListener('DOMContentLoaded', () => {
   runFinishingCalculation();
+  if (document.querySelector(".packages-tiers-nav")) { switchPackageTier(0); }
   if (location.hash === "#certifications") { switchAboutCertTab("certs"); }
 });
