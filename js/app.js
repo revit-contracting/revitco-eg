@@ -620,6 +620,7 @@ function selectTierCard(rate, name, el) {
   if (tierInput) tierInput.value = rate;
 
   runFinishingCalculation();
+
 }
 
 function syncAreaFromInput(val) {
@@ -642,6 +643,33 @@ function setQuickArea(area) {
   runFinishingCalculation();
 }
 
+
+function switchAboutCertTab(tab) {
+  const aboutPane = document.getElementById("aboutTabPane");
+  const certsPane = document.getElementById("certsTabPane");
+  const btnAbout = document.getElementById("btnShowAbout");
+  const btnCerts = document.getElementById("btnShowCerts");
+
+  if (tab === "about") {
+    if (aboutPane) aboutPane.style.display = "block";
+    if (certsPane) certsPane.style.display = "none";
+    if (btnAbout) btnAbout.classList.add("active");
+    if (btnCerts) btnCerts.classList.remove("active");
+  } else if (tab === "certs") {
+    if (certsPane) certsPane.style.display = "block";
+    if (aboutPane) aboutPane.style.display = "none";
+    if (btnCerts) btnCerts.classList.add("active");
+    if (btnAbout) btnAbout.classList.remove("active");
+  }
+}
+
+window.addEventListener("hashchange", () => {
+  if (location.hash === "#certifications") {
+    switchAboutCertTab("certs");
+  } else if (location.hash === "#about") {
+    switchAboutCertTab("about");
+  }
+});
 
 function switchPackageTool(tool) {
   const calc = document.getElementById("finishingCalc");
@@ -729,4 +757,5 @@ function runFinishingCalculation() {
 
 document.addEventListener('DOMContentLoaded', () => {
   runFinishingCalculation();
+  if (location.hash === "#certifications") { switchAboutCertTab("certs"); }
 });
