@@ -4048,30 +4048,83 @@ html[lang="en"] .partner-card {
   font-size: 0.82rem !important;
 }
 
-/* Compact Certifications & Accreditations */
-.certs-grid {
-  gap: 1.25rem !important;
+/* Compact Certifications & Accreditations Section */
+.certifications-grid {
+  gap: 1.1rem !important;
+  margin-bottom: 1.75rem !important;
 }
 
 .cert-card {
-  padding: 1.4rem 1.2rem !important;
+  padding: 1.25rem 1.15rem 1rem !important;
+  border-radius: 16px !important;
 }
 
-.cert-icon {
-  width: 50px !important;
-  height: 50px !important;
-  font-size: 1.4rem !important;
+.cert-stamp-badge {
+  padding: 0.22rem 0.75rem !important;
+  font-size: 0.74rem !important;
   margin-bottom: 0.8rem !important;
 }
 
-.cert-card h3 {
-  font-size: 1.15rem !important;
+.cert-seal {
+  width: 58px !important;
+  height: 58px !important;
+  margin: 0 auto 0.95rem auto !important;
+}
+
+.seal-inner {
+  width: 44px !important;
+  height: 44px !important;
+  font-size: 1.2rem !important;
+}
+
+.seal-ribbon {
+  bottom: -7px !important;
+  font-size: 0.65rem !important;
+  padding: 1px 8px !important;
+}
+
+.cert-card h4 {
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
   margin-bottom: 0.4rem !important;
+  line-height: 1.35 !important;
 }
 
 .cert-card p {
-  font-size: 0.86rem !important;
+  font-size: 0.83rem !important;
   line-height: 1.45 !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.cert-meta {
+  padding-top: 0.55rem !important;
+  font-size: 0.78rem !important;
+  gap: 0.35rem !important;
+}
+
+.official-stamp-banner {
+  padding: 1.25rem 1.75rem !important;
+  margin-top: 1.25rem !important;
+  border-radius: 16px !important;
+}
+
+.stamp-icon {
+  font-size: 2.2rem !important;
+}
+
+.stamp-text h4 {
+  font-size: 1.08rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.stamp-text p {
+  font-size: 0.84rem !important;
+  line-height: 1.4 !important;
+}
+
+.official-stamp-banner .btn {
+  padding: 0.65rem 1.15rem !important;
+  font-size: 0.88rem !important;
 }
 
 /* Compact Why Choose Us */
