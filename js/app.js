@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Revit Contracting & Public Supplies - Main Application Controller
  * Handles Bilingual Switch, Dark/Light Themes, Portfolio Filter, Lightbox,
  * and WhatsApp Instant Quote Generator.
@@ -642,7 +642,28 @@ function setQuickArea(area) {
   runFinishingCalculation();
 }
 
+
+function switchPackageTool(tool) {
+  const calc = document.getElementById("finishingCalc");
+  const comp = document.getElementById("packagesComparisonDeck");
+  const btnCalc = document.getElementById("btnShowCalc");
+  const btnComp = document.getElementById("btnShowCompare");
+
+  if (tool === "calc") {
+    if (calc) { calc.style.display = "block"; }
+    if (comp) { comp.style.display = "none"; }
+    if (btnCalc) btnCalc.classList.add("active");
+    if (btnComp) btnComp.classList.remove("active");
+  } else if (tool === "compare") {
+    if (comp) { comp.style.display = "block"; }
+    if (calc) { calc.style.display = "none"; }
+    if (btnComp) btnComp.classList.add("active");
+    if (btnCalc) btnCalc.classList.remove("active");
+  }
+}
+
 function setFinishingPackage(rate, name) {
+  switchPackageTool("calc");
   const cards = document.querySelectorAll('#tierSelectorDeck .tier-card-btn');
   cards.forEach(c => {
     if (c.innerText.includes(name)) {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -573,6 +573,66 @@
       .calc-grid { grid-template-columns: 1fr; }
       .calc-total-val { font-size: 2.2rem; }
     }
+    /* Interactive Tools Navigation */
+    .packages-tools-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 2.2rem auto 1.5rem auto;
+      max-width: 680px;
+      background: #ffffff;
+      padding: 6px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .packages-tools-nav .tool-nav-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.75rem 1.4rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.96rem;
+      font-weight: 700;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .packages-tools-nav .tool-nav-btn:hover {
+      color: var(--primary);
+    }
+    .packages-tools-nav .tool-nav-btn.active {
+      background: linear-gradient(135deg, #c5a869 0%, #dfc38a 50%, #b8934a 100%);
+      color: #0d1b2a;
+      box-shadow: 0 4px 15px rgba(197, 168, 105, 0.4);
+    }
+    .package-tool-pane {
+      animation: toolFadeIn 0.35s ease forwards;
+    }
+    @keyframes toolFadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 640px) {
+      .packages-tools-nav {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 8px;
+        gap: 8px;
+      }
+      .packages-tools-nav .tool-nav-btn {
+        width: 100%;
+        border-radius: 12px;
+        padding: 0.65rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -806,7 +866,19 @@
       </div>
     </div>
 
-    <div id="finishingCalc" class="revite-executive-calc-container">
+      <!-- Interactive Tools Navigation (Calculator / Specifications Comparison) -->
+      <div class="packages-tools-nav" role="tablist" aria-label="أدوات ومقارنة الباقات">
+        <button type="button" class="tool-nav-btn active" id="btnShowCalc" onclick="switchPackageTool('calc')">
+          <i class="fas fa-calculator"></i>
+          <span>حاسبة المقايسة الذكية وجدول الدفعات</span>
+        </button>
+        <button type="button" class="tool-nav-btn" id="btnShowCompare" onclick="switchPackageTool('compare')">
+          <i class="fas fa-table-list"></i>
+          <span>جدول مقارنة المواصفات الهندسية</span>
+        </button>
+      </div>
+
+      <div id="finishingCalc" class="revite-executive-calc-container package-tool-pane active">
         <style>
           .revite-executive-calc-container {
             background: radial-gradient(circle at 20% 20%, #1e293b 0%, #0a0f1d 100%) !important;
@@ -1280,7 +1352,8 @@
             
     
 
-    <!-- Detailed Comparison Table -->
+    <!-- Detailed Comparison Table Deck -->
+    <div id="packagesComparisonDeck" class="package-tool-pane" style="display: none;">
     <div class="section-title">
       <h2>مقارنة المواصفات الهندسية</h2>
       <p>جدول تفصيلي يوضح نوعية الخامات والماركات المستخدمة في كل باقة بدقة هندسية.</p>
@@ -1399,6 +1472,7 @@
         </tbody>
       </table>
     </div>
+    </div><!-- End packagesComparisonDeck -->
 
     <!-- Guarantees Grid -->
     <div class="guarantees-grid">
