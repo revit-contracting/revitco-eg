@@ -148,6 +148,7 @@ const translations = {
 
     // Portfolio Section
     "portfolio.badge": "معرض الأعمال والتصميمات",
+    "portfolio.filter_hint": "انقر هنا للتبديل بين تصنيفات معرض الأعمال والتصميمات",
     "portfolio.title": "معرض أعمال وتصميمات شركة ريفيت",
     "portfolio.subtitle": "استعرض مشروعاتنا وتصميماتنا المصنفة في 5 تصنيفات هندسية ومعمارية رئيسية متكاملة.",
     "portfolio.tabAll": "الكل",
@@ -459,6 +460,7 @@ const translations = {
 
     // Portfolio Section
     "portfolio.badge": "Portfolio & Showcase",
+    "portfolio.filter_hint": "Click here to toggle between portfolio and design categories",
     "portfolio.title": "Revit Signature Projects & Designs",
     "portfolio.subtitle": "Explore our portfolio across 5 major architectural and engineering categories.",
     "portfolio.tabAll": "All Projects",

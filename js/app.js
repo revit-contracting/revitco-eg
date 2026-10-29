@@ -200,8 +200,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
+      filterTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
       tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
 
       const filterCategory = tab.getAttribute('data-filter');
       filterPortfolio(filterCategory);

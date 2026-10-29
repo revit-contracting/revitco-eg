@@ -1676,12 +1676,34 @@
       </div>
 
       <!-- Filter Tabs (5 Primary Categories) -->
-      <div class="portfolio-filter-tabs">
-        <button class="filter-tab-btn active" data-filter="arch_2d" data-i18n="portfolio.tab_arch_2d">تصميم معماري 2D</button>
-        <button class="filter-tab-btn" data-filter="arch_3d" data-i18n="portfolio.tab_arch_3d">تصميم معماري و 3D</button>
-        <button class="filter-tab-btn" data-filter="finishing_decor" data-i18n="portfolio.tab_finishing_decor">تشطيبات و ديكور</button>
-        <button class="filter-tab-btn" data-filter="construction_buildings" data-i18n="portfolio.tab_construction_buildings">انشاءات و مباني</button>
-        <button class="filter-tab-btn" data-filter="landscape" data-i18n="portfolio.tab_landscape">لاندسكيب</button>
+      <div class="portfolio-tabs-container">
+        <div class="tabs-interactive-hint" aria-hidden="true">
+          <span class="hint-pulse-dot"></span>
+          <i class="fas fa-hand-pointer"></i>
+          <span data-i18n="portfolio.filter_hint">انقر هنا للتبديل بين تصنيفات معرض الأعمال والتصميمات</span>
+        </div>
+        <div class="portfolio-filter-tabs" role="tablist" aria-label="تصنيفات معرض الأعمال">
+          <button type="button" class="filter-tab-btn active" data-filter="arch_2d" role="tab" aria-selected="true" title="عرض تصميم معماري 2D">
+            <i class="fas fa-drafting-compass"></i>
+            <span data-i18n="portfolio.tab_arch_2d">تصميم معماري 2D</span>
+          </button>
+          <button type="button" class="filter-tab-btn" data-filter="arch_3d" role="tab" aria-selected="false" title="عرض تصميم معماري و 3D">
+            <i class="fas fa-cubes"></i>
+            <span data-i18n="portfolio.tab_arch_3d">تصميم معماري و 3D</span>
+          </button>
+          <button type="button" class="filter-tab-btn" data-filter="finishing_decor" role="tab" aria-selected="false" title="عرض تشطيبات و ديكور">
+            <i class="fas fa-paint-roller"></i>
+            <span data-i18n="portfolio.tab_finishing_decor">تشطيبات و ديكور</span>
+          </button>
+          <button type="button" class="filter-tab-btn" data-filter="construction_buildings" role="tab" aria-selected="false" title="عرض انشاءات و مباني">
+            <i class="fas fa-city"></i>
+            <span data-i18n="portfolio.tab_construction_buildings">انشاءات و مباني</span>
+          </button>
+          <button type="button" class="filter-tab-btn" data-filter="landscape" role="tab" aria-selected="false" title="عرض لاندسكيب">
+            <i class="fas fa-tree"></i>
+            <span data-i18n="portfolio.tab_landscape">لاندسكيب</span>
+          </button>
+        </div>
       </div>
 
       <!-- Portfolio Grid -->
