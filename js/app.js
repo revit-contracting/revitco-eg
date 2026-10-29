@@ -50,6 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Translate portfolio tags and titles
+    translatePortfolio(lang);
+
+    // Re-run dynamic finishing calculation in the selected language
+    if (typeof runFinishingCalculation === 'function') {
+      runFinishingCalculation();
+    }
+
     // Update Language Toggle Button text
     if (langToggleBtn) {
       langToggleBtn.innerHTML = lang === 'ar' 
@@ -778,6 +786,110 @@ function setFinishingPackage(rate, name) {
   }
 }
 
+// =========================================================================
+// Bilingual Portfolio Translation Mappings & Logic
+// =========================================================================
+const portfolioTagMap = {
+  "مخططات 2D": "2D Architectural Plans",
+  "تصميم داخلي": "Interior Design",
+  "عمارة": "Architecture",
+  "حمامات": "Master Bathrooms",
+  "دريسينج": "Walk-In Dressing",
+  "غرف اطفال": "Kids Bedrooms",
+  "غرف نوم": "Master Bedrooms",
+  "فيلا": "Luxury Villa",
+  "مكتبة شاشة": "TV Media Wall",
+  "سفرة": "Dining Room",
+  "دهانات داخلية": "Interior Wall Finishes",
+  "سلالم": "Staircases & Railings",
+  "طرقات داخلية": "Corridors & Hallways",
+  "مطابخ": "Modern Kitchens",
+  "مكاتب": "Commercial & Offices",
+  "فندق": "Luxury Hotel Design",
+  "مزرعة خيل": "Equestrian Stables",
+  "اسوار": "Perimeter Walls",
+  "بوابات حديد": "Wrought Iron Gates",
+  "صور اثناء التنفيذ": "Site Construction",
+  "واجهات": "Exterior Facades",
+  "لاندسكيب": "Landscape Architecture",
+  "لاندسكيب كامب": "Camp & Resort Landscape",
+  "لاندسكيب فيلا": "Villa Landscape"
+};
+
+const portfolioTitleMap = {
+  "الدور الارضي برج سكني": "Ground Floor - Residential Tower Plan",
+  "الدور المتكرر برج سكني": "Typical Floor - Residential Tower Plan",
+  "مخطط معماري تنفيذي - مسقط الدور الأرضي (نموذج 1)": "Working Architectural Plan - Ground Floor (Model 1)",
+  "مخطط معماري تنفيذي - مسقط الدور الأول (نموذج 1)": "Working Architectural Plan - First Floor (Model 1)",
+  "مسقط أفقي تفصيلي - توزيع الفراغات للدور الأرضي": "Detailed Floor Plan - Ground Floor Layout",
+  "مسقط أفقي تفصيلي - التقسيم الداخلي للدور الأول": "Detailed Floor Plan - First Floor Layout",
+  "مسقط أفقي تفصيلي - التقسيم والتوزيع للدور الثاني": "Detailed Floor Plan - Second Floor Layout",
+  "مخطط أوتوكاد معماري - مسقط الدور الأرضي والمداخل": "AutoCAD Architectural Plan - Ground Floor & Entrances",
+  "مخطط معماري شامل - نموذج فيلا سكنية متكاملة": "Comprehensive Architectural Blueprint - Residential Villa",
+  "المخطط المعماري التنفيذي المعتمد النهائي": "Approved Final Architectural Working Blueprint"
+};
+
+function translatePortfolioTitle(title) {
+  if (portfolioTitleMap[title]) return portfolioTitleMap[title];
+
+  return title
+    .replace(/^تصميم داخلي فاخر\s*-\s*(\d+)$/, 'Luxury Interior Design - $1')
+    .replace(/^تصميم عمارة سكنية\s*-\s*(\d+)$/, 'Residential Building Design - $1')
+    .replace(/^تصميم فندق فاخر\s*-\s*(\d+)$/, 'Luxury Hotel Concept - $1')
+    .replace(/^تصميم اسطبل خيل\s*-\s*(\d+)$/, 'Equestrian Stables Concept - $1')
+    .replace(/^تصميم لاندسكيب\s*-\s*(\d+)$/, 'Landscape Architecture Concept - $1')
+    .replace(/^تصميم لاندسكيب كامب\s*-\s*(\d+)$/, 'Resort & Desert Camp Landscape - $1')
+    .replace(/^تصميم لاندسكيب فيلا\s*-\s*(\d+)$/, 'Private Villa Landscape & Gardens - $1')
+    .replace(/^تصميم حمامات ماستر فاخرة 3D\s*-\s*لوحة\s*(\d+)$/, '3D Luxury Master Bathroom Concept - Board $1')
+    .replace(/^غرف ملابس ودريسينج روم مودرن\s*-\s*لوحة\s*(\d+)$/, 'Modern Walk-In Closet & Dressing Room - Board $1')
+    .replace(/^تصميم غرف أطفال مبهجة وعصرية\s*-\s*لوحة\s*(\d+)$/, 'Vibrant & Modern Kids Bedroom Design - Board $1')
+    .replace(/^أجنحة وغرف نوم رئيسية راقية\s*-\s*لوحة\s*(\d+)$/, 'Executive Master Bedroom Suite - Board $1')
+    .replace(/^تصميمات فلل وقصور ثلاثية الأبعاد\s*-\s*لوحة\s*(\d+)$/, '3D Luxury Villa & Mansion Concepts - Board $1')
+    .replace(/^ديكورات ومكتبات شاشات تلفزيون\s*-\s*لوحة\s*(\d+)$/, 'Bespoke TV Unit & Media Wall Decor - Board $1')
+    .replace(/^غرف سفرة وطعام مودرن فاخرة\s*-\s*لوحة\s*(\d+)$/, 'Modern Luxury Dining Hall Concept - Board $1')
+    .replace(/^تشطيبات ودهانات ديكورية مميزة\s*-\s*لوحة\s*(\d+)$/, 'Premium Decorative Coatings & Wall Finishes - Board $1')
+    .replace(/^ديكورات وتشطيبات سلالم رخامية وخشبية\s*-\s*لوحة\s*(\d+)$/, 'Luxury Marble & Wood Staircase Finishes - Board $1')
+    .replace(/^ممرات وطرقات داخلية بأحدث الإضاءات\s*-\s*لوحة\s*(\d+)$/, 'Ambient Lit Corridors & Hallways - Board $1')
+    .replace(/^مطابخ عصرية متطورة بتشطيبات راقية\s*-\s*لوحة\s*(\d+)$/, 'Contemporary High-End Designer Kitchen - Board $1')
+    .replace(/^تصميم وتشطيب مساحات مكاتب ومقرات إدارية\s*-\s*لوحة\s*(\d+)$/, 'Corporate Office & Executive Space Fit-Out - Board $1')
+    .replace(/^إنشاء وتشطيب أسوار خرسانية وديكورية\s*-\s*لوحة\s*(\d+)$/, 'Decorative & Structural Boundary Walls - Board $1')
+    .replace(/^تصنيع وتركيب بوابات حديد ليزر وفورفورجيه\s*-\s*لوحة\s*(\d+)$/, 'CNC Laser & Wrought Iron Gates - Board $1')
+    .replace(/^أعمال التنفيذ والإنشاءات بالمواقع الميدانية\s*-\s*لوحة\s*(\d+)$/, 'Active Site Works & Structural Execution - Board $1')
+    .replace(/^تنفيذ واجهات معمارية خارجية مودرن ونيوكلاسيك\s*-\s*لوحة\s*(\d+)$/, 'Modern & Neoclassic Exterior Facades - Board $1')
+    .replace(/^تصميم وتنسيق حدائق ولاندسكيب متكامل\s*-\s*لوحة\s*(\d+)$/, 'Turnkey Garden & Landscape Design - Board $1');
+}
+
+function translatePortfolio(lang) {
+  document.querySelectorAll('.portfolio-item-card').forEach(card => {
+    const tagEl = card.querySelector('.portfolio-badge-tag');
+    const titleEl = card.querySelector('.portfolio-item-title');
+
+    if (tagEl) {
+      if (!tagEl.hasAttribute('data-ar-tag')) {
+        tagEl.setAttribute('data-ar-tag', tagEl.innerText.trim());
+      }
+      if (lang === 'en') {
+        const ar = tagEl.getAttribute('data-ar-tag');
+        tagEl.innerText = portfolioTagMap[ar] || ar;
+      } else {
+        tagEl.innerText = tagEl.getAttribute('data-ar-tag');
+      }
+    }
+
+    if (titleEl) {
+      if (!titleEl.hasAttribute('data-ar-title')) {
+        titleEl.setAttribute('data-ar-title', titleEl.innerText.trim());
+      }
+      if (lang === 'en') {
+        const ar = titleEl.getAttribute('data-ar-title');
+        titleEl.innerText = translatePortfolioTitle(ar);
+      } else {
+        titleEl.innerText = titleEl.getAttribute('data-ar-title');
+      }
+    }
+  });
+}
+
 function runFinishingCalculation() {
   const areaInput = document.getElementById('finishingArea');
   const tierInput = document.getElementById('finishingTier');
@@ -790,8 +902,12 @@ function runFinishingCalculation() {
   const area = parseFloat(areaInput.value) || 0;
   const rate = parseFloat(tierInput.value) || 6600;
   const total = area * rate;
+  const isEn = (document.documentElement.getAttribute('lang') === 'en');
 
-  totalDisplay.innerText = total.toLocaleString('ar-EG') + ' ج.م';
+  const currencyUnit = isEn ? ' EGP' : ' ج.م';
+  const locale = isEn ? 'en-US' : 'ar-EG';
+
+  totalDisplay.innerText = total.toLocaleString(locale) + currencyUnit;
 
   const inst1 = document.getElementById('inst1');
   const inst2 = document.getElementById('inst2');
@@ -799,24 +915,35 @@ function runFinishingCalculation() {
   const inst4 = document.getElementById('inst4');
   const inst5 = document.getElementById('inst5');
 
-  if (inst1) inst1.innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
-  if (inst2) inst2.innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
-  if (inst3) inst3.innerText = (total * 0.25).toLocaleString('ar-EG') + ' ج.م';
-  if (inst4) inst4.innerText = (total * 0.20).toLocaleString('ar-EG') + ' ج.م';
-  if (inst5) inst5.innerText = (total * 0.10).toLocaleString('ar-EG') + ' ج.م';
+  if (inst1) inst1.innerText = (total * 0.20).toLocaleString(locale) + currencyUnit;
+  if (inst2) inst2.innerText = (total * 0.25).toLocaleString(locale) + currencyUnit;
+  if (inst3) inst3.innerText = (total * 0.25).toLocaleString(locale) + currencyUnit;
+  if (inst4) inst4.innerText = (total * 0.20).toLocaleString(locale) + currencyUnit;
+  if (inst5) inst5.innerText = (total * 0.10).toLocaleString(locale) + currencyUnit;
 
-  let duration = "من 60 إلى 90 يوم عمل";
-  let packageName = "الباقة الاقتصادية";
-  if (rate === 6600) { duration = "من 60 إلى 90 يوم عمل"; packageName = "الباقة اللوكس"; }
-  if (rate === 9000) { duration = "من 75 إلى 90 يوم عمل"; packageName = "باقة VIP"; }
-  if (rate === 20500) { duration = "من 90 إلى 120 يوم عمل"; packageName = "باقة LUXURY الفندقية"; }
+  let duration = isEn ? "60 to 90 business days" : "من 60 إلى 90 يوم عمل";
+  let packageName = isEn ? "Economic Package" : "الباقة الاقتصادية";
+
+  if (rate === 6600) {
+    duration = isEn ? "60 to 90 business days" : "من 60 إلى 90 يوم عمل";
+    packageName = isEn ? "Deluxe Package" : "الباقة اللوكس";
+  } else if (rate === 9000) {
+    duration = isEn ? "75 to 90 business days" : "من 75 إلى 90 يوم عمل";
+    packageName = isEn ? "VIP Package" : "باقة VIP";
+  } else if (rate === 20500) {
+    duration = isEn ? "90 to 120 business days" : "من 90 إلى 120 يوم عمل";
+    packageName = isEn ? "LUXURY Hotel Package" : "باقة LUXURY الفندقية";
+  }
 
   if (durationDisplay) {
-    durationDisplay.innerHTML = '<i class="far fa-clock"></i> مدة التنفيذ: ' + duration;
+    const durationPrefix = isEn ? 'Execution Timeline: ' : 'مدة التنفيذ: ';
+    durationDisplay.innerHTML = '<i class="far fa-clock"></i> ' + durationPrefix + duration;
   }
 
   if (whatsappBtn) {
-    var msg = encodeURIComponent('مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ (' + packageName + ') لمساحة ' + area + ' م² بإجمالي تقديري ' + total.toLocaleString('ar-EG') + ' ج.م');
+    var msg = isEn
+      ? encodeURIComponent('Hello Revit Contracting, I would like to book an engineering consultation & site visit for (' + packageName + ') for an area of ' + area + ' m² with an estimated total of ' + total.toLocaleString('en-US') + ' EGP')
+      : encodeURIComponent('مرحباً شركة ريفيت للمقاولات، أرغب في حجز استشارة ومعاينة هندسية لـ (' + packageName + ') لمساحة ' + area + ' م² بإجمالي تقديري ' + total.toLocaleString('ar-EG') + ' ج.م');
     whatsappBtn.href = 'https://wa.me/201044743355?text=' + msg;
   }
 }

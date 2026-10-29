@@ -522,6 +522,22 @@ button {
   width: 100%;
 }
 
+/* English Navbar Typography & Spacing Optimization */
+html[lang="en"] .nav-links {
+  gap: 1.05rem;
+}
+
+html[lang="en"] .nav-link {
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+html[lang="en"] .brand-sub {
+  font-size: 0.72rem;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
