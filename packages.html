@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -733,7 +733,7 @@
 
   <!-- Main Container -->
   <div class="container">
-      <!-- Solo Showcase: Custom Package (Cost-Plus 14% - 18%) -->
+      <!-- Solo Showcase: Custom Package (Cost-Plus) -->
       <div class="cost-plus-solo-showcase">
         <div class="cost-plus-solo-header">
           <div class="badge" style="background: rgba(2, 132, 199, 0.15); color: #0284c7; border: 1px solid rgba(2, 132, 199, 0.35);">
@@ -749,13 +749,13 @@
           <div class="cost-plus-solo-side">
             <div class="cost-plus-solo-img">
               <img src="images/packages/01_revite_packages_showcase_all.jpg" alt="فصّل باقتك بنظام Cost-Plus - شركة ريفيت" loading="lazy">
-              <span class="cost-plus-rate-badge">14% - 18% نسبة إشراف</span>
+              <span class="cost-plus-rate-badge"><i class="fas fa-file-invoice"></i> إشراف كامل + فواتير معتمدة</span>
             </div>
             <div class="cost-plus-rate-callout">
-              <span class="rate-callout-num">14% - 18%</span>
-              <span class="rate-callout-txt">نسبة إشراف هندسي شفاف (فواتير معتمدة)</span>
+              <span class="rate-callout-num">إشراف كامل + فواتير معتمدة</span>
+              <span class="rate-callout-txt">(نسب إشراف مختلفة حسب كل موقع)</span>
             </div>
-            <a href="https://wa.me/201044743355?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%8A%D9%81%D9%8A%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%86%D8%B8%D8%A7%D9%85%20%D9%81%D8%B5%D9%91%D9%84%20%D8%A8%D8%A7%D9%82%D8%AA%D9%83%20%D8%A8%D9%86%D8%B3%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B4%D8%B1%D8%A7%D9%81%20(Cost-Plus%2014-18%25)" target="_blank" rel="noopener noreferrer" class="btn btn-cost-plus-action">
+            <a href="https://wa.me/201044743355?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%8A%D9%81%D9%8A%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%86%D8%B8%D8%A7%D9%85%20%D9%81%D8%B5%D9%91%D9%84%20%D8%A8%D8%A7%D9%82%D8%AA%D9%83%20%D8%A8%D9%86%D8%B3%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B4%D8%B1%D8%A7%D9%81%20(Cost-Plus)" target="_blank" rel="noopener noreferrer" class="btn btn-cost-plus-action">
               <i class="fab fa-whatsapp"></i>
               <span>تواصل معنا الآن</span>
             </a>
@@ -968,15 +968,24 @@
     </div>
 
       <!-- Interactive Tools Navigation (Calculator / Specifications Comparison) -->
-      <div class="packages-tools-nav" role="tablist" aria-label="أدوات ومقارنة الباقات">
-        <button type="button" class="tool-nav-btn active" id="btnShowCalc" onclick="switchPackageTool('calc')">
-          <i class="fas fa-calculator"></i>
-          <span>حاسبة المقايسة الذكية وجدول الدفعات</span>
-        </button>
-        <button type="button" class="tool-nav-btn" id="btnShowCompare" onclick="switchPackageTool('compare')">
-          <i class="fas fa-table-list"></i>
-          <span>جدول مقارنة المواصفات الهندسية</span>
-        </button>
+      <div class="packages-tools-container">
+        <div class="tabs-interactive-hint" aria-hidden="true">
+          <span class="hint-pulse-dot"></span>
+          <i class="fas fa-hand-pointer"></i>
+          <span data-i18n="packages.tools_hint">انقر للتنقل بين حاسبة التكاليف وجدول المقارنة الشامل</span>
+        </div>
+        <div class="packages-tools-nav" role="tablist" aria-label="أدوات ومقارنة الباقات">
+          <button type="button" class="tool-nav-btn active" id="btnShowCalc" onclick="switchPackageTool('calc')" role="tab" aria-selected="true" title="عرض حاسبة المقايسة الذكية">
+            <i class="fas fa-calculator"></i>
+            <span>حاسبة المقايسة الذكية وجدول الدفعات</span>
+            <span class="tab-badge-pulse" id="badgeCalc" style="display: none;" data-i18n="about.tab_view">استعراض</span>
+          </button>
+          <button type="button" class="tool-nav-btn" id="btnShowCompare" onclick="switchPackageTool('compare')" role="tab" aria-selected="false" title="عرض جدول مقارنة المواصفات">
+            <i class="fas fa-table-list"></i>
+            <span>جدول مقارنة المواصفات الهندسية</span>
+            <span class="tab-badge-pulse" id="badgeCompare" data-i18n="about.tab_view">استعراض</span>
+          </button>
+        </div>
       </div>
 
       <div id="finishingCalc" class="revite-executive-calc-container package-tool-pane active">
