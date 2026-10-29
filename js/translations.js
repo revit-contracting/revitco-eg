@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Revit Contracting & Public Supplies - Translation Dictionary
  * Arabic (Default) & English
  */
@@ -71,6 +71,10 @@ const translations = {
 
     // About Section
     "about.badge": "نبذة عن ريفيت",
+    "about.tabs_hint": "انقر للتبديل بين نبذة الشركة والاعتمادات الرسمية",
+    "about.tab_about": "من نحن | نبذة عن الشركة",
+    "about.tab_certs": "الاعتمادات والتراخيص الرسمية",
+    "about.tab_view": "استعراض",
     "about.title": "شريكك الهندسي الموثوق في البناء والتطوير",
     "about.desc1": "تعد شركة **ريفيت للمقاولات العامة والتوريدات العمومية** من الشركات المصرية الصاعدة بقوة في تنفيذ المشروعات الإنشائية المتكاملة وتوريد المواد والمعدات اللازمة لكافة القطاعات.",
     "about.desc2": "تأسست الشركة على أسس مهنية صلبة تهدف إلى تقديم حلول هندسية متكاملة تجمع بين الفخامة المعمارية، الجودة الإنشائية، والدقة الصارمة في التنفيذ والالتزام بالمواعيد.",
@@ -88,6 +92,8 @@ const translations = {
     "services.title": "حلول هندسية وإنشائية شاملة من الفكرة للتسليم",
         // Finishing Packages Section
     "packages.badge": "باقتنا الهندسية المتكاملة",
+    "packages.tiers_hint": "انقر للتبديل بين باقات التشطيب واستعراض مواصفات كل باقة",
+    "packages.tools_hint": "انقر للتنقل بين حاسبة التكاليف وجدول المقارنة الشامل",
     "packages.title": "باقات التشطيب الداخلي المعتمدة من ريفيت",
     "packages.subtitle": "حلول تشطيب متكاملة تبدأ من 4,100 ج.م/م² مع تصميمات 2D & 3D مجانية، هدايا حصرية عند التعاقد، وضمان 10 سنوات على التأسيس.",
     "services.subtitle": "نقدم منظومة عمل متكاملة تغطي كافة متطلبات المقاولات والتشطيب والتصميم والتوريد باحترافية استثنائية.",
@@ -376,6 +382,10 @@ const translations = {
 
     // About Section
     "about.badge": "About Revit",
+    "about.tabs_hint": "Click to toggle between Company Overview & Official Accreditations",
+    "about.tab_about": "About Us | Company Overview",
+    "about.tab_certs": "Official Accreditations & Licenses",
+    "about.tab_view": "View",
     "about.title": "Your Trusted Engineering & Construction Partner",
     "about.desc1": "Revit for General Contracting & Public Supplies is a premier Egyptian company specialized in executing comprehensive construction projects and supplying essential materials and equipment across various sectors.",
     "about.desc2": "Founded on solid professional principles, Revit combines architectural elegance, structural integrity, and disciplined execution with complete adherence to deadlines.",
@@ -393,6 +403,8 @@ const translations = {
     "services.title": "Comprehensive Engineering & Building Solutions",
     // Finishing Packages Section
     "packages.badge": "Certified Turnkey Packages",
+    "packages.tiers_hint": "Click to toggle between finishing packages and view their specifications",
+    "packages.tools_hint": "Click to toggle between the Smart Estimator and Comparison Table",
     "packages.title": "Revit Interior Finishing Packages",
     "packages.subtitle": "Integrated engineering fit-out packages starting at 4,100 EGP/m² with complimentary 2D & 3D designs, exclusive signing gifts, and a 10-year MEP warranty.",
     "services.subtitle": "We provide end-to-end contracting, design, finishing, and supply services tailored to the highest standards.",

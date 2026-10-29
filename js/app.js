@@ -650,10 +650,16 @@ function switchPackageTier(index) {
   const cards = document.querySelectorAll(".packages-grid .package-card");
   const buttons = document.querySelectorAll(".packages-tiers-nav .tier-nav-btn");
 
-  buttons.forEach(btn => btn.classList.remove("active"));
+  buttons.forEach(btn => {
+    btn.classList.remove("active");
+    btn.setAttribute("aria-selected", "false");
+  });
 
   const activeBtn = document.getElementById("btnTier" + index);
-  if (activeBtn) activeBtn.classList.add("active");
+  if (activeBtn) {
+    activeBtn.classList.add("active");
+    activeBtn.setAttribute("aria-selected", "true");
+  }
   if (grid) grid.classList.add("single-tier-active");
   cards.forEach((card, i) => {
     if (i === index) {
@@ -669,17 +675,35 @@ function switchAboutCertTab(tab) {
   const certsPane = document.getElementById("certsTabPane");
   const btnAbout = document.getElementById("btnShowAbout");
   const btnCerts = document.getElementById("btnShowCerts");
+  const badgeAbout = document.getElementById("badgeAbout");
+  const badgeCerts = document.getElementById("badgeCerts");
 
   if (tab === "about") {
     if (aboutPane) aboutPane.style.display = "block";
     if (certsPane) certsPane.style.display = "none";
-    if (btnAbout) btnAbout.classList.add("active");
-    if (btnCerts) btnCerts.classList.remove("active");
+    if (btnAbout) {
+      btnAbout.classList.add("active");
+      btnAbout.setAttribute("aria-selected", "true");
+    }
+    if (btnCerts) {
+      btnCerts.classList.remove("active");
+      btnCerts.setAttribute("aria-selected", "false");
+    }
+    if (badgeAbout) badgeAbout.style.display = "none";
+    if (badgeCerts) badgeCerts.style.display = "inline-block";
   } else if (tab === "certs") {
     if (certsPane) certsPane.style.display = "block";
     if (aboutPane) aboutPane.style.display = "none";
-    if (btnCerts) btnCerts.classList.add("active");
-    if (btnAbout) btnAbout.classList.remove("active");
+    if (btnCerts) {
+      btnCerts.classList.add("active");
+      btnCerts.setAttribute("aria-selected", "true");
+    }
+    if (btnAbout) {
+      btnAbout.classList.remove("active");
+      btnAbout.setAttribute("aria-selected", "false");
+    }
+    if (badgeCerts) badgeCerts.style.display = "none";
+    if (badgeAbout) badgeAbout.style.display = "inline-block";
   }
 }
 
@@ -696,17 +720,35 @@ function switchPackageTool(tool) {
   const comp = document.getElementById("packagesComparisonDeck");
   const btnCalc = document.getElementById("btnShowCalc");
   const btnComp = document.getElementById("btnShowCompare");
+  const badgeCalc = document.getElementById("badgeCalc");
+  const badgeCompare = document.getElementById("badgeCompare");
 
   if (tool === "calc") {
     if (calc) { calc.style.display = "block"; }
     if (comp) { comp.style.display = "none"; }
-    if (btnCalc) btnCalc.classList.add("active");
-    if (btnComp) btnComp.classList.remove("active");
+    if (btnCalc) {
+      btnCalc.classList.add("active");
+      btnCalc.setAttribute("aria-selected", "true");
+    }
+    if (btnComp) {
+      btnComp.classList.remove("active");
+      btnComp.setAttribute("aria-selected", "false");
+    }
+    if (badgeCalc) badgeCalc.style.display = "none";
+    if (badgeCompare) badgeCompare.style.display = "inline-block";
   } else if (tool === "compare") {
     if (comp) { comp.style.display = "block"; }
     if (calc) { calc.style.display = "none"; }
-    if (btnComp) btnComp.classList.add("active");
-    if (btnCalc) btnCalc.classList.remove("active");
+    if (btnComp) {
+      btnComp.classList.add("active");
+      btnComp.setAttribute("aria-selected", "true");
+    }
+    if (btnCalc) {
+      btnCalc.classList.remove("active");
+      btnCalc.setAttribute("aria-selected", "false");
+    }
+    if (badgeCompare) badgeCompare.style.display = "none";
+    if (badgeCalc) badgeCalc.style.display = "inline-block";
   }
 }
 
