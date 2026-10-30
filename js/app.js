@@ -50,6 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Update element titles with data-i18n-title
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      if (translations[lang] && translations[lang][key]) {
+        el.setAttribute('title', translations[lang][key]);
+      }
+    });
+
+    // Update aria-labels with data-i18n-aria-label
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria-label');
+      if (translations[lang] && translations[lang][key]) {
+        el.setAttribute('aria-label', translations[lang][key]);
+      }
+    });
+
     // Translate portfolio tags and titles
     translatePortfolio(lang);
 

@@ -675,7 +675,7 @@
           <i class="fas fa-shapes"></i>
           <span data-i18n="services.badge">خدماتنا المتكاملة</span>
         </div>
-        <h2 data-i18n="services.title">حلول هندسية وإنشائية شاملة من الفكرة للتسليم</h2>
+        <h2 data-i18n="services.title">حلول هندسية وإنشائية شاملة من الفكرة حتى التسليم</h2>
         <p data-i18n="services.subtitle">نقدم منظومة عمل متكاملة تغطي كافة متطلبات المقاولات والتشطيب والتصميم والتوريد باحترافية استثنائية.</p>
       </div>
 
@@ -2804,21 +2804,21 @@
             <span data-i18n="guide.tagYear">إصدار 2026 الحصري</span>
           </div>
 
-          <div class="guide-3d-book" id="bookTriggerBtn" title="انقر لتصفح الدليل">
+          <div class="guide-3d-book" id="bookTriggerBtn" title="انقر لتصفح الدليل" data-i18n-title="guide.bookTooltip">
             <div class="book-cover-top">
               <span class="book-tag" data-i18n="guide.tagFree">تحميل مجاني 100%</span>
               <div class="book-cover-logo">
                 <img src="logo.jpg" alt="Revit Logo">
                 <span>REVIT CONSULTING</span>
               </div>
-              <h3 class="book-title">دليل المالك الذكي لتشطيب شقتك أو فيلتك</h3>
-              <p class="book-subtitle">كشف أسرار التوفير وتجنب الأخطاء الهندسية الشائعة</p>
+              <h3 class="book-title" data-i18n="guide.bookTitle">دليل المالك الذكي لتشطيب شقتك أو فيلتك</h3>
+              <p class="book-subtitle" data-i18n="guide.bookSubtitle">كشف أسرار التوفير وتجنب الأخطاء الهندسية الشائعة</p>
             </div>
 
             <div class="book-cover-bottom">
               <div class="book-author">
                 <span data-i18n="guide.tagRevit">إعداد مهندسي ريفيت</span>
-                <small>نسخة مهنية معتمدة</small>
+                <small data-i18n="guide.tagCertified">نسخة مهنية معتمدة</small>
               </div>
               <div class="book-badge-icon">
                 <i class="fas fa-file-pdf"></i>
@@ -2828,7 +2828,7 @@
 
           <div class="book-floating-badge book-badge-bottom">
             <i class="fas fa-shield-check"></i>
-            <span data-i18n="guide.tagRevit">إشراف هندسي معتمد</span>
+            <span data-i18n="guide.tagSupervision">إشراف هندسي معتمد</span>
           </div>
         </div>
       </div>
@@ -3018,7 +3018,7 @@
             <li><a href="#services" data-i18n="nav.services">خدماتنا</a></li>
             <li><a href="#portfolio" data-i18n="nav.portfolio">معرض الأعمال</a></li>
             <li><a href="#reels" data-i18n="nav.reels">فيديوهات التنفيذ</a></li>
-            <li><a href="#guide" style="color: var(--primary-gold); font-weight: 700;"><i class="fas fa-book-bookmark"></i> <span data-i18n="guide.badge">دليل المالك الذكي (مجاني)</span></a></li>
+            <li><a href="#guide" style="color: var(--primary-gold); font-weight: 700;"><i class="fas fa-book-bookmark"></i> <span data-i18n="footer.guideLink">دليل المالك الذكي (مجاني)</span></a></li>
             <li><a href="company-profile.pdf" download="بروفايل شركة ريفيت للمقاولات العامة.pdf" target="_blank" style="color: var(--primary-gold); font-weight: 700;"><i class="fas fa-file-pdf"></i> <span data-i18n="about.profileBtn">تحميل بروفايل الشركة (PDF)</span></a></li>
             <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
           </ul>
@@ -3078,13 +3078,13 @@
       <div class="guide-modal-header">
         <div class="guide-modal-title">
           <i class="fas fa-book-open"></i>
-          <h3 id="guideModalTitle">دليل المالك الذكي لتشطيب شقتك أو فيلتك وتجنب أخطاء البناء الشائعة</h3>
+          <h3 id="guideModalTitle" data-i18n="guide.modal.title">دليل المالك الذكي لتشطيب شقتك أو فيلتك وتجنب أخطاء البناء الشائعة</h3>
         </div>
         <div class="guide-modal-actions">
           <a href="smart-finishing-guide.pdf" download="دليل المالك الذكي لتشطيب شقتك أو فيلتك - شركة ريفيت.pdf" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;" target="_blank">
-            <i class="fas fa-download"></i> تحميل PDF
+            <i class="fas fa-download"></i> <span data-i18n="guide.modal.download">تحميل PDF</span>
           </a>
-          <button type="button" class="guide-modal-close" id="closeGuideModalBtn" aria-label="إغلاق النافذة">
+          <button type="button" class="guide-modal-close" id="closeGuideModalBtn" aria-label="إغلاق النافذة" data-i18n-aria-label="guide.modal.closeAria">
             <i class="fas fa-times"></i>
           </button>
         </div>
@@ -3092,71 +3092,71 @@
 
       <div class="guide-modal-body">
         <div class="guide-chapter">
-          <span class="guide-chapter-badge">مقدمة استشارية</span>
-          <h4>لماذا يحتاج كل مالك عقار لهذا الدليل؟</h4>
-          <p>
+          <span class="guide-chapter-badge" data-i18n="guide.chIntro.badge">مقدمة استشارية</span>
+          <h4 data-i18n="guide.chIntro.title">لماذا يحتاج كل مالك عقار لهذا الدليل؟</h4>
+          <p data-i18n="guide.chIntro.p1">
             مرحلة التشطيب والبناء هي أضخم استثمار مالي يضعه مالك الشقة أو الفيلا بعد شراء العقار. وللأسف، يقع أكثر من 70% من الملاك في فخ الأخطاء غير المرئية أو العشوائية في التنسيق بين مقاولي الباطن، مما يؤدي إلى إهدار 20% إلى 35% من الميزانية في إعادة التكسير ومعالجة التسريبات والشروخ.
           </p>
-          <p>
+          <p data-i18n="guide.chIntro.p2">
             هذا الدليل يقدمه فريق <strong>شركة ريفيت للمقاولات العامة</strong> كمرجع هندسي مبسط لحماية استثمارك وتوجيهك خطوة بخطوة.
           </p>
         </div>
 
         <div class="guide-chapter">
-          <span class="guide-chapter-badge">الباب الأول: التسلسل الهندسي</span>
-          <h4>الترتيب الهندسي الصارم لـ 12 مرحلة تشطيب</h4>
-          <p>القاعدة الذهبية في الهندسة: <em>«لا تبدأ بنداً يفسد ما قبله، ولا تؤجل بنداً يحتاج إلى تأسيس مدفون»</em>.</p>
+          <span class="guide-chapter-badge" data-i18n="guide.ch1.badge">الباب الأول: التسلسل الهندسي</span>
+          <h4 data-i18n="guide.ch1.title">الترتيب الهندسي الصارم لـ 12 مرحلة تشطيب</h4>
+          <p data-i18n="guide.ch1.rule">القاعدة الذهبية في الهندسة: <em>«لا تبدأ بنداً يفسد ما قبله، ولا تؤجل بنداً يحتاج إلى تأسيس مدفون»</em>.</p>
           <div class="guide-steps-list">
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>1. التعديلات المعمارية والتكسير وبناء الحوائط:</strong> فتح وتعديل الفراغات وبناء الجدران واستلام الزوايا بميزان خيط وقامة.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>2. تأسيس السباكة والصرف الداخلي:</strong> تمديد مواسير التغذية والصرف وتجهيز مسارات التكييف والعزل الأولي.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>3. تأسيس الكهرباء وتمديد الخراطيم:</strong> شق مسارات الجدران ودفن الخراطيم وتوزيع لوحة القواطع الرئيسية ومفاتيح التحكم.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>4. أعمال المحارة (اللياسة المتكاملة):</strong> عمل البؤج والأوتار والطرطشة واستلام استواء الحوائط بالقدة وميزان المياه.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>5. العزل المائي الكيميائي للحمامات والمطابخ:</strong> عزل أرضيات الحمامات واختبار الغمر بالماء 48 ساعة قبل وضع السيراميك.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>6. الجبس بورد والأسقف المعلقة:</strong> تثبيت الشاسيهات المعدنية واستلام استقامة الفواصل وتأسيس إضاءة الـ LED والسبوتات.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>7. أرضيات السيراميك والبورسلين:</strong> استخدام مادة لاصقة مخصصة للبورسلين مع صلايب تمدد هندسية وفواصل ليونة.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div><strong>8. الدهانات والديكورات الحديثة:</strong> سحب سكينات المعجون وصنفرة الإضاءة الكاشفة والبطانة ثم الأوجه النهائية.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s1"><strong>1. التعديلات المعمارية والتكسير وبناء الحوائط:</strong> فتح وتعديل الفراغات وبناء الجدران واستلام الزوايا بميزان خيط وقامة.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s2"><strong>2. تأسيس السباكة والصرف الداخلي:</strong> تمديد مواسير التغذية والصرف وتجهيز مسارات التكييف والعزل الأولي.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s3"><strong>3. تأسيس الكهرباء وتمديد الخراطيم:</strong> شق مسارات الجدران ودفن الخراطيم وتوزيع لوحة القواطع الرئيسية ومفاتيح التحكم.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s4"><strong>4. أعمال المحارة (اللياسة المتكاملة):</strong> عمل البؤج والأوتار والطرطشة واستلام استواء الحوائط بالقدة وميزان المياه.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s5"><strong>5. العزل المائي الكيميائي للحمامات والمطابخ:</strong> عزل أرضيات الحمامات واختبار الغمر بالماء 48 ساعة قبل وضع السيراميك.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s6"><strong>6. الجبس بورد والأسقف المعلقة:</strong> تثبيت الشاسيهات المعدنية واستلام استقامة الفواصل وتأسيس إضاءة الـ LED والسبوتات.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s7"><strong>7. أرضيات السيراميك والبورسلين:</strong> استخدام مادة لاصقة مخصصة للبورسلين مع صلايب تمدد هندسية وفواصل ليونة.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-circle"></i> <div data-i18n="guide.ch1.s8"><strong>8. الدهانات والديكورات الحديثة:</strong> سحب سكينات المعجون وصنفرة الإضاءة الكاشفة والبطانة ثم الأوجه النهائية.</div></div>
           </div>
         </div>
 
         <div class="guide-chapter">
-          <span class="guide-chapter-badge" style="background: rgba(239, 68, 68, 0.12); color: #EF4444; border-color: rgba(239, 68, 68, 0.3);">الباب الثاني: تحذيرات هامة</span>
-          <h4>أخطر 7 أخطاء شائعة في التشطيب تكلفك ثروة</h4>
+          <span class="guide-chapter-badge" style="background: rgba(239, 68, 68, 0.12); color: #EF4444; border-color: rgba(239, 68, 68, 0.3);" data-i18n="guide.ch2.badge">الباب الثاني: تحذيرات هامة</span>
+          <h4 data-i18n="guide.ch2.title">أخطر 7 أخطاء شائعة في التشطيب تكلفك ثروة</h4>
           <div class="guide-steps-list">
-            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div><strong>إلغاء اختبار كبس السباكة:</strong> عدم طلب فني شركة المواسير لكبس وضغط شبكة المياه ومنح شهادة الضمان قبل دفن المواسير بالأسمنت.</div></div>
-            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div><strong>تكسير الخرسانات والأعمدة لتمرير المواسير:</strong> خطأ إنشائي كارثي يضعف الهيكل الحامل للمبنى ويمنعه الكود الهندسي منعاً باتاً.</div></div>
-            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div><strong>لصق البورسلين بمونة الأسمنت فقط:</strong> مسامية البورسلين صفرية، والأسمنت يسبب تطبيل وانفصال البلاطات بعد فترة، والواجب استخدام مادة لاصقة مخصصة.</div></div>
-            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div><strong>إهمال عزل الحوائط بارتفاع 20-30 سم:</strong> العزل يجب أن يرتفع رقبة زجاجة فوق منسوب التشطيب لمنع رشح الرطوبة لظهر حوائط الغرف المجاورة.</div></div>
-            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div><strong>توزيع الكهرباء بدون مخطط فرش مسبق:</strong> تركيب مفاتيح ومآخذ في أماكن ستغطيها الدواليب أو السرير لاحقاً، مما يجبرك على التمديد الخارجي المشوه.</div></div>
+            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div data-i18n="guide.ch2.w1"><strong>إلغاء اختبار كبس السباكة:</strong> عدم طلب فني شركة المواسير لكبس وضغط شبكة المياه ومنح شهادة الضمان قبل دفن المواسير بالأسمنت.</div></div>
+            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div data-i18n="guide.ch2.w2"><strong>تكسير الخرسانات والأعمدة لتمرير المواسير:</strong> خطأ إنشائي كارثي يضعف الهيكل الحامل للمبنى ويمنعه الكود الهندسي منعاً باتاً.</div></div>
+            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div data-i18n="guide.ch2.w3"><strong>لصق البورسلين بمونة الأسمنت فقط:</strong> مسامية البورسلين صفرية، والأسمنت يسبب تطبيل وانفصال البلاطات بعد فترة، والواجب استخدام مادة لاصقة مخصصة.</div></div>
+            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div data-i18n="guide.ch2.w4"><strong>إهمال عزل الحوائط بارتفاع 20-30 سم:</strong> العزل يجب أن يرتفع رقبة زجاجة فوق منسوب التشطيب لمنع رشح الرطوبة لظهر حوائط الغرف المجاورة.</div></div>
+            <div class="guide-step-item warning"><i class="fas fa-triangle-exclamation"></i> <div data-i18n="guide.ch2.w5"><strong>توزيع الكهرباء بدون مخطط فرش مسبق:</strong> تركيب مفاتيح ومآخذ في أماكن ستغطيها الدواليب أو السرير لاحقاً، مما يجبرك على التمديد الخارجي المشوه.</div></div>
           </div>
         </div>
 
         <div class="guide-chapter">
-          <span class="guide-chapter-badge">الباب الثالث: الاستلام الهندسي</span>
-          <h4>قائمة فحص المهندس (Checklist) عند استلام الشقة</h4>
+          <span class="guide-chapter-badge" data-i18n="guide.ch3.badge">الباب الثالث: الاستلام الهندسي</span>
+          <h4 data-i18n="guide.ch3.title">قائمة فحص المهندس (Checklist) عند استلام الشقة</h4>
           <div class="guide-steps-list">
-            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div><strong>المحارة:</strong> التأكد من عدم وجود أي تطبيل بطرق خفيف، واستواء الحائط مع القدة بدون أي فراغ (أقل من 2 مم).</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div><strong>السيراميك:</strong> فحص ميول بالوعات الصرف بصب ماء ومراقبة انسيابه السريع، والتأكد من تطابق لحامات العراميس.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div><strong>الكهرباء:</strong> اختبار كل مقبس كهربائي بجهاز فحص القطبية والتأكد من ربط سلك التأريض (Earth) في الأجهزة الحساسة.</div></div>
-            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div><strong>الأبواب والشبابيك:</strong> سهولة القفل والإحكام وعزل الصوت والحرارة وعدم احتكاك الدلف بالأرضيات.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div data-i18n="guide.ch3.c1"><strong>المحارة:</strong> التأكد من عدم وجود أي تطبيل بطرق خفيف، واستواء الحائط مع القدة بدون أي فراغ (أقل من 2 مم).</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div data-i18n="guide.ch3.c2"><strong>السيراميك:</strong> فحص ميول بالوعات الصرف بصب ماء ومراقبة انسيابه السريع، والتأكد من تطابق لحامات العراميس.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div data-i18n="guide.ch3.c3"><strong>الكهرباء:</strong> اختبار كل مقبس كهربائي بجهاز فحص القطبية والتأكد من ربط سلك التأريض (Earth) في الأجهزة الحساسة.</div></div>
+            <div class="guide-step-item"><i class="fas fa-check-double"></i> <div data-i18n="guide.ch3.c4"><strong>الأبواب والشبابيك:</strong> سهولة القفل والإحكام وعزل الصوت والحرارة وعدم احتكاك الدلف بالأرضيات.</div></div>
           </div>
         </div>
 
         <div class="guide-chapter" style="background: rgba(197, 168, 105, 0.08); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--primary-gold);">
-          <span class="guide-chapter-badge">استشارة ميدانية مجانية</span>
-          <h4>هل ترغب في أن يفحص مهندس ريفيت شقتك أو فيلتك؟</h4>
-          <p>
+          <span class="guide-chapter-badge" data-i18n="guide.ch4.badge">استشارة ميدانية مجانية</span>
+          <h4 data-i18n="guide.ch4.title">هل ترغب في أن يفحص مهندس ريفيت شقتك أو فيلتك؟</h4>
+          <p data-i18n="guide.ch4.desc">
             يسعد فريق ريفيت الهندسي بتقديم <strong>معاينة ميدانية ومقايسة تفصيلية معتمدة</strong> لوحدتك السكنية أو التجارية بدون أي التزام مسبق.
           </p>
           <div style="margin-top: 1rem; display: flex; gap: 0.85rem; flex-wrap: wrap;">
-            <a href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> احجز موعد معاينة عبر واتساب</a>
-            <a href="#contact" class="btn btn-primary" onclick="document.getElementById('guideModal').classList.remove('active'); document.body.style.overflow = '';">اطلب مقايسة تفصيلية الآن</a>
+            <a href="https://wa.me/201044743355" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> <span data-i18n="guide.ch4.whatsapp">احجز موعد معاينة عبر واتساب</span></a>
+            <a href="#contact" class="btn btn-primary" onclick="document.getElementById('guideModal').classList.remove('active'); document.body.style.overflow = '';"><span data-i18n="guide.ch4.quoteBtn">اطلب مقايسة تفصيلية الآن</span></a>
           </div>
         </div>
       </div>
 
       <div class="guide-modal-footer">
-        <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-shield-halved gold-text"></i> موثق ومعتمد من الإدارة الهندسية لشركة ريفيت للمقاولات 2026.</span>
-        <button type="button" class="btn btn-outline" id="closeGuideModalBtnBottom" style="padding: 0.45rem 1.25rem;">إغلاق</button>
+        <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-shield-halved gold-text"></i> <span data-i18n="guide.modal.footer">موثق ومعتمد من الإدارة الهندسية لشركة ريفيت للمقاولات 2026.</span></span>
+        <button type="button" class="btn btn-outline" id="closeGuideModalBtnBottom" style="padding: 0.45rem 1.25rem;" data-i18n="guide.modal.close">إغلاق</button>
       </div>
     </div>
   </div>
@@ -3168,7 +3168,7 @@
   </div>
 
   <!-- JavaScript Scripts -->
-  <script src="js/translations.js?v=20261025_fixed"></script>
-  <script src="js/app.js?v=20261025_fixed"></script>
+  <script src="js/translations.js?v=20261030_guide_en"></script>
+  <script src="js/app.js?v=20261030_guide_en"></script>
 </body>
 </html>
