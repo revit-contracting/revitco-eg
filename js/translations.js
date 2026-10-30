@@ -72,7 +72,7 @@ const translations = {
 
     // About Section
     "about.badge": "نبذة عن ريفيت",
-    "about.tabs_hint": "انقر للتبديل بين نبذة الشركة والاعتمادات الرسمية",
+    "about.tabs_hint": "انقر للتبديل بين نبذة عن الشركة والاعتمادات الرسمية",
     "about.tab_about": "من نحن | نبذة عن الشركة",
     "about.tab_certs": "الاعتمادات والتراخيص الرسمية",
     "about.tab_view": "استعراض",
