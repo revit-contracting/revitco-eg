@@ -1530,10 +1530,10 @@ html[lang="en"] .partner-card {
 
 .reels-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 780px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1140px;
   margin: 0 auto;
-  gap: 2.25rem;
+  gap: 2rem;
 }
 
 .reel-card {
